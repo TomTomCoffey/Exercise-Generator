@@ -190,6 +190,46 @@
           </p>
         </div>
       </footer>
+
+
+      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+      <script>
+
+          Vue.createApp({
+              data() {
+                  return {
+                      isMenuActive: false,
+                      currentTab: 'All',
+                      tabs: [
+                          { name: 'All', icon: 'fas fa-list' },
+                          { name: 'Completed', icon: 'fas fa-check' },
+                          { name: 'Current', icon: 'fas fa-spinner' },
+                          { name: 'Overdue', icon: 'fas fa-exclamation-triangle' },
+                          { name: 'Trash', icon: 'fas fa-trash'}
+                          /*  calendar, calendar-day, calendar-times, clipboard-list*/
+                      ],
+                      items: [
+                          { name: 'Learn Vue', completed: true },
+                          { name: 'Learn React', completed: false },
+                          { name: 'Learn Angular', completed: false },
+                          { name: 'Learn Svelte', completed: false },
+                          { name: 'Learn Ember', completed: false },
+
+                      ]
+                      
+                  }
+              },
+              methods: {
+                  shouldShow(item) {
+                      if (this.currentTab === 'All') return true
+                      if (this.currentTab === 'Completed' && item.completed) return true
+                      if (this.currentTab === 'Current' && !item.completed) return true
+                      return false
+                  },
+              }
+          }).mount('body')
+      </script>
     
 </body>
 </html>
