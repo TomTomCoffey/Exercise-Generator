@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Sign Up</title>
+    
+
+    <style>
+            
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                
+               
+            }
+            body{
+                background-color: darkblue;
+            }
+         
+            .navbar{
+                    background-color: white;
+            }
+            .navbar-item{
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            .navbar-item:hover{
+                background-color: #f0e9e9;
+            }
+            .navbar-item:active{
+                background-color: #f0e9e9;
+            }
+            .navbar-item:focus{
+                background-color: #f0e9e9;
+            }
+
+            .columns{
+                margin-top: 0rem;
+                background-color: #ffffff;
+            }
+            .box{
+                display: auto;
+                margin-top: 2rem;
+                margin-left: 5rem;
+                margin-right: 5rem;
+                margin-bottom: 2rem;
+                background-color: #ffffff;
+               
+            }
+            .box{
+      
+                background-color: transparent;
+                margin-right: 400px;
+                margin-left: 400px;
+               
+                
+              
+               
+            }
+            .label{
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: orange;
+            }
+            .footer{
+                background-color: orange;
+                margin:auto;
+            
+            }
+           
+        
+        
+          
+            
+    </style>
+
+
+</head>
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              Home
+            </a>
+      
+            <a class="navbar-item">
+              About us
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Exercises
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  Chest
+                </a>
+                <a class="navbar-item">
+                  Shoulder
+                </a>
+                <a class="navbar-item">
+                  Triceps
+                </a>
+                <a class="navbar-item">
+                  Biceps
+                </a>
+                <a class="navbar-item">
+                  Back
+                </a>
+                <a class="navbar-item">
+                  Legs
+                </a>
+                <a class="navbar-item">
+                  Abs
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-info">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <form class="box" action="CalculateBMI.php" method="POST">
+
+        <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              
+              <input name="name" class="input" type="name" placeholder="Enter First and Last name">
+            </div>
+          </div>
+
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" type="email" placeholder="e.g. alex@example.com">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Password</label>
+          <div class="control">
+            <input class="input" type="Height" placeholder="********">
+          </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Height</label>
+            <div class="control">
+              <input name="height" class="input" type="Weight" placeholder="Enter height in inches">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Weight</label>
+            <div class="control">
+              <input name="weight" class="input" type="weight" placeholder="Enter Weight in pounds">
+            </div>
+          </div>
+        
+      
+        <button class="button is-link" href="file:///Users/tomcoffey/Desktop/college/Software/signup.html?">Sign up</button>
+      </form>
+
+
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Product Name</strong> by <a href="">Scrum Team 4</a>. 
+            <a href=""> Possible Link we can use</a> 
+            <a href="">SUNY New Paltz</a>.
+          </p>
+        </div>
+      </footer>
+
+
+      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+      <script>
+
+          Vue.createApp({
+              data() {
+                  return {
+                      isMenuActive: false,
+                      currentTab: 'All',
+                      tabs: [
+                          { name: 'All', icon: 'fas fa-list' },
+                          { name: 'Completed', icon: 'fas fa-check' },
+                          { name: 'Current', icon: 'fas fa-spinner' },
+                          { name: 'Overdue', icon: 'fas fa-exclamation-triangle' },
+                          { name: 'Trash', icon: 'fas fa-trash'}
+                          /*  calendar, calendar-day, calendar-times, clipboard-list*/
+                      ],
+                      items: [
+                          { name: 'Learn Vue', completed: true },
+                          { name: 'Learn React', completed: false },
+                          { name: 'Learn Angular', completed: false },
+                          { name: 'Learn Svelte', completed: false },
+                          { name: 'Learn Ember', completed: false },
+
+                      ]
+                      
+                  }
+              },
+              methods: {
+                  shouldShow(item) {
+                      if (this.currentTab === 'All') return true
+                      if (this.currentTab === 'Completed' && item.completed) return true
+                      if (this.currentTab === 'Current' && !item.completed) return true
+                      return false
+                  },
+              }
+          }).mount('body')
+      </script>
+    
+</body>
+</html>
