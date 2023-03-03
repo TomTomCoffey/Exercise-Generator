@@ -29,7 +29,8 @@
     }
 
     $name = $_POST["name"];
-
+    $email = $_POST["email"];
+    $password = $_POST["password"];
     $height = $_POST["height"];
     $weight = $_POST["weight"];
     $bmi = calcBMI($height, $weight)
@@ -37,7 +38,10 @@
     echo "Hello " . $name . "<br>height: " . $height . "<br>weight: " . $weight;
     echo "<br>Your bmi is " . number_format((float)$bmi, 2, '.', '');
 
-    function checkPassword{
+
+    
+    ///check if password matches the one in the database
+    function checkPassword($password, $password2){
         $password = $_POST["password"];
         $password2 = $_POST["password2"];
         if ($password == $password2){
@@ -48,6 +52,10 @@
         }
     }
 
+   
+
+
+    ///check if password is valid
     function validPassword($password){
         if (strlen($password) < 8){
             echo "<br>Password must be at least 8 characters";
@@ -85,6 +93,10 @@
     } else {
         echo "Error: ";
     }
+    $conn->close();
+
+
+
     
 ?>
 
