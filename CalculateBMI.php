@@ -39,6 +39,22 @@
     echo "<br>Your bmi is " . number_format((float)$bmi, 2, '.', '');
 
 
+    function checkEmailDatabase()
+    {
+        $sql = "SELECT email FROM User";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                if ($row["email"] == $email){
+                    echo "<br>Email already in use";
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+
     
     ///check if password matches the one in the database
     function checkPassword($password, $password2){
@@ -94,6 +110,9 @@
         echo "Error: ";
     }
     $conn->close();
+
+    
+
 
 
 
