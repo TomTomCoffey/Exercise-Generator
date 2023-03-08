@@ -33,30 +33,26 @@
     $password = $_POST["password"];
     $height = $_POST["height"];
     $weight = $_POST["weight"];
-    $bmi = calcBMI($height, $weight)
-    
+    $bmi = (float) calcBMI($height, $weight);
+
+    checkPassword($password);
+
+
     echo "Hello " . $name . "<br>height: " . $height . "<br>weight: " . $weight;
     echo "<br>Your bmi is " . number_format((float)$bmi, 2, '.', '');
 
 
-    function checkEmailDatabase()
-    {
-        $sql = "SELECT email FROM User";
-        $result = $conn->query($sql);
-        if ($result->num_rows > 0) {
-            while($row = $result->fetch_assoc()) {
-                if ($row["email"] == $email){
-                    echo "<br>Email already in use";
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
-
-
     
-    ///check if password matches the one in the database
+    $sql = "insert into User(name,email,password,height,weight,bmi) values('$name','$email','$password','$height','$weight','$bmi')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "ADDED: ";
+    } else {
+        echo "Error: ";
+    }
+    
+    
+    
     function checkPassword($password, $password2){
         $password = $_POST["password"];
         $password2 = $_POST["password2"];
@@ -67,10 +63,7 @@
             echo "<br>Passwords do not match";
         }
     }
-
-   
-
-
+    
     ///check if password is valid
     function validPassword($password){
         if (strlen($password) < 8){
@@ -102,17 +95,7 @@
         echo "<br>Your bmi is " . number_format((float)$bmi, 2, '.', '');
     }
     
-    $sql = "insert into User(name,email,password,height,weight,bmi) values('$name','$email','$password','$height','$weight','$bmi')";
-  
-    if ($conn->query($sql) === TRUE) {
-        echo "ADDED: ";
-    } else {
-        echo "Error: ";
-    }
-    $conn->close();
-
     
-
 
 
 
