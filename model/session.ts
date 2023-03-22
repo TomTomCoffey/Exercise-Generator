@@ -1,9 +1,8 @@
 
+import { Workout } from './workout';
+import { Cardio } from './cardio';
 
-
-
-
-interface User{
+export interface User{
    
     id: number;
     name: string;
