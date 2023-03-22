@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Records</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<style>
+
+    body
+    {
+        background-color: rgba(0, 149, 255,0.167);
+    }
+    .footer
+    {
+        background-color: orange;
+    }
+
+</style>
+
+<body class = "has-navbar-fixed-top">
+
+    <nav class = "navbar has-shadow is-fixed-top">                                          <!-- This Starts the Navigation Bar-->
+    
+        <div class = "navbar-brand">                                      <!-- Navigation Bar Logo-->            
+          <a href="https://www.newpaltz.edu/" class="navbar-item">        
+            <img src = "pics/download.png" style = "max-height: 70px" class = "py-2 px-2"> 
+          </a>
+        </div>                                                             <!-- Navigation Bar Logo End--> 
+        <div class = "navbar-menu">                                        <!-- Navigation Bar Menu--> 
+    
+          <div class = "navbar-start">                                      <!-- Left Side NavBar--> 
+           <a class = "navbar-item" href = "HomePage-Brian.html">Home</a>
+            <div class = "navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">Today's Workout</a>
+              <div class = "navbar-dropdown">
+                <a class = "navbar-item">Leg Extensions</a>
+                <a class="navbar-item">Calf Extensions</a>
+                <a class = "navbar-item">Seated Curls</a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">Show All</a>
+              </div>
+            </div>
+           <a class = "navbar-item active" href = "personal-record.html">Personal Records</a>
+          </div>
+    
+          <div class = navbar-end>                                          <!-- Right Side NavBar-->
+            <a class = navbar-item><button class="button is-info is-outlined">Settings</button></a>
+            <a class = navbar-item><button class="button is-danger is-outlined">Logout</button></a>
+          </div>
+        </div>                                                          <!-- Navigation Bar Menu End--> 
+      </nav>                                                              <!-- This Ends the Navigation Bar-->
+
+      <div class="columns">
+        <div class="column is-three-fifths is-offset-one-fifth">
+           <div class="box mt-6 mb-3">
+                <h1 class = "title">
+                    Personal Records
+                </h1>
+           </div>
+           <div class="box">
+            <table class = "table is-fullwidth">
+                <thead>
+                  <th class = "has-text-centered">Excersise Name</th>
+                  <th class = "has-text-centered">Number of Sets</th>
+                  <th class = "has-text-centered">Number of Reps</th>
+                  <th class = "has-text-centered">Weight in Pounds</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class = "has-text-centered">Leg Extensions</td>
+                    <td class = "has-text-centered">4</td>
+                    <td class = "has-text-centered">10</td>
+                    <td class = "has-text-centered">60 lb</td>
+                  </tr>
+                  <tr>
+                    <td class = "has-text-centered">Calf Extensions</td>
+                    <td class = "has-text-centered">3</td>
+                    <td class = "has-text-centered">15</td>
+                    <td class = "has-text-centered">50 lb</td>
+                  </tr>
+                  <tr>
+                    <td class = "has-text-centered">Seated Curls</td>
+                    <td class = "has-text-centered">5</td>
+                    <td class = "has-text-centered">8</td>
+                    <td class = "has-text-centered">65 lb</td>
+                  </tr>
+                </tbody>
+                </table>
+           </div>
+        </div>
+
+      </div>
+
+
+
+
+
+</body>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>HomePage</strong> by <a href="">Scrum Team 4</a>. This website is assosiated with <a href="https://www.newpaltz.edu/">SUNY New Paltz</a>.
+      </p>
+    </div>
+  </footer>
+
+</html>

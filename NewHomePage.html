@@ -24,32 +24,26 @@
     border-radius: 1rem;
     margin: auto;
     display: block;
-    
-
   }
   .navbar
   {
     background-color: white;
-
   }
   .container
   {
-    background-color: white;
+    background-color: transparent;
     margin: 2rem;
     margin-left: 5rem;
     margin-right: 5rem;
     margin-top: 2rem;
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 1px 1px 6px darkgray;
 
   }
   .navbar-divider
   {
     background-color: black;
   }
-
- 
   body{
     background-color: darkblue;
   }
@@ -57,12 +51,9 @@
     background-color: transparent;
     display: block;
   }
-
-  .columns{
-    background-color: transparent;
-    display: block;
-    justify-content: center;
-    margin: -2rem;
+  img
+  {
+    max-width: 100%;
   }
   
   
@@ -111,16 +102,7 @@
 
 <div class="container">
   <div class="columns">
-    <div class="column is-one-fifth">
-    </div>
-
-
-
-
-
-
-    <div class="column is three-fifths">
-      
+    <div class="column is-8 is-offset-2">
       <div class="box mb-3">
         <h1 class = "title">
           Brian Ordonez 
@@ -132,9 +114,9 @@
           Today's Workout Routine
           <hr class="navbar-divider">
         </h1>
-        <div class="columns is-centered">
+        <div class="columns">
           <div class="column is-narrow">
-        <table class = "table">
+        <table class = "table is-fullwidth">
           <thead>
             <th>Excersise Name</th>
             <th>Picture</th>
@@ -147,7 +129,7 @@
               <td>Leg Extensions</td>
               <td>
                 <figure class="image is-128x128">
-                <img src="LegExtension.png">
+                <img src="pics/LegExtension.png">
               </figure>
             </td>
               <td class = "has-text-centered">4</td>
@@ -158,7 +140,7 @@
               <td>Calf Extensions</td>
               <td>
                 <figure class="image is-128x128">
-                <img src="CalfExtensions.jpg">
+                <img src="pics/CalfExtensions.jpg">
               </figure>
             </td>
               <td class = "has-text-centered">3</td>
@@ -169,7 +151,7 @@
               <td>Seated Curls</td>
               <td>
                 <figure class="image is-128x128">
-                <img src="SeatedCurl.png">
+                <img src="pics/SeatedCurl.png">
               </figure>
             </td>
               <td class = "has-text-centered">5</td>
@@ -187,7 +169,7 @@
           Today's Workout Input
           <hr class="navbar-divider">
         </h1>
-        <div class="columns">
+        <div class="columns is-centered">
           <div class="column">
             <div class="field">
               <label class="label">Type of Exercise</label>
@@ -224,10 +206,10 @@
           Previous Workouts
           <hr class="navbar-divider">
         </h1>
-        <div class="columns is-vcentered">
-          <div class="column">
+        <div class="columns ">
+          <div class="column is-narrow">
             <h2 class = "is-size-5 has-text-weight-medium has-text-centered">MONDAY</h2>
-            <table class = "table">
+            <table class = "table is-fullwidth">
               <thead>
                 <th>Name</th>
                 <th>Sets</th>
@@ -258,9 +240,9 @@
     
             </table>
           </div>
-          <div class="column">
+          <div class="column is-narrow ">
             <h2 class = "is-size-5 has-text-weight-medium has-text-centered">TUESDAY</h2>
-            <table class = "table">
+            <table class = "table is-fullwidth">
               <thead>
                 <th>Name</th>
                 <th>Sets</th>
@@ -291,9 +273,9 @@
     
             </table>
           </div>
-            <div class = "column">
+            <div class = "column is-narrow">
               <h2 class = "is-size-5 has-text-weight-medium has-text-centered">WEDNESDAY</h2>
-              <table class = "table">
+              <table class = "table is-fullwidth">
                 <thead>
                   <th>Name</th>
                   <th>Sets</th>
@@ -330,7 +312,6 @@
         </div>
       </div>
     </div>
-    <div class="column is-one-fifth"> </div>
   </div>
 </div>
 
