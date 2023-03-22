@@ -1,7 +1,7 @@
 
 
 
-interface Workout{
+export interface Workout{
 
     exerciseName: string;
     sets: number;

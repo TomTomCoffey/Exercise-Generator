@@ -1,6 +1,6 @@
 
 
-interface Cardio{
+export interface Cardio{
 
     exerciseName: string;
     duration: number;
