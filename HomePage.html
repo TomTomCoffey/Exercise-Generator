@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New HomePage</title>
+    <title>HomePage</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <style>
@@ -24,7 +24,7 @@
   {
     background-color: white;
   }
-  .navbar-divider
+  .navbar-divider-black
   {
     background-color: black;
   }
@@ -52,11 +52,14 @@
       <div class = "navbar-start">                                      <!-- Left Side NavBar--> 
        <a class = "navbar-item active" href = "HomePage.html">Home</a>
         <div class = "navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">Today's Workout</a>
+          <a class="navbar-link">Workouts</a>
           <div class = "navbar-dropdown">
-            <a class = "navbar-item">Leg Extensions</a>
-            <a class="navbar-item">Calf Extensions</a>
-            <a class = "navbar-item">Seated Curls</a>
+            <a class = "navbar-item" href = "arms.html">Arms</a>
+            <a class="navbar-item" href = "legs.html">Legs</a>
+            <a class = "navbar-item" href = "chest.html">Chest</a>
+            <a class = "navbar-item" href = "back.html">Back</a>
+            <a class = "navbar-item" href = "shoulders.html">Shoulders</a>
+            <a class = "navbar-item" href = "cardio.html">Cardio</a>
             <hr class="navbar-divider">
             <a class="navbar-item">Show All</a>
           </div>
@@ -84,7 +87,7 @@
       <div class="box">
         <h1 class = "title is-size-4 has-text-centered">
           Today's Workout Routine
-          <hr class="navbar-divider">
+          <hr class="navbar-divider-black">
         </h1>
         <div class="columns">
           <div class="column is-narrow-mobile">
@@ -139,7 +142,7 @@
       <div class="box">
         <h1 class = "title is-size-4 has-text-centered">
           Today's Workout Input
-          <hr class="navbar-divider">
+          <hr class="navbar-divider-black">
         </h1>
         <div class="columns">
           <div class="column">
@@ -176,7 +179,7 @@
       <div class="box">
         <h1 class = "title is-size-4 has-text-centered">
           Previous Workouts
-          <hr class="navbar-divider">
+          <hr class="navbar-divider-black">
         </h1>
         <div class="columns">
           <div class="column">
