@@ -1,10 +1,13 @@
-import { User } from "./model/session";
+import { User  } from "./model/session";
 import { Workout } from "./model/workout";
 import { Cardio }  from "./model/cardio";
 
 
 document.getElementById("submission").onclick = function()
 {
+
+    
+
     var exType = document.getElementById("eT").value;
     var numSet = document.getElementById("nS").value;
     var numRep = document.getElementById("nR").value;
