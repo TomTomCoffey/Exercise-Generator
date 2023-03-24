@@ -17,6 +17,7 @@ export interface User{
     height: number;
     weight: number;
     workout: Workout[];
+    workoutPointer: number;
 
 
 }
@@ -72,6 +73,18 @@ export function totalCardioTime(): number{
         total += this.cardio[i].duration;
     }
     return total;
+}
+
+export function increment (): void{
+    
+    if(this.workoutPointer < this.workouts[0].length){
+        this.workoutPointer++;
+    }
+
+    else if(this.workoutPointer === this.workouts[0].length){
+        this.workoutPointer = 0;
+    }
+    
 }
 
 
