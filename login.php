@@ -30,7 +30,7 @@ if( checkForMatchingEmail($email) ){
 
 
 function checkForMatchingEmail($email){
-    dbConnection();
+    $conn = dbConnection();
     $sql = "SELECT email FROM User";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
@@ -49,14 +49,14 @@ function checkForMatchingEmail($email){
 function checkForMatchingPassword($email, $password){
     $conn = dbConnection();
 
-    $sql = "Select password FROM User WHERE email = '$email'";
-    $result = mysqli_fetch_assoc($result);
-    echo $result;
-    if ($result['password'] == $password) {
-        echo "passwords match";
-    }
-    else{
-        echo "incorrect password";
+    $sql = "SELECT password FROM User WHERE email = '$email'";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            if ($row["password"] == $password){
+                return true;
+            }
+        }
     }
 }
 
