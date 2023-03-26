@@ -22,8 +22,11 @@ if( checkForMatchingEmail($email) ){
         echo "login accepted";
     }
     else{
-        echo "<br>User not found";
+        echo "<br>password is incorrect";
     }
+}
+else{
+    echo "email not found";
 }
 
 
@@ -40,7 +43,6 @@ function checkForMatchingEmail($email){
             }
         }
     }
-    echo "<br>Email not found";
     return false;
 
 }
@@ -58,6 +60,7 @@ function checkForMatchingPassword($email, $password){
             }
         }
     }
+    return false;
 }
 
     
