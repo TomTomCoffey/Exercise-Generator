@@ -14,22 +14,23 @@ $email = $_POST["email"];
 $password = $_POST["password"];
 $serverName = "localhost";
 
+
+
+
 if( checkForMatchingEmail($email) ){
     if( checkForMatchingPassword($email, $password) ){
         echo "login accepted";
     }
     else{
-        "<br>password is incorrect";
+        echo "<br>User not found";
     }
-}
-else{
-    echo "<br>user not found";
 }
 
 
 
 
 function checkForMatchingEmail($email){
+    dbConnection();
     $sql = "SELECT email FROM User";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
@@ -50,13 +51,12 @@ function checkForMatchingPassword($email, $password){
 
     $sql = "Select password FROM User WHERE email = '$email'";
     $result = mysqli_fetch_assoc($result);
+    echo $result;
     if ($result['password'] == $password) {
         echo "passwords match";
-        return true;
     }
     else{
         echo "incorrect password";
-        return false;
     }
 }
 
