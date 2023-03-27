@@ -1,5 +1,5 @@
 <html>
-<head><title>CalculateBMI.php</title></head>
+<head><title>SignUpBackend.php</title></head>
 
 <body>
 <?php
