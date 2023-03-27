@@ -13,10 +13,11 @@ export interface User{
     password: string;
     isAdmin: boolean;
     workouts: Workout[][];
-    cardio: Cardio[];
+    cardios: Cardio[][];
     height: number;
     weight: number;
     workout: Workout[];
+    cardio: Cardio[];
     workoutPointer: number;
 
 
