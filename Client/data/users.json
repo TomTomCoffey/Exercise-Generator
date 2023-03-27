@@ -1,0 +1,176 @@
+
+{
+    "id": "1",
+    "name": "Scott Doe", 
+    "email": "scott@scott",
+    "password": "scott",
+    "isAdmin": "true",
+    "workouts": [
+        [
+            {
+                "id": "1",
+                "name": "Bench Press",
+                "sets": "3",
+                "reps": "10",
+                "weight": "100",
+                "date": "2020-03-03"
+            },
+            {
+                "id": "2",
+                "name": "Squat",
+                "sets": "3",
+                "reps": "10",
+                "weight": "100",
+                "date": "2020-03-03"
+            },
+            {
+                "id": "3",
+                "name": "Deadlift",
+                "sets": "3",
+                "reps": "10",
+                "weight": "100",
+                "date": "2020-03-03"
+            }
+        ],
+        [
+            {
+                "id": "1",
+                "name": "Bench Press",
+                "sets": "3",
+                "reps": "10",
+                "weight": "100",
+                "date": "2020-03-03"
+            },
+            {
+                "id": "2",
+                "name": "Squat",
+                "sets": "3",
+                "reps": "10",
+                "weight": "100",
+                "date": "2020-03-03"
+            },
+            {
+                "id": "3",
+                "name": "Deadlift",
+                "sets": "3",
+                "reps": "10",
+                "weight": "100",
+                "date": "2020-03-03"
+            }
+        ]
+    ],
+    "cardios": [
+        [
+            {
+                "id": "1",
+                "name": "Running",
+                "distance": "3",
+                "time": "30",
+                "date": "2020-03-03"
+            },
+            {
+                "id": "2",
+                "name": "Running",
+                "distance": "3",
+                "time": "30",
+                "date": "2020-03-03"
+            },
+            {
+                "id": "3",
+                "name": "Running",
+                "distance": "3",
+                "time": "30",
+                "date": "2020-03-03"
+            }
+        ],
+        [
+            {
+                "id": "1",
+                "name": "Running",
+                "distance": "3",
+                "time": "30",
+                "date": "2020-03-03"
+            },
+            {
+                "id": "2",
+                "name": "Running",
+                "distance": "3",
+                "time": "30",
+                "date": "2020-03-03"
+            },
+            {
+                "id": "3",
+                "name": "Running",
+                "distance": "3",
+                "time": "30",
+                "date": "2020-03-03"
+            }
+        ]
+    ],
+    "height": "5",
+    "weight": "150",
+    "workout": [
+        {
+            "id": "1",
+            "name": "Bench Press",
+            "sets": "3",
+            "reps": "10",
+            "weight": "100",
+            "date": "2020-03-03"
+        },
+        {
+            "id": "2",
+            "name": "Squat",
+            "sets": "3",
+            "reps": "10",
+            "weight": "100",
+            "date": "2020-03-03"
+        },
+        {
+            "id": "3",
+            "name": "Deadlift",
+            "sets": "3",
+            "reps": "10",
+            "weight": "100",
+            "date": "2020-03-03"
+        }
+    ],
+    "cardio": [
+        {
+            "id": "1",
+            "name": "Running",
+            "distance": "3",
+            "time": "30",
+            "date": "2020-03-03"
+        },
+        {
+            "id": "2",
+            "name": "Running",
+            "distance": "3",
+            "time": "30",
+            "date": "2020-03-03"
+        },
+        {
+            "id": "3",
+            "name": "Running",
+            "distance": "3",
+            "time": "30",
+            "date": "2020-03-03"
+        }
+    ],
+    "workoutPointer": "0"
+
+
+    
+
+}
+
+
+
+   
+
+
+
+
+
+
