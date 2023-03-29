@@ -1,11 +1,18 @@
-import { User  } from "./model/session";
+import { User, userArray} from "./model/user";
 import { Workout } from "./model/workout";
 import { Cardio }  from "./model/cardio";
-
+import users from "../data/users.json";
 
 
 document.getElementById("submission").onclick = function()
 {
+
+  
+
+    const dummyUser = userArray[0];
+
+
+    
 
 
     
