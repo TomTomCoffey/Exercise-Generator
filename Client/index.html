@@ -9,155 +9,100 @@
 
     <style>
             
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                bottom: auto;
-               
-            }
             body{
-                background-color: rgb(0, 255, 140);
+              background-color: rgba(0, 149, 255, 0.167);
             }
          
             .navbar{
-                    background-color: #f0e9e9;
-            }
-            .navbar-item{
-                font-size: 1rem;
-                font-weight: 600;
-            }
-            .navbar-item:hover{
-                background-color: #f0e9e9;
-            }
-            .navbar-item:active{
-                background-color: #f0e9e9;
-            }
-            .navbar-item:focus{
-                background-color: #f0e9e9;
-            }
-
-            .columns{
-                margin-top: 0rem;
-                background-color: #ffffff;
-            }
-            .box{
-                display: center;
-                margin-top: 2rem;
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: auto;
-                background-color: #ffffff;
-               
+                    background-color: white;
             }
             .footer{
                 background-color: orange;
-                margin-bottom: 100%;
-                margin-top: -10%;
 
+            }   
+            .box
+            {
+              box-shadow: 1px 1px 6px darkgray;
             }
-
-            .title{
-                font-size: 2rem;
-                font-weight: 600;
-                margin-top: 2rem;
-                margin-bottom: 2rem;
-                color: white;
-            }
-            .subtitle{
-                font-size: 1.5rem;
-                font-weight: 600;
-                margin-top: 2rem;
-                margin-bottom: 2rem;
-                color: white;
-            }
-            .section{
-                background-color: transparent;
-                margin-bottom: -3rem;
-            }
-            .control{
-                margin-bottom: 1rem;
-                margin-right: auto;
-                margin-left: auto;
-
-               
-
-            }
-          
-            
     </style>
 
 </head>
-<body>
+<body class = "has-navbar-fixed-top" width = "device-width">
 
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-      
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item">
-              Home
-            </a>
-      
-            <a class="navbar-item">
-              About us
-            </a>
-      
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
-                Exercises
-              </a>
-      
-              <div class="navbar-dropdown">
-                <a class="navbar-item">
-                  Chest
-                </a>
-                <a class="navbar-item">
-                  Shoulder
-                </a>
-                <a class="navbar-item">
-                  Triceps
-                </a>
-                <a class="navbar-item">
-                  Biceps
-                </a>
-                <a class="navbar-item">
-                  Back
-                </a>
-                <a class="navbar-item">
-                  Legs
-                </a>
-                <a class="navbar-item">
-                  Abs
-                </a>
-              </div>
-            </div>
-          </div>
-      
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-info">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light">
-                  Log in
-                </a>
-              </div>
-            </div>
+  <nav class = "navbar has-shadow is-fixed-top">                                          <!-- This Starts the Navigation Bar-->
+    
+    <div class = "navbar-brand">                                      <!-- Navigation Bar Logo-->            
+      <a href="https://www.newpaltz.edu/" class="navbar-item">        
+        <img src = "pics/download.png" style = "max-height: 70px" class = "py-2 px-2"> 
+      </a>
+    </div>                                                             <!-- Navigation Bar Logo End--> 
+    <div class = "navbar-menu">                                        <!-- Navigation Bar Menu--> 
+
+      <div class = "navbar-start">                                      <!-- Left Side NavBar--> 
+       <a class = "navbar-item active" href = "HomePage.html">Home</a>
+        <div class = "navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">Workouts</a>
+          <div class = "navbar-dropdown">
+            <a class = "navbar-item" href = "arms.html">Arms</a>
+            <a class="navbar-item" href = "legs.html">Legs</a>
+            <a class = "navbar-item" href = "chest.html">Chest</a>
+            <a class = "navbar-item" href = "back.html">Back</a>
+            <a class = "navbar-item" href = "shoulders.html">Shoulders</a>
+            <a class = "navbar-item" href = "cardio.html">Cardio</a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">Show All</a>
           </div>
         </div>
-      </nav>
+       <a class = "navbar-item" href = "personal-record.html">Personal Records</a>
+      </div>
+
+      <div class = navbar-end>                                          <!-- Right Side NavBar-->
+      </div>
+    </div>                                                          <!-- Navigation Bar Menu End--> 
+  </nav>
 
 
+  <div class = "columns">
+    <div class  = "column is-half is-offset-one-quarter">
+      <div class="block pt-5"></div>
+      <div class="block pt-5"></div>
+      <div class="block pt-5"></div>
+     
+        <form class="box" action="login.php" method="POST">
+          <h1 class="title">Log in and find your workout for today!</h1>
+          <h2 class="subtitle">
+            If you do not have an account please sign up.
+          </h2>
+            
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input name="email" class="input" type="email" placeholder="e.g. alex@example.com">
+            </div>
+          </div>
+  
+          <div class="field">
+            <label class="label">Password</label>
+            <div class="control">
+              <input name="password" class="input" type="password" placeholder="********">
+            </div>
+          </div>
 
-      <section class="section is-medium">
+
+      
+  
+          
+  
+          <button class="button is-link" href="">Sign up</button>
+          <button class="button is-" href="">Log In</button>
+        </form>
+  </div>
+  </div>
+  <div class="block pt-5"></div>
+  <div class="block pt-5"></div>
+  <div class="block pt-5"></div>
+
+      <!--<section class="section is-medium">
         <h1 class="title">Log in and find your workout for today!</h1>
         <h2 class="subtitle">
           If you do not have an account please sign up.
@@ -193,18 +138,8 @@
             <button class="button is-" href="">Log In</button>
           </form>
 
-        </section>
+        </section> -->
 
-
-          <footer class="footer">
-            <div class="content has-text-centered">
-              <p>
-                <strong>Product Name</strong> by <a href="">Scrum Team 4</a>. 
-                <a href=""> Possible Link we can use</a> 
-                <a href="">SUNY New Paltz</a>.
-              </p>
-            </div>
-          </footer>
 
 
 
@@ -218,4 +153,13 @@
    
 
 </body>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>HomePage</strong> by <a href="">Scrum Team 4</a>. This website is assosiated with <a href="https://www.newpaltz.edu/">SUNY New Paltz</a>.
+    </p>
+  </div>
+</footer>
+
 </html>
