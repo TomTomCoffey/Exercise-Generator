@@ -3,10 +3,12 @@
 
 export interface Workout{
 
-    exerciseName: string;
+    id: number;
+    name: string;
     sets: number;
     reps: number;
     weight: number;
+    date: string;
 
 
 }

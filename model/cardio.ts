@@ -2,9 +2,11 @@
 
 export interface Cardio{
 
-    exerciseName: string;
+    id: number;
+    name: string;
     duration: number;
     distance: number;
+    date: string;
 
 }
 
