@@ -1,4 +1,4 @@
-import { User, userArray} from "./model/user";
+import { User, userArray, calculateBMI} from "./model/user";
 import { Workout } from "./model/workout";
 import { Cardio }  from "./model/cardio";
 import users from "../data/users.json";
@@ -12,12 +12,32 @@ document.getElementById("submission").onclick = function()
     const dummyUser = userArray[0];
 
 
-    
+    function login()
+    {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        for (let i = 0; i < userArray.length; i++)
+        {
+            if (username == userArray[i].username && password == userArray[i].password)
+            {
+                return userArray[i];
+            }
+        }
+        return null;
+    }
+
+    function loginDummy()
+    {
+        return dummyUser;
+    }
 
 
     
 
 
+  
+ 
     
 
     var exType = document.getElementById("eT").value;
@@ -35,3 +55,4 @@ document.getElementById("submission").onclick = function()
     output3.innerHTML = numRep;
     output4.innerHTML = weight;
 }
+
