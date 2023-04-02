@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import AboutView from '@/views/AboutView.vue';
+import { RouterLink } from 'vue-router';
+
 
 
 
@@ -24,12 +26,12 @@ import AboutView from '@/views/AboutView.vue';
     <div class = "navbar-menu">                                        <!-- Navigation Bar Menu--> 
 
       <div class = "navbar-start">                                      <!-- Left Side NavBar--> 
-       <a class = "navbar-item"> <AboutView/></a>
+       <a class = "navbar-item"></a>
         <div class = "navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">Workouts</a>
           <div class = "navbar-dropdown">
-            <a class = "navbar-item" href = "arms.html">Arms</a>
-            <a class="navbar-item" href = "legs.html">Legs</a>
+            <RouterLink to="/arms" class="navbar-item">Arms</RouterLink>
+            <RouterLink to="/about" class="navbar-item">About</RouterLink>
             <a class = "navbar-item" href = "chest.html">Chest</a>
             <a class = "navbar-item" href = "back.html">Back</a>
             <a class = "navbar-item" href = "shoulders.html">Shoulders</a>
