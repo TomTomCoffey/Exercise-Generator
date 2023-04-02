@@ -1,6 +1,6 @@
-
-import { Workout } from './workout';
-import { Cardio } from './cardio';
+import type { Workout } from "./workout";
+import type { Cardio } from "./cardio";
+import user from "../data/users.json"
 
 
 
@@ -179,6 +179,9 @@ export interface User{
     }   
 
 ];
+
+
+
 
   
 
