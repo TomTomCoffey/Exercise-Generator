@@ -18,7 +18,7 @@ const session = useSession();
       <div class="block pt-5"></div>
       <div class="box mb-3">
         <h1 class = "title">
-          {{  }}
+           Hello, {{ session.user.name }}
           <button class="button is-success is-outlined is-pulled-right">View Profile</button>
         </h1>
       </div>
