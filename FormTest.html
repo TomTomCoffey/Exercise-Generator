@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(function() {
+			$('#loginForm').submit(function(event) {
+				event.preventDefault(); // prevent the form from submitting normally
+				var formData = $(this).serialize();
+
+				$.ajax({
+					type: 'POST',
+					url: 'login.php',
+					data: formData,
+					success: function(response) {
+						$('#message').html(response); // update the HTML element with the response message
+					}
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+
+
+
+	<h2>
+		<div id="message"></div>
+		Login</h2>
+	<form id="loginForm">
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br><br>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password"><br><br>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
