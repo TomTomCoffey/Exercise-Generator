@@ -45,12 +45,9 @@ const session = useSession();
 <template>
 
 
-<<<<<<< HEAD
-<body id = "grad">
-=======
 
 <div v-if="session.user != null">
->>>>>>> e5b3e06635a3ae7151123b0fff97b64bf9c85151
+
   <div class="columns">
     <div class="column is-three-fifths is-offset-one-fifth is-narrow-mobile">
       <div class="block pt-5"></div>
@@ -228,9 +225,6 @@ const session = useSession();
       </div>
     </div>
   </div>
-<<<<<<< HEAD
-</body>
-=======
 </div>
 
 <div v-else>
