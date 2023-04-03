@@ -1,7 +1,20 @@
 import type { Workout } from "./workout";
 import type { Cardio } from "./cardio";
-//import user from "../data/users.json"
+import user from "../data/users.json"
+import { reactive } from "vue";
 
+
+
+const session = reactive({
+    user: null as User | null
+
+
+
+})
+
+export function useSession() {
+    return session;
+}
 
 
 export interface User{
@@ -21,6 +34,60 @@ export interface User{
 
 
 }
+
+export function login(){
+    session.user = userArray[0];
+
+}
+
+export function logout(){
+    session.user = null;
+}
+
+export function getUser(){
+    return session.user;
+}
+
+export function getWorkoutPointer(){
+    return session.user?.workoutPointer;
+}
+
+export function increment(){
+   if(session.user?.workoutPointer! < session.user?.workouts.length! - 1)
+       { session.user!.workoutPointer++;}
+    else{
+        session.user!.workoutPointer = 0;
+    }
+}
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
