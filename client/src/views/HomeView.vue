@@ -47,12 +47,16 @@ const session = useSession();
 
 
 <div v-if="session.user != null">
+<<<<<<< HEAD
+=======
+
+>>>>>>> d0c9f9f75b314cc087de8e172cade6bc641256b9
   <div class="columns">
     <div class="column is-three-fifths is-offset-one-fifth is-narrow-mobile">
       <div class="block pt-5"></div>
       <div class="box mb-3">
         <h1 class = "title">
-          {{  }}
+           Hello, {{ session.user.name }}
           <button class="button is-success is-outlined is-pulled-right">View Profile</button>
         </h1>
       </div>
