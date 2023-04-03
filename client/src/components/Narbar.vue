@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import AboutView from '@/views/AboutView.vue';
 import { RouterLink } from 'vue-router';
+import HomeView from '@/views/HomeView.vue';
 
 
 
@@ -27,9 +28,16 @@ import { RouterLink } from 'vue-router';
 
       <div class = "navbar-start">                                      <!-- Left Side NavBar--> 
        <a class = "navbar-item"></a>
+       <div class="span">
+              <div class="icon">
+                <i class="fas fa-home"></i>
+              </div>
+            </div>
+             <RouterLink to="/" class="navbar-item">Home</RouterLink>
         <div class = "navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">Workouts</a>
           <div class = "navbar-dropdown">
+      
             <RouterLink to="/arms" class="navbar-item">Arms</RouterLink>
             <RouterLink to="/about" class="navbar-item">About</RouterLink>
             <a class = "navbar-item" href = "chest.html">Chest</a>
