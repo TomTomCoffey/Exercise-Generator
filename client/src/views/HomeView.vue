@@ -1,4 +1,10 @@
 <script setup lang="ts">
+import LoginBadge from '@/components/LoginBadge.vue';
+import { useSession, login } from '@/model/user';
+import { useRouter } from 'vue-router';
+
+
+const session = useSession();
 
 </script>
 
@@ -6,12 +12,13 @@
 
 
 
+<div v-if="session.user != null">
   <div class="columns">
     <div class="column is-three-fifths is-offset-one-fifth is-narrow-mobile">
       <div class="block pt-5"></div>
       <div class="box mb-3">
         <h1 class = "title">
-          Brian Ordonez
+          {{  }}
           <button class="button is-success is-outlined is-pulled-right">View Profile</button>
         </h1>
       </div>
@@ -183,6 +190,13 @@
       </div>
     </div>
   </div>
+</div>
+
+<div v-else>
+
+  <LoginBadge></LoginBadge>
+
+</div>
 
 
 
