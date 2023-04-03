@@ -1,7 +1,8 @@
 <script setup lang="ts">
-
-import { useSession } from '@/model/user';
+import { useSession, login } from '@/model/user';
 import { useRouter } from 'vue-router';
+
+const session = useSession();
 
 
 </script>
@@ -37,7 +38,7 @@ import { useRouter } from 'vue-router';
           </div>
 
           <button class="button is-info is-outlined is-link" href = "">Sign Up</button>
-          <button class="button is-info is-outlined is-success" href = "">Log In</button>
+          <button class="button is-info is-outlined is-success" @click="login()">Log In</button>
         </form>
   </div>
   </div>
