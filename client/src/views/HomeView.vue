@@ -88,7 +88,7 @@ const session = useSession();
               <td class = "has-text-centered">Calf Extensions</td>
               <td>
                 <figure>
-                <img class = "center" src="pics/CalfExtensions.jpg">
+                <img class = "center" src="ExcersisePic/CalfExtensions.jpg">
               </figure>
             </td>
               <td class = "has-text-centered">3</td>
