@@ -47,7 +47,8 @@ const session = useSession();
 
 
 <div v-if="session.user != null">
-  <body id = "grad">
+<body id = "grad">
+  <div class = "block pt-5"></div>
   <div class="columns">
     <div class="column is-three-fifths is-offset-one-fifth is-narrow-mobile">
       <div class="block pt-5"></div>
@@ -77,7 +78,7 @@ const session = useSession();
               <td class = "has-text-centered">Leg Extensions</td>
               <td>
                 <figure>
-                <img  class = "center" src="pics/LegExtension.png">
+                <img  class = "center" src="../assets/images/LegExtension.png">
               </figure>
             </td>
               <td class = "has-text-centered">4</td>
@@ -88,7 +89,7 @@ const session = useSession();
               <td class = "has-text-centered">Calf Extensions</td>
               <td>
                 <figure>
-                <img class = "center" src="ExcersisePic/CalfExtensions.jpg">
+                <img class = "center" src="../assets/images/CalfExtensions.jpg">
               </figure>
             </td>
               <td class = "has-text-centered">3</td>
@@ -99,7 +100,7 @@ const session = useSession();
               <td class = "has-text-centered">Seated Curls</td>
               <td>
                 <figure>
-                <img class = "center" src="pics/SeatedCurl.png">
+                <img class = "center" src="../assets/images/SeatedCurl.png">
               </figure>
             </td>
               <td class = "has-text-centered">5</td>
