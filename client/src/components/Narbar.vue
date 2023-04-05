@@ -34,6 +34,15 @@ import { RouterLink } from 'vue-router';
               </div>
                 Home
             </RouterLink>
+            <RouterLink to="/about" class="navbar-item">
+              <div class="span">
+                <div class="icon pr-3">
+                  <i class="fa-solid fa-info"></i>
+                </div>
+              </div>
+              About
+
+            </RouterLink>
         <div class = "navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
             <div class="span">
@@ -44,7 +53,6 @@ import { RouterLink } from 'vue-router';
             Workouts</a>
           <div class = "navbar-dropdown">
       
-            <RouterLink to="/about" class="navbar-item">About</RouterLink>
             <RouterLink to="/arms" class="navbar-item">Arms</RouterLink>
             <RouterLink to="/chest" class="navbar-item">Chest</RouterLink>
             <RouterLink to="/back" class="navbar-item">Back</RouterLink>
