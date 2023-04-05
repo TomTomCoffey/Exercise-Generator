@@ -9,26 +9,26 @@
     "workouts": [
         [
             {
-                "id": "1",
-                "name": "Bench Press",
-                "sets": "3",
+                "id": 1,
+                "name": "Leg Extensions",
+                "sets": "4",
                 "reps": "10",
-                "weight": "100",
+                "weight": "60",
                 "date": "2020-03-03"
             },
             {
                 "id": "2",
-                "name": "Squat",
+                "name": "Calf Extensions",
                 "sets": "3",
-                "reps": "10",
+                "reps": "15",
                 "weight": "100",
                 "date": "2020-03-03"
             },
             {
                 "id": "3",
-                "name": "Deadlift",
-                "sets": "3",
-                "reps": "10",
+                "name": "Seated Curls",
+                "sets": "5",
+                "reps": "8",
                 "weight": "100",
                 "date": "2020-03-03"
             }
