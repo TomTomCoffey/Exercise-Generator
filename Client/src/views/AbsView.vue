@@ -10,7 +10,7 @@
             <div class = "box mb-3">
             <div class = "columns">
               <div class = "column is-half">
-                <h1 class = "title">Legs</h1>
+                <h1 class = "title">Abs</h1>
                 <p>
                   There will be words here, that everyone will be able to read.
                   There will be words here, that everyone will be able to read.
@@ -35,7 +35,7 @@
 
               <div class = "column is-half">
                 <h1 class = "title has-text-centered">Location</h1>
-                <img src = "../assets/images/legsRed.png">
+                <img src = "../assets/images/absRed.png">
 
 
               </div>

@@ -57,6 +57,8 @@ import { RouterLink } from 'vue-router';
             <RouterLink to="/chest" class="navbar-item">Chest</RouterLink>
             <RouterLink to="/back" class="navbar-item">Back</RouterLink>
             <RouterLink to="/shoulders" class="navbar-item">Shoulders</RouterLink>
+            <RouterLink to="/legs" class = "navbar-item">Legs</RouterLink>
+            <RouterLink to="/abs" class = "navbar-item">Abs</RouterLink>
             <RouterLink to="/cardio" class="navbar-item">Cardio</RouterLink>
             <hr class="navbar-divider">
             <a class="navbar-item">Show All</a>
