@@ -60,6 +60,17 @@ export function increment(){
     }
 }
 
+export function todaysWorkout(){
+    return session.user?.workouts[session.user?.workoutPointer!];
+}
+
+
+
+
+
+
+
+
 
 
 
