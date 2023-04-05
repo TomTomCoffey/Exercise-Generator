@@ -1,61 +1,61 @@
 
 
 {
-    "id": "1",
+    "id": 1,
     "name": "Scott Doe", 
     "email": "scott@scott",
     "password": "scott",
-    "isAdmin": "true",
+    "isAdmin": true,
     "workouts": [
         [
             {
                 "id": 1,
                 "name": "Leg Extensions",
-                "sets": "4",
-                "reps": "10",
-                "weight": "60",
+                "sets": 4,
+                "reps": 10,
+                "weight": 100,
                 "date": "2020-03-03"
             },
             {
-                "id": "2",
+                "id": 2,
                 "name": "Calf Extensions",
-                "sets": "3",
-                "reps": "15",
-                "weight": "100",
+                "sets": 3,
+                "reps": 15,
+                "weight": 100,
                 "date": "2020-03-03"
             },
             {
-                "id": "3",
+                "id": 3,
                 "name": "Seated Curls",
-                "sets": "5",
-                "reps": "8",
-                "weight": "100",
+                "sets": 5,
+                "reps": 8,
+                "weight": 100,
                 "date": "2020-03-03"
             }
         ],
         [
             {
-                "id": "1",
+                "id": 1,
                 "name": "Bench Press",
-                "sets": "3",
-                "reps": "10",
-                "weight": "100",
+                "sets": 3,
+                "reps": 10,
+                "weight": 100,
                 "date": "2020-03-03"
             },
             {
-                "id": "2",
+                "id": 2,
                 "name": "Squat",
-                "sets": "3",
-                "reps": "10",
-                "weight": "100",
+                "sets": 3,
+                "reps": 8,
+                "weight": 250,
                 "date": "2020-03-03"
             },
             {
-                "id": "3",
+                "id": 3,
                 "name": "Deadlift",
-                "sets": "3",
-                "reps": "10",
-                "weight": "100",
+                "sets": 3,
+                "reps": 6,
+                "weight": 385,
                 "date": "2020-03-03"
             }
         ]
@@ -63,103 +63,103 @@
     "cardios": [
         [
             {
-                "id": "1",
+                "id": 1,
                 "name": "Running",
-                "distance": "3",
-                "time": "30",
+                "distance": 3,
+                "time": 30,
                 "date": "2020-03-03"
             },
             {
-                "id": "2",
+                "id": 2,
                 "name": "Running",
-                "distance": "3",
-                "time": "30",
+                "distance": 3,
+                "time": 30,
                 "date": "2020-03-03"
             },
             {
-                "id": "3",
+                "id": 3,
                 "name": "Running",
-                "distance": "3",
-                "time": "30",
+                "distance": 3,
+                "time": 30,
                 "date": "2020-03-03"
             }
         ],
         [
             {
-                "id": "1",
+                "id": 1,
                 "name": "Running",
-                "distance": "3",
-                "time": "30",
+                "distance": 3,
+                "time": 30,
                 "date": "2020-03-03"
             },
             {
-                "id": "2",
+                "id": 2,
                 "name": "Running",
-                "distance": "3",
-                "time": "30",
+                "distance": 3,
+                "time": 30,
                 "date": "2020-03-03"
             },
             {
-                "id": "3",
+                "id": 3,
                 "name": "Running",
-                "distance": "3",
-                "time": "30",
+                "distance": 3,
+                "time": 30,
                 "date": "2020-03-03"
             }
         ]
     ],
-    "height": "5",
-    "weight": "150",
+    "height": 68,
+    "weight": 170,
     "workout": [
         {
-            "id": "1",
+            "id":1,
             "name": "Bench Press",
-            "sets": "3",
-            "reps": "10",
-            "weight": "100",
+            "sets": 3,
+            "reps": 10,
+            "weight": 225,
             "date": "2020-03-03"
         },
         {
-            "id": "2",
+            "id": 2,
             "name": "Squat",
-            "sets": "3",
-            "reps": "10",
-            "weight": "100",
+            "sets": 3,
+            "reps": 10,
+            "weight": 275,
             "date": "2020-03-03"
         },
         {
-            "id": "3",
+            "id": 3,
             "name": "Deadlift",
-            "sets": "3",
-            "reps": "10",
-            "weight": "100",
+            "sets": 3,
+            "reps": 10,
+            "weight": 385,
             "date": "2020-03-03"
         }
     ],
     "cardio": [
         {
-            "id": "1",
+            "id": 1,
             "name": "Running",
-            "distance": "3",
-            "time": "30",
+            "distance": 3,
+            "time": 30,
             "date": "2020-03-03"
         },
         {
-            "id": "2",
+            "id": 2,
             "name": "Running",
-            "distance": "3",
-            "time": "30",
+            "distance": 3,
+            "time": 30,
             "date": "2020-03-03"
         },
         {
-            "id": "3",
+            "id": 3,
             "name": "Running",
-            "distance": "3",
-            "time": "30",
+            "distance": 3,
+            "time": 30,
             "date": "2020-03-03"
         }
     ],
-    "workoutPointer": "0"
+    "workoutPointer": 0
 
 
     
