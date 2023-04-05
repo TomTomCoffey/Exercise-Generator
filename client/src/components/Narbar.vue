@@ -26,15 +26,22 @@ import { RouterLink } from 'vue-router';
     <div class = "navbar-menu">                                        <!-- Navigation Bar Menu--> 
 
       <div class = "navbar-start">                                      <!-- Left Side NavBar--> 
-       <a class = "navbar-item"></a>
-       <div class="span">
-              <div class="icon">
-                <i class="fas fa-home"></i>
+             <RouterLink to="/" class="navbar-item"> 
+              <div class="span">
+                <div class="icon pr-3">
+                  <i class="fa-solid fa-home"></i>
+                </div>
               </div>
-            </div>
-             <RouterLink to="/" class="navbar-item">Home</RouterLink>
+                Home
+            </RouterLink>
         <div class = "navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">Workouts</a>
+          <a class="navbar-link">
+            <div class="span">
+                <div class="icon pr-3">
+                  <i class="fa-solid fa-dumbbell"></i>
+                </div>
+              </div>
+            Workouts</a>
           <div class = "navbar-dropdown">
       
             <RouterLink to="/about" class="navbar-item">About</RouterLink>
@@ -47,7 +54,14 @@ import { RouterLink } from 'vue-router';
             <a class="navbar-item">Show All</a>
           </div>
         </div>
-        <RouterLink to="/personal records" class="navbar-item">Personal Records</RouterLink>
+        <RouterLink to="/personal records" class="navbar-item">
+          <div class="span">
+                <div class="icon pr-3">
+                  <i class="fa-solid fa-pen"></i>
+                </div>
+              </div>  
+          Personal Records
+        </RouterLink>
       </div>
 
       <div class = navbar-end>                                          <!-- Right Side NavBar-->
