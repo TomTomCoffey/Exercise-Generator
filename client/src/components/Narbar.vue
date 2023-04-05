@@ -20,34 +20,58 @@ import { RouterLink } from 'vue-router';
     
     <div class = "navbar-brand">                                      <!-- Navigation Bar Logo-->            
       <a href="https://www.newpaltz.edu/" class="navbar-item">        
-        <img src = "../assets/images/download.png" style = "max-height: 70px" class = "py-2 px-2"> 
+        <img src = "../assets/images/NPLogo.png" style = "max-height: 70px" class = "py-2 px-2"> 
       </a>
     </div>                                                             <!-- Navigation Bar Logo End--> 
     <div class = "navbar-menu">                                        <!-- Navigation Bar Menu--> 
 
       <div class = "navbar-start">                                      <!-- Left Side NavBar--> 
-       <a class = "navbar-item"></a>
-       <div class="span">
-              <div class="icon">
-                <i class="fas fa-home"></i>
+             <RouterLink to="/" class="navbar-item"> 
+              <div class="span">
+                <div class="icon pr-3">
+                  <i class="fa-solid fa-home"></i>
+                </div>
               </div>
-            </div>
-             <RouterLink to="/" class="navbar-item">Home</RouterLink>
+                Home
+            </RouterLink>
+            <RouterLink to="/about" class="navbar-item">
+              <div class="span">
+                <div class="icon pr-3">
+                  <i class="fa-solid fa-info"></i>
+                </div>
+              </div>
+              About
+
+            </RouterLink>
         <div class = "navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">Workouts</a>
+          <a class="navbar-link">
+            <div class="span">
+                <div class="icon pr-3">
+                  <i class="fa-solid fa-dumbbell"></i>
+                </div>
+              </div>
+            Workouts</a>
           <div class = "navbar-dropdown">
       
-            <RouterLink to="/about" class="navbar-item">About</RouterLink>
             <RouterLink to="/arms" class="navbar-item">Arms</RouterLink>
             <RouterLink to="/chest" class="navbar-item">Chest</RouterLink>
             <RouterLink to="/back" class="navbar-item">Back</RouterLink>
             <RouterLink to="/shoulders" class="navbar-item">Shoulders</RouterLink>
+            <RouterLink to="/legs" class = "navbar-item">Legs</RouterLink>
+            <RouterLink to="/abs" class = "navbar-item">Abs</RouterLink>
             <RouterLink to="/cardio" class="navbar-item">Cardio</RouterLink>
             <hr class="navbar-divider">
             <a class="navbar-item">Show All</a>
           </div>
         </div>
-        <RouterLink to="/personal records" class="navbar-item">Personal Records</RouterLink>
+        <RouterLink to="/personal records" class="navbar-item">
+          <div class="span">
+                <div class="icon pr-3">
+                  <i class="fa-solid fa-trophy"></i>
+                </div>
+              </div>  
+          Personal Records
+        </RouterLink>
       </div>
 
       <div class = navbar-end>                                          <!-- Right Side NavBar-->
@@ -56,14 +80,9 @@ import { RouterLink } from 'vue-router';
       </div>
     </div>                                                          <!-- Navigation Bar Menu End--> 
   </nav>  
-
-
-
-
-
-
-
     </div>
+
+    
 </template>
 
 

@@ -9,6 +9,7 @@ const session = useSession();
 
 
 <template>
+  <body id = "grad">
     <div>
 
         <div class = "columns">
@@ -38,7 +39,7 @@ const session = useSession();
           </div>
 
           <button class="button is-info is-outlined is-link" href = "">Sign Up</button>
-          <button class="button is-info is-outlined is-success" @click="login()">Log In</button>
+          <button class="button is-info is-outlined is-success ml-3" @click="login()">Log In</button>
         </form>
   </div>
   </div>
@@ -51,6 +52,7 @@ const session = useSession();
 
 
     </div>
+  </body>
 </template>
 
 
