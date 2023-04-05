@@ -6,6 +6,8 @@ import BackViewVue from '@/views/BackView.vue'
 import ShouldersViewVue from '@/views/ShouldersView.vue'
 import PersonalRecordsViewVue from '@/views/PersonalRecordsView.vue'
 import LegsView from '@/views/LegsView.vue'
+import CardioViewVue from '@/views/CardioView.vue'
+
 
 
 
@@ -18,7 +20,8 @@ const router = createRouter({
     {path: '/chest', name: 'chest',component: ChestViewVue },
     {path: '/back', name: 'back',component: BackViewVue },
     {path: '/shoulders', name: 'shoulders',component: ShouldersViewVue },
-    {path: '/personalrecords', name: 'personalrecords',component: PersonalRecordsViewVue },
+    {path: '/cardio', name: 'cardio',component: CardioViewVue },
+    {path: '/personal records', name: 'personal records',component: PersonalRecordsViewVue },
     {path: '/legs', name: 'legs',component: LegsView },
  
     {

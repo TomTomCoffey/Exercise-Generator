@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import AboutView from '@/views/AboutView.vue';
 import { RouterLink } from 'vue-router';
-import HomeView from '@/views/HomeView.vue';
+
 
 
 
@@ -38,17 +37,17 @@ import HomeView from '@/views/HomeView.vue';
           <a class="navbar-link">Workouts</a>
           <div class = "navbar-dropdown">
       
-            <RouterLink to="/arms" class="navbar-item">Arms</RouterLink>
             <RouterLink to="/about" class="navbar-item">About</RouterLink>
-            <a class = "navbar-item" href = "chest.html">Chest</a>
-            <a class = "navbar-item" href = "back.html">Back</a>
-            <a class = "navbar-item" href = "shoulders.html">Shoulders</a>
-            <a class = "navbar-item" href = "cardio.html">Cardio</a>
+            <RouterLink to="/arms" class="navbar-item">Arms</RouterLink>
+            <RouterLink to="/chest" class="navbar-item">Chest</RouterLink>
+            <RouterLink to="/back" class="navbar-item">Back</RouterLink>
+            <RouterLink to="/shoulders" class="navbar-item">Shoulders</RouterLink>
+            <RouterLink to="/cardio" class="navbar-item">Cardio</RouterLink>
             <hr class="navbar-divider">
             <a class="navbar-item">Show All</a>
           </div>
         </div>
-       <a class = "navbar-item" href = "personal-record.html">Personal Records</a>
+        <RouterLink to="/personal records" class="navbar-item">Personal Records</RouterLink>
       </div>
 
       <div class = navbar-end>                                          <!-- Right Side NavBar-->

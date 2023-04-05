@@ -3,7 +3,7 @@
 </script>
 <template>
     <div>
-        <p>shoulders page</p>
+        <p><br><br><br><br>shoulders page</p>
     </div>
 </template>
 

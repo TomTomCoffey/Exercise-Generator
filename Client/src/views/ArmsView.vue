@@ -6,7 +6,7 @@
 <template>
     <div>
 
-        <p> testing</p>
+        <p> <br><br><br><br><br>This is the arms page</p>
 
     </div>
 </template>
