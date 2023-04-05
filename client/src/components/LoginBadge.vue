@@ -39,7 +39,7 @@ const session = useSession();
           </div>
 
           <button class="button is-info is-outlined is-link" href = "">Sign Up</button>
-          <button class="button is-info is-outlined is-success" @click="login()">Log In</button>
+          <button class="button is-info is-outlined is-success ml-3" @click="login()">Log In</button>
         </form>
   </div>
   </div>

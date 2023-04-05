@@ -9,14 +9,6 @@ const session = useSession();
 </script>
 
 <style>
-  .footer
-  {
-    background-color: orange;
-  }
-  body
-  {
-    background-color: rgba(0, 149, 255, 0.167);
-  }
   .box
   {
     box-shadow: 1px 1px 6px darkgray;
