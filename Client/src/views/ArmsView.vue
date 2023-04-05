@@ -46,8 +46,8 @@
               </div>
 
               <div class = "column is-half">
-                <h1 class = "title">These are Arms</h1>
-                
+                <h1 class = "title has-text-centered">Location</h1>
+                <img src = "../assets/images/armsRed.png">
 
 
               </div>
