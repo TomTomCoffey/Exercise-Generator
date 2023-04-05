@@ -67,7 +67,7 @@ import { RouterLink } from 'vue-router';
         <RouterLink to="/personal records" class="navbar-item">
           <div class="span">
                 <div class="icon pr-3">
-                  <i class="fa-solid fa-pen"></i>
+                  <i class="fa-solid fa-trophy"></i>
                 </div>
               </div>  
           Personal Records

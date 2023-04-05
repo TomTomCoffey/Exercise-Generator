@@ -2,7 +2,7 @@
 
 </script>
 <template>
-    <body>
+    <body id = "grad2">
     <div class = "block pt-5"></div>
       <div class = "columns">
         <div class = "column is is-three-fifths is-offset-one-fifth is narrow-mobile">
@@ -52,12 +52,16 @@
 
 
 <style scoped>
-    body
-        {
-            background-color: rgba(0, 149, 255, 0.167);
-        }
-        .box
-        {
-            box-shadow: 1px 1px 6px darkgray;
-        }
+      body
+      {
+         background-color: rgba(0, 149, 255, 0.167);
+      }
+       .box
+      {
+          box-shadow: 1px 1px 6px darkgray;
+      }
+       #grad2 
+      {
+        background-image: linear-gradient(to right, rgb(255, 102, 0) ,  rgb(255, 0, 0), rgba(255, 102, 0));
+      }
 </style>
