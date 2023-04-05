@@ -84,7 +84,7 @@ const items = todaysWorkout();
               <td class = "has-text-centered">{{ item?.name }}</td>
               <td>
                 <figure>
-                <img  class = "center" src= "../assets/images/LegExtension.png">
+                  <img :src="item?.photo" alt="" class="img">
               </figure>
             </td>
               <td class = "has-text-centered">{{ item?.sets }}</td>
