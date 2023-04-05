@@ -9,7 +9,7 @@ import LegsView from '@/views/LegsView.vue'
 import CardioViewVue from '@/views/CardioView.vue'
 import LoginViewVue from '@/views/LoginView.vue'
 import AbsViewVue from '@/views/AbsView.vue'
-
+import SettingsViewView from '@/views/SettingsView.vue'
 
 
 
@@ -26,6 +26,7 @@ const router = createRouter({
     {path: '/legs', name: 'legs',component: LegsView },
     {path: '/abs', name: 'abs',component: AbsViewVue },
     {path: '/login', name: 'login',component: LoginViewVue },
+    {path: '/settings', name: 'settings',component: SettingsViewVue },
  
     {
     
