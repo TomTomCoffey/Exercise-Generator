@@ -9,6 +9,7 @@ const session = useSession();
 
 
 <template>
+  <body id = "grad">
     <div>
 
         <div class = "columns">
@@ -51,6 +52,7 @@ const session = useSession();
 
 
     </div>
+  </body>
 </template>
 
 
