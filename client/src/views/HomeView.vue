@@ -1,10 +1,23 @@
 <script setup lang="ts">
 import LoginBadge from '@/components/LoginBadge.vue';
-import { useSession, login } from '@/model/user';
-import { useRouter } from 'vue-router';
+import { useSession, login, todaysWorkout  } from '@/model/user';
+
 
 
 const session = useSession();
+
+const items = todaysWorkout();
+
+
+
+
+
+
+
+
+
+
+
 
 </script>
 
@@ -66,39 +79,20 @@ const session = useSession();
             <th class = "has-text-centered">Weight in Pounds</th>
           </thead>
           <tbody>
-            <tr>
-              <td class = "has-text-centered">Leg Extensions</td>
+            <div v-for="item in items" :key="item?.id">
+              <tr>
+              <td class = "has-text-centered">{{ item?.name }}</td>
               <td>
                 <figure>
-                <img  class = "center" src="../assets/images/LegExtension.png">
+                <img  class = "center" src= "../assets/images/LegExtension.png">
               </figure>
             </td>
-              <td class = "has-text-centered">4</td>
-              <td class = "has-text-centered">10</td>
-              <td class = "has-text-centered">60 lb</td>
+              <td class = "has-text-centered">{{ item?.sets }}</td>
+              <td class = "has-text-centered">{{ item?.reps }}</td>
+              <td class = "has-text-centered">{{item?.weight}}lbs</td>
             </tr>
-            <tr>
-              <td class = "has-text-centered">Calf Extensions</td>
-              <td>
-                <figure>
-                <img class = "center" src="../assets/images/CalfExtensions.jpg">
-              </figure>
-            </td>
-              <td class = "has-text-centered">3</td>
-              <td class = "has-text-centered">15</td>
-              <td class = "has-text-centered">50 lb</td>
-            </tr>
-            <tr>
-              <td class = "has-text-centered">Seated Curls</td>
-              <td>
-                <figure>
-                <img class = "center" src="../assets/images/SeatedCurl.png">
-              </figure>
-            </td>
-              <td class = "has-text-centered">5</td>
-              <td class = "has-text-centered">8</td>
-              <td class = "has-text-centered">65 lb</td>
-            </tr>
+
+            </div>
           </tbody>
           </table>
           </div>

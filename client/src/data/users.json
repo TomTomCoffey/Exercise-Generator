@@ -11,6 +11,7 @@
             {
                 "id": 1,
                 "name": "Leg Extensions",
+                "photo": "../assets/images/leg-extensions.jpg",
                 "sets": 4,
                 "reps": 10,
                 "weight": 100,
@@ -19,6 +20,7 @@
             {
                 "id": 2,
                 "name": "Calf Extensions",
+                "photo": "client/src/assets/images/CalfExtensions.jpg",
                 "sets": 3,
                 "reps": 15,
                 "weight": 100,
@@ -27,6 +29,7 @@
             {
                 "id": 3,
                 "name": "Seated Curls",
+                "photo": "client/src/assets/images/SeatedCurl.png",
                 "sets": 5,
                 "reps": 8,
                 "weight": 100,
@@ -37,6 +40,7 @@
             {
                 "id": 1,
                 "name": "Bench Press",
+                "photo": "client/src/assets/images/BenchPress.jpg",
                 "sets": 3,
                 "reps": 10,
                 "weight": 100,
@@ -45,6 +49,7 @@
             {
                 "id": 2,
                 "name": "Squat",
+                "photo": "client/src/assets/images/Squat.jpg",
                 "sets": 3,
                 "reps": 8,
                 "weight": 250,
@@ -53,6 +58,7 @@
             {
                 "id": 3,
                 "name": "Deadlift",
+                "photo": "client/src/assets/images/Deadlift.jpg",
                 "sets": 3,
                 "reps": 6,
                 "weight": 385,
@@ -66,21 +72,21 @@
                 "id": 1,
                 "name": "Running",
                 "distance": 3,
-                "time": 30,
+                "duration": 30,
                 "date": "2020-03-03"
             },
             {
                 "id": 2,
                 "name": "Running",
                 "distance": 3,
-                "time": 30,
+                "duration": 30,
                 "date": "2020-03-03"
             },
             {
                 "id": 3,
                 "name": "Running",
                 "distance": 3,
-                "time": 30,
+                "duration": 30,
                 "date": "2020-03-03"
             }
         ],
@@ -89,21 +95,21 @@
                 "id": 1,
                 "name": "Running",
                 "distance": 3,
-                "time": 30,
+                "duration": 30,
                 "date": "2020-03-03"
             },
             {
                 "id": 2,
                 "name": "Running",
                 "distance": 3,
-                "time": 30,
+                "duration": 30,
                 "date": "2020-03-03"
             },
             {
                 "id": 3,
                 "name": "Running",
                 "distance": 3,
-                "time": 30,
+                "duration": 30,
                 "date": "2020-03-03"
             }
         ]
@@ -114,6 +120,7 @@
         {
             "id":1,
             "name": "Bench Press",
+            "photo": "client/src/assets/images/BenchPress.jpg",
             "sets": 3,
             "reps": 10,
             "weight": 225,
@@ -122,6 +129,7 @@
         {
             "id": 2,
             "name": "Squat",
+            "photo": "client/src/assets/images/Squat.jpg",
             "sets": 3,
             "reps": 10,
             "weight": 275,
@@ -130,6 +138,7 @@
         {
             "id": 3,
             "name": "Deadlift",
+            "photo": "client/src/assets/images/Deadlift.jpg",
             "sets": 3,
             "reps": 10,
             "weight": 385,
@@ -141,21 +150,21 @@
             "id": 1,
             "name": "Running",
             "distance": 3,
-            "time": 30,
+            "duration": 30,
             "date": "2020-03-03"
         },
         {
             "id": 2,
             "name": "Running",
             "distance": 3,
-            "time": 30,
+            "duration": 30,
             "date": "2020-03-03"
         },
         {
             "id": 3,
             "name": "Running",
             "distance": 3,
-            "time": 30,
+            "duration": 30,
             "date": "2020-03-03"
         }
     ],
