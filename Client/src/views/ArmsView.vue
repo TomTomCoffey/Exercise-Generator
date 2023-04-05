@@ -15,6 +15,7 @@
 
 <template>
     <body>
+    <div class = "block pt-5"></div>
       <div class = "columns">
         <div class = "column is is-three-fifths is-offset-one-fifth is narrow-mobile">
           <div class = "block pt-5"></div>

@@ -56,14 +56,9 @@ import { RouterLink } from 'vue-router';
       </div>
     </div>                                                          <!-- Navigation Bar Menu End--> 
   </nav>  
-
-
-
-
-
-
-
     </div>
+
+    
 </template>
 
 
