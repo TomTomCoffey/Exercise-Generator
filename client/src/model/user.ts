@@ -102,7 +102,37 @@ export function increment(){
             [
                 {
                     "id": 1,
+                    "name": "Leg Extensions",
+                    "photo": "../assets/images/leg-extensions.jpg",
+                    "sets": 4,
+                    "reps": 10,
+                    "weight": 100,
+                    "date": "2020-03-03"
+                },
+                {
+                    "id": 2,
+                    "name": "Calf Extensions",
+                    "photo": "client/src/assets/images/CalfExtensions.jpg",
+                    "sets": 3,
+                    "reps": 15,
+                    "weight": 100,
+                    "date": "2020-03-03"
+                },
+                {
+                    "id": 3,
+                    "name": "Seated Curls",
+                    "photo": "client/src/assets/images/SeatedCurl.png",
+                    "sets": 5,
+                    "reps": 8,
+                    "weight": 100,
+                    "date": "2020-03-03"
+                }
+            ],
+            [
+                {
+                    "id": 1,
                     "name": "Bench Press",
+                    "photo": "client/src/assets/images/BenchPress.jpg",
                     "sets": 3,
                     "reps": 10,
                     "weight": 100,
@@ -111,43 +141,19 @@ export function increment(){
                 {
                     "id": 2,
                     "name": "Squat",
-                    "sets": 23,
-                    "reps": 3,
-                    "weight": 909,
+                    "photo": "client/src/assets/images/Squat.jpg",
+                    "sets": 3,
+                    "reps": 8,
+                    "weight": 250,
                     "date": "2020-03-03"
                 },
                 {
                     "id": 3,
                     "name": "Deadlift",
+                    "photo": "client/src/assets/images/Deadlift.jpg",
                     "sets": 3,
-                    "reps": 908,
-                    "weight": 4,
-                    "date": "2020-03-03"
-                }
-            ],
-            [
-                {
-                    "id": 3,
-                    "name": "Bench Press",
-                    "sets": 4,
                     "reps": 6,
-                    "weight": 989,
-                    "date": "2020-03-03"
-                },
-                {
-                    "id": 2,
-                    "name": "Squat",
-                    "sets": 4,
-                    "reps": 89,
-                    "weight": 1,
-                    "date": "2020-03-03"
-                },
-                {
-                    "id": 3,
-                    "name": "Deadlift",
-                    "sets": 3,
-                    "reps": 3,
-                    "weight": 3,
+                    "weight": 385,
                     "date": "2020-03-03"
                 }
             ]
@@ -164,8 +170,8 @@ export function increment(){
                 {
                     "id": 2,
                     "name": "Running",
-                    "distance": 2,
-                    "duration" : 30,
+                    "distance": 3,
+                    "duration": 30,
                     "date": "2020-03-03"
                 },
                 {
@@ -187,85 +193,88 @@ export function increment(){
                 {
                     "id": 2,
                     "name": "Running",
-                    "distance": 80,
-                    duration: 40,
+                    "distance": 3,
+                    "duration": 30,
                     "date": "2020-03-03"
                 },
                 {
                     "id": 3,
                     "name": "Running",
                     "distance": 3,
-                    "duration": 4,
+                    "duration": 30,
                     "date": "2020-03-03"
                 }
             ]
         ],
-        "height": 60,
-        "weight": 150,
+        "height": 68,
+        "weight": 170,
         "workout": [
             {
-                "id": 1,
+                "id":1,
                 "name": "Bench Press",
+                "photo": "client/src/assets/images/BenchPress.jpg",
                 "sets": 3,
                 "reps": 10,
-                "weight": 100,
+                "weight": 225,
                 "date": "2020-03-03"
             },
             {
                 "id": 2,
                 "name": "Squat",
+                "photo": "client/src/assets/images/Squat.jpg",
                 "sets": 3,
                 "reps": 10,
-                "weight": 100,
+                "weight": 275,
                 "date": "2020-03-03"
             },
             {
                 "id": 3,
                 "name": "Deadlift",
-                "sets": 4,
-                "reps": 4,
-                "weight": 5,
+                "photo": "client/src/assets/images/Deadlift.jpg",
+                "sets": 3,
+                "reps": 10,
+                "weight": 385,
                 "date": "2020-03-03"
             }
         ],
         "cardio": [
             {
-                "id": 6,
+                "id": 1,
                 "name": "Running",
-                "distance": 6,
+                "distance": 3,
                 "duration": 30,
                 "date": "2020-03-03"
             },
-          
+            {
+                "id": 2,
+                "name": "Running",
+                "distance": 3,
+                "duration": 30,
+                "date": "2020-03-03"
+            },
+            {
+                "id": 3,
+                "name": "Running",
+                "distance": 3,
+                "duration": 30,
+                "date": "2020-03-03"
+            }
         ],
         "workoutPointer": 0
     
     
         
     
-    }   
-
-];
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
+    
+    
+    
+       
+    
+    
+    
+    
+    
+    
+    
+ ]
