@@ -9,7 +9,7 @@ import LegsView from '@/views/LegsView.vue'
 import CardioViewVue from '@/views/CardioView.vue'
 import LoginViewVue from '@/views/LoginView.vue'
 import AbsViewVue from '@/views/AbsView.vue'
-import SettingsViewView from '@/views/SettingsView.vue'
+import SettingsViewVue from '@/views/SettingsView.vue'
 
 
 
