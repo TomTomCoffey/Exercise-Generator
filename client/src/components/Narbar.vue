@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
+import { useSession, logout } from '@/model/user';
 
 
 
-
+const session = useSession();
 
 
 </script>
@@ -76,7 +77,7 @@ import { RouterLink } from 'vue-router';
 
       <div class = navbar-end>                                          <!-- Right Side NavBar-->
         <a class = navbar-item><button class="button is-info is-outlined">Settings</button></a>
-        <a class = navbar-item><button class="button is-danger is-outlined">Logout</button></a>
+        <a class = navbar-item><button class="button is-danger is-outlined" @click="logout">Logout</button></a>
       </div>
     </div>                                                          <!-- Navigation Bar Menu End--> 
   </nav>  
