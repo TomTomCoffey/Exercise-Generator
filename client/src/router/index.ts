@@ -13,6 +13,7 @@ import SettingsViewVue from '@/views/SettingsView.vue'
 
 
 
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -27,6 +28,7 @@ const router = createRouter({
     {path: '/abs', name: 'abs',component: AbsViewVue },
     {path: '/login', name: 'login',component: LoginViewVue },
     {path: '/settings', name: 'settings',component: SettingsViewVue },
+    
  
     {
     
@@ -37,6 +39,7 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue')
     }
+    
   ]
 })
 

@@ -61,7 +61,6 @@ const session = useSession();
             <RouterLink to="/legs" class = "navbar-item">Legs</RouterLink>
             <RouterLink to="/abs" class = "navbar-item">Abs</RouterLink>
             <RouterLink to="/cardio" class="navbar-item">Cardio</RouterLink>
-            <RouterLink to="/settings" class="navbar-item">Settings</RouterLink>
             <hr class="navbar-divider">
             <a class="navbar-item">Show All</a>
           </div>
@@ -77,9 +76,15 @@ const session = useSession();
       </div>
 
       <div class = navbar-end>                                          <!-- Right Side NavBar-->
-        <a class = navbar-item><button class="button is-info is-outlined">Settings</button></a>
+
+        <div style = "position:relative; top:15px;">
+        <RouterLink to="/settings"><a class = navbar-item>
+          <button class="button is-info is-outlined">Settings</button></a></RouterLink>
+        </div>
+
         <a class = navbar-item><button class="button is-danger is-outlined" @click="logout">Logout</button></a>
       </div>
+    
     </div>                                                          <!-- Navigation Bar Menu End--> 
   </nav>  
     </div>
