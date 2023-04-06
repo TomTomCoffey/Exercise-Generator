@@ -35,7 +35,7 @@
 
               <div class = "column is-half">
                 <h1 class = "title has-text-centered">Brian Ordonez</h1>
-                <img src = "../assets/images/BrianOrdonez.jpg">
+                <img src = "../assets/images/team.jpg">
 
 
               </div>
