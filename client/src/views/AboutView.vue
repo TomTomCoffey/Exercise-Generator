@@ -36,9 +36,9 @@
 
                 <h2 class = "has-text-weight-bold is-size-4 has-text-black pt-4">Brian Ordonez</h2>
                 <p>
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
+                  Junior at SUNY New Paltz, majoring in Computer Engineering. I'm 20 years old
+                  who enjoys learning something new and challenging myself. I'm from 
+                  Poughkeepsie, NY and I'm bilingual in English and Spanish. 
                 </p>
 
                 <h2 class = "has-text-weight-bold is-size-4 has-text-black pt-4">Jalen Feton</h2>
