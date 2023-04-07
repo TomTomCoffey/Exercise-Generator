@@ -2,51 +2,110 @@
 
 </script>
 <template>
-   <body id = "grad3">
-    <div class = "block pt-5"></div>
+  <body id = "grad">
+    <div class="columns">
+    <div class="column is-three-fifths is-offset-one-fifth is-narrow-mobile">
+      <div class="block pt-5"></div>
+      <div class="box mb-3">
+        <div class="columns">
+        <div class = "column">
+        <h1 class = "title has-text-left pt-6 mb-1 is-size-1">
+          Brian Ordonez
+        </h1>
+    </div>
+    <div class = "column">
+        <figure class="image is-128x128 is-pulled-right">
+            <img class = "is-rounded" src="pics/ppf.png">
+          </figure>
+
+    </div>
+  </div>
+</div>
       <div class = "columns">
-        <div class = "column is is-three-fifths is-offset-one-fifth is narrow-mobile">
-          <div class = "block pt-5"></div>
-            <div class = "box mb-3">
-            <div class = "columns">
-              <div class = "column is-half">
-                <h1 class = "title">View Profile</h1>
-                <p>
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                </p>
-
-
-              </div>
-
-              <div class = "column is-half">
-                <h1 class = "title has-text-centered">Brian Ordonez</h1>
-                <img src = "../assets/images/BrianOrdonez.jpg">
-
-
-              </div>
-
-
-
-            </div>
-          </div>
+        <div class = "column">
+          <div class="box">
+            <h1 class = "title is-size-4 has-text-centered">
+              Personal Information
+              <hr class="navbar-divider-black">
+            </h1>
+              <table class = "table is-fullwidth is-hoverable is-striped">
+                <tbody>
+                  <tr>
+                    <td>Name:</td>
+                    <td>Brian Ordonez</td>
+                  </tr>
+                  <tr>
+                    <td>Gender:</td>
+                    <td>Male</td>
+                  </tr>
+                  <tr>
+                    <td>Age:</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>Level:</td>
+                    <td>Beginner</td>
+                  </tr>
+                  <tr>
+                    <td>Height:</td>
+                    <td>5'10</td>
+                  </tr>
+                  <tr>
+                    <td>Weight:</td>
+                    <td>185 lb</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button class="button is-fullwidth is-info is-outlined">Edit Info</button>
         </div>
       </div>
-</body>
+      <div class = "column">
+        <div class="box">
+          <h1 class = "title is-size-4 has-text-centered">
+            Weekly Analytics
+            <hr class="navbar-divider-black">
+          </h1>
+          <h2>Sessions</h2>
+          <progress class="progress is-success is-normal mb-1" value="3" max="5">60%</progress>
+          <h2 class = "is-pulled-right">60%</h2>
+          <h2 class = "pt-3">Workouts</h2>
+          <progress class="progress is-success is-normal mb-1" value="8" max="25">32%</progress>
+          <h2 class = "is-pulled-right">32%</h2>
+          <h2 class = "pt-3">Average HeartRate</h2>
+          <progress class="progress is-success is-normal mb-1" value="73" max="150">60%</progress>
+          <h2 class = "is-pulled-left">50</h2>
+          <h2 class = "is-pulled-right pb-5">200</h2>
+          
+          <table class = "table is-fullwidth is-hoverable is-striped">
+            <tbody>
+              <tr>
+                <td># Workout Sessions:</td>
+                <td class = "has-text-centered">3</td>
+                <td class = "has-text-centered">/ 5</td>
+              </tr>
+              <tr>
+                <td># Workouts:</td>
+                <td class = "has-text-centered">8</td>
+                <td class = "has-text-centered">/ 25</td>
+              </tr>
+              <tr>
+                <td>Average HeartRate:</td>
+                <td>73 bpm</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Average Time Spent:</td>
+                <td>2 Hours, 17 Minutes</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </body>
 </template>
 
 <style>
@@ -58,8 +117,8 @@
     {
         box-shadow: 1px 1px 6px darkgray;
     }
-    #grad3 
+    #grad 
     {
-      background-image: linear-gradient(to right, rgb(246, 255, 0) ,  rgb(255, 153, 0), rgba(246, 255, 0));
+       background-image: linear-gradient(to right, rgba(0, 255, 195, 0.199) ,  rgb(25, 255, 79), rgba(0, 255, 195, 0.245));
     }
 </style>

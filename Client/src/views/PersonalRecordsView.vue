@@ -7,7 +7,14 @@
         <div class = "block pt-5"></div>
         <div class="columns">
         <div class="column is-three-fifths is-offset-one-fifth">
-           <div class="box mt-6 mb-3">
+          <div class = "block pt-5"></div>
+              <nav class="breadcrumb mb-3" aria-label="breadcrumbs">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li class="is-active"><a href="#" aria-current="page">Personal Records</a></li>
+                </ul>
+              </nav>
+           <div class="box mb-3">
                 <h1 class = "title">
                     Personal Records
                 </h1>
