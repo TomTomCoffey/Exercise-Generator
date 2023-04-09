@@ -3,9 +3,16 @@
 </script>
 <template>
   <body id = "grad">
+    <div class="block pt-5"></div>
     <div class="columns">
     <div class="column is-three-fifths is-offset-one-fifth is-narrow-mobile">
       <div class="block pt-5"></div>
+      <nav class="breadcrumb mb-3" aria-label="breadcrumbs">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li class="is-active"><a href="#" aria-current="page">View Profile</a></li>
+                </ul>
+              </nav>
       <div class="box mb-3">
         <div class="columns">
         <div class = "column">
@@ -15,7 +22,7 @@
     </div>
     <div class = "column">
         <figure class="image is-128x128 is-pulled-right">
-            <img class = "is-rounded" src="pics/ppf.png">
+            <img class = "is-rounded" src="../assets/images/ppf.png">
           </figure>
 
     </div>
