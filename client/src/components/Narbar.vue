@@ -77,6 +77,7 @@ const session = useSession();
 
       <div class = navbar-end>                                          <!-- Right Side NavBar-->
 
+
         <div style = "position:relative; top:15px;">
         <RouterLink to="/settings"><a class = navbar-item>
           <button class="button is-info is-outlined">Settings</button></a></RouterLink>

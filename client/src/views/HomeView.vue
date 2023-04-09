@@ -60,7 +60,11 @@ const items = todaysWorkout();
       <div class="box mb-3">
         <h1 class = "title">
            Hello, {{ session.user.name }}
+           <div style = "position:relative; top:-38px;">
+            <RouterLink to="/viewProfile">
           <button class="button is-success is-outlined is-pulled-right">View Profile</button>
+            </RouterLink>
+           </div>
         </h1>
       </div>
       <div class="box">
