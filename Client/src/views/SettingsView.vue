@@ -1,7 +1,13 @@
 <script setup lang="ts">
 
+import LoginBadge from '@/components/LoginBadge.vue';
+import { useSession } from '@/model/user';
+
+const session = useSession();
+
 </script>
 <template>
+  <div v-if="session.user">
    <body id = "grad4">
     <div class = "block pt-5"></div>
       <div class = "columns">
@@ -60,6 +66,10 @@
       </div>
 
 </body>
+  </div>
+  <div v-else>
+    <LoginBadge />
+  </div>
 </template>
 
 <style>

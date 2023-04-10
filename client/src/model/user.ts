@@ -21,6 +21,7 @@ export interface User{
    
     id: number;
     name: string;
+    age: number
     email: string;
     password: string;
     isAdmin: boolean;
@@ -74,6 +75,8 @@ export function todaysWorkout(){
 
 
 
+
+
     
 
 
@@ -106,6 +109,7 @@ export function todaysWorkout(){
     {
         "id": 1,
         "name": "Scott Doe", 
+        "age": 22,
         "email": "scott@scott",
         "password": "scott",
         "isAdmin": true,

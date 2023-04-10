@@ -1,5 +1,9 @@
 <script setup lang="ts">
 
+import { useSession } from '@/model/user';
+
+const session = useSession();
+
 </script>
 <template>
   <body id = "grad">
@@ -17,7 +21,7 @@
         <div class="columns">
         <div class = "column">
         <h1 class = "title has-text-left pt-6 mb-1 is-size-1">
-          Brian Ordonez
+         {{session?.user?.name}}
         </h1>
     </div>
     <div class = "column">
@@ -39,7 +43,7 @@
                 <tbody>
                   <tr>
                     <td>Name:</td>
-                    <td>Brian Ordonez</td>
+                    <td>{{ session?.user?.name }}</td>
                   </tr>
                   <tr>
                     <td>Gender:</td>
@@ -47,7 +51,7 @@
                   </tr>
                   <tr>
                     <td>Age:</td>
-                    <td>20</td>
+                    <td>{{session.user?.age }}</td>
                   </tr>
                   <tr>
                     <td>Level:</td>
@@ -55,11 +59,11 @@
                   </tr>
                   <tr>
                     <td>Height:</td>
-                    <td>5'10</td>
+                    <td>{{ session.user?.height }} inches</td>
                   </tr>
                   <tr>
                     <td>Weight:</td>
-                    <td>185 lb</td>
+                    <td>{{ session.user?.height }} lbs</td>
                   </tr>
                 </tbody>
               </table>
@@ -78,7 +82,7 @@
           <h2 class = "pt-3">Workouts</h2>
           <progress class="progress is-success is-normal mb-1" value="8" max="25">32%</progress>
           <h2 class = "is-pulled-right">32%</h2>
-          <h2 class = "pt-3">Average HeartRate</h2>
+          <h2 class = "pt-3">Average Calories Burned</h2>
           <progress class="progress is-success is-normal mb-1" value="210" max="500">42%</progress>
           <h2 class = "is-pulled-left">0</h2>
           <h2 class = "is-pulled-right pb-5">500</h2>
