@@ -48,6 +48,12 @@ console.log(session.user?.workoutPointer);
   {
      background-image: linear-gradient(to right, rgba(0, 255, 195, 0.199) ,  rgb(25, 255, 79), rgba(0, 255, 195, 0.245));
   }
+  .img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+
+  }
 </style>
 
 <template>
@@ -91,7 +97,7 @@ console.log(session.user?.workoutPointer);
               <td class = "has-text-centered">{{ item?.name }}</td>
               <td>
                 <figure>
-                  <img :src="item?.photo" alt="User Photo"> <!-- This is where the image should go -->
+                  <img :src="item?.photo" alt="User Photo" class="img"> <!-- This is where the image should go -->
               </figure>
             </td>
               <td class = "has-text-centered">{{ item?.sets }}</td>
