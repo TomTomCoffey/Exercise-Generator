@@ -77,6 +77,7 @@ const session = useSession();
 
       <div class = navbar-end>                                          <!-- Right Side NavBar-->
 
+        <div v-if="session.user">
 
         <div style = "position:relative; top:15px;">
         <RouterLink to="/settings"><a class = navbar-item>
@@ -84,6 +85,7 @@ const session = useSession();
         </div>
 
         <a class = navbar-item><button class="button is-danger is-outlined" @click="logout">Logout</button></a>
+      </div>
       </div>
     
     </div>                                                          <!-- Navigation Bar Menu End--> 

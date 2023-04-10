@@ -123,7 +123,7 @@ export function todaysWorkout(){
                 {
                     "id": 2,
                     "name": "Calf Extensions",
-                    "photo": "client/src/assets/images/CalfExtensions.jpg",
+                    "photo": "../assets/images/calf-extensions.jpg",
                     "sets": 3,
                     "reps": 15,
                     "weight": 100,
@@ -132,7 +132,7 @@ export function todaysWorkout(){
                 {
                     "id": 3,
                     "name": "Seated Curls",
-                    "photo": "client/src/assets/images/SeatedCurl.png",
+                    "photo": "../assets/images/SeatedCurl.png",
                     "sets": 5,
                     "reps": 8,
                     "weight": 100,

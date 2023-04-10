@@ -11,7 +11,7 @@
             {
                 "id": 1,
                 "name": "Leg Extensions",
-                "photo": "../assets/images/leg-extensions.jpg",
+                "photo": "../assets/images/LegExtension.png",
                 "sets": 4,
                 "reps": 10,
                 "weight": 100,
