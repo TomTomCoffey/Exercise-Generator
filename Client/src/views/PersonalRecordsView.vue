@@ -64,17 +64,13 @@ const session = useSession();
 </div>
 
 <div v-else>
-  <LoginBadge />
+  <LoginBadge/>
 </div>
   
 
 </template>
 
 <style scoped>
-    body
-    {
-        background-color: rgba(0, 149, 255,0.167);
-    }
     #grad 
     {
          background-image: linear-gradient(to right, rgba(0, 255, 195, 0.199) ,  rgb(25, 255, 79), rgba(0, 255, 195, 0.245));

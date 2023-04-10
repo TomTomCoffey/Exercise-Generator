@@ -11,7 +11,6 @@ const session = useSession();
 
 
 <template>
-    <div>
 
 
 
@@ -75,22 +74,27 @@ const session = useSession();
         </RouterLink>
       </div>
 
-      <div class = navbar-end>                                          <!-- Right Side NavBar-->
-
-        <div v-if="session.user">
-
-        <div style = "position:relative; top:15px;">
-        <RouterLink to="/settings"><a class = navbar-item>
-          <button class="button is-info is-outlined">Settings</button></a></RouterLink>
+      <div v-if="session.user">
+        <div class = "navbar-end">                                          <!-- Right Side NavBar-->
+          <div style = "position:relative; top:15px;">
+            <RouterLink to="/settings">
+              <a class = "navbar-item">
+                <button class="button is-info is-outlined">Settings</button>
+              </a>
+            </RouterLink>
+            </div>
+        
+            <div style = "position:relative; top:15px;">
+              <a class = "navbar-item">
+                <button class="button is-danger is-outlined" @click="logout">Logout</button>
+              </a>
+            </div>
+          
         </div>
-
-        <a class = navbar-item><button class="button is-danger is-outlined" @click="logout">Logout</button></a>
-      </div>
       </div>
     
     </div>                                                          <!-- Navigation Bar Menu End--> 
   </nav>  
-    </div>
 
     
 </template>
@@ -98,5 +102,6 @@ const session = useSession();
 
 
 <style scoped>
+
 
 </style>

@@ -78,6 +78,7 @@ console.log(session.user?.workoutPointer);
         <div class="columns">
           <div class="column is-narrow-mobile">
         <table class = "table is-fullwidth is-hoverable">
+          <div v-for="item in items" :key="item?.id">
           <thead>
             <th class = "has-text-centered">Exercise Name</th>
             <th class = "has-text-centered">Picture</th>
@@ -86,7 +87,6 @@ console.log(session.user?.workoutPointer);
             <th class = "has-text-centered">Weight in Pounds</th>
           </thead>
           <tbody>
-            <div v-for="item in items" :key="item?.id">
               <tr>
               <td class = "has-text-centered">{{ item?.name }}</td>
               <td>
@@ -99,9 +99,8 @@ console.log(session.user?.workoutPointer);
               <td class = "has-text-centered">{{item?.weight}}lbs</td>
             </tr>
 
-            </div>
           </tbody>
-          
+          </div>
           </table>
           </div>
           </div>
