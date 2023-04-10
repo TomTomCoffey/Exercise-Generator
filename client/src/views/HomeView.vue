@@ -5,7 +5,6 @@ import { useSession, login, todaysWorkout  } from '@/model/user';
 
 
 const session = useSession();
-
 const items = todaysWorkout();
 
 
@@ -76,7 +75,7 @@ const items = todaysWorkout();
           <div class="column is-narrow-mobile">
         <table class = "table is-fullwidth is-hoverable">
           <thead>
-            <th class = "has-text-centered">Excersise Name</th>
+            <th class = "has-text-centered">Exercise Name</th>
             <th class = "has-text-centered">Picture</th>
             <th class = "has-text-centered">Number of Sets</th>
             <th class = "has-text-centered">Number of Reps</th>
@@ -88,7 +87,7 @@ const items = todaysWorkout();
               <td class = "has-text-centered">{{ item?.name }}</td>
               <td>
                 <figure>
-                  <img :src="item?.photo" alt="" class="img">
+                  <img :src="item?.photo" alt="User Photo"> <!-- This is where the image should go -->
               </figure>
             </td>
               <td class = "has-text-centered">{{ item?.sets }}</td>
