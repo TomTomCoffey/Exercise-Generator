@@ -1,11 +1,15 @@
 <script setup lang="ts">
 import LoginBadge from '@/components/LoginBadge.vue';
-import { useSession, login, todaysWorkout  } from '@/model/user';
+import { useSession, todaysWorkout,increment  } from '@/model/user';
 
 
 
 const session = useSession();
 const items = todaysWorkout();
+
+
+
+console.log(session.user?.workoutPointer);
 
 
 
@@ -97,9 +101,12 @@ const items = todaysWorkout();
 
             </div>
           </tbody>
+          
           </table>
           </div>
           </div>
+          <button class="button is-fullwidth is-info is-outlined" id = "submission" type = "button" @click="increment()">Finished Workout</button>
+
         
       </div>
       <div class="box">
