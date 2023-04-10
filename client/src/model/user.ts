@@ -143,7 +143,7 @@ export function todaysWorkout(){
                 {
                     "id": 1,
                     "name": "Bench Press",
-                    "photo": "client/src/assets/images/BenchPress.jpg",
+                    "photo": "https://s3.amazonaws.com/prod.skimble/assets/2289486/image_iphone.jpg",
                     "sets": 3,
                     "reps": 10,
                     "weight": 100,
@@ -152,7 +152,7 @@ export function todaysWorkout(){
                 {
                     "id": 2,
                     "name": "Squat",
-                    "photo": "client/src/assets/images/Squat.jpg",
+                    "photo": "https://static.strengthlevel.com/images/illustrations/squat-1000x1000.jpg",
                     "sets": 3,
                     "reps": 8,
                     "weight": 250,
@@ -161,7 +161,7 @@ export function todaysWorkout(){
                 {
                     "id": 3,
                     "name": "Deadlift",
-                    "photo": "client/src/assets/images/Deadlift.jpg",
+                    "photo": "https://static.strengthlevel.com/images/illustrations/deadlift-1000x1000.jpg",
                     "sets": 3,
                     "reps": 6,
                     "weight": 385,
