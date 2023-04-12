@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import type FooterVue from './components/Footer.vue';
+import type Footer from './components/Footer.vue';
 import Narbar from './components/Narbar.vue';
 </script>
 
