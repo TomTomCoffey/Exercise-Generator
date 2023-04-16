@@ -1,4 +1,4 @@
-
+{
 "workouts": [
     [
         {
@@ -51,7 +51,7 @@
         {
             "id": 1,
             "name": "Lat Pulldowns",
-            "photo": "https://static.strengthlevel.com/images/illustrations/seated-cable-row-1000x1000.jpg"
+            "photo": "https://static.strengthlevel.com/images/illustrations/seated-cable-row-1000x1000.jpg",
             "sets": 4,
             "reps": 12,
             "weight": 60,
@@ -114,4 +114,7 @@
             "date": "2020-03-03"
         }          
     ]
-],
+    
+]
+
+}
