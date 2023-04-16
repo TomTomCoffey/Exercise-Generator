@@ -65,6 +65,22 @@ export function todaysWorkout(){
     return session.user?.workouts[session.user?.workoutPointer!];
 }
 
+export function setWorkouts(Workout: Workout[][]){
+    session.user!.workouts = Workout;
+}
+
+
+export function setCardios(Cardio: Cardio[][]){
+    session.user!.cardios = Cardio;
+}
+
+export function getWorkouts(){
+    return session.user?.workouts;
+}
+
+export function getCardios(){
+    return session.user?.cardios;
+}
 
 
 
