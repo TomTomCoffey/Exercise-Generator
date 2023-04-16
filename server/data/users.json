@@ -1,6 +1,5 @@
-
-
-{
+{ 
+ "user":{ 
     "id": 1,
     "name": "Scott Doe", 
     "email": "scott@scott",
@@ -171,9 +170,11 @@
     "workoutPointer": 0
 
 
-    
+}
 
 }
+
+
 
 
 
