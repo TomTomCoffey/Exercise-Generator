@@ -1,6 +1,6 @@
 import type { Workout } from "./workout";
 import type { Cardio } from "./cardio";
-import user from "../data/users.json"
+//import user from "../data/user.json";
 import { reactive } from "vue";
 
 
