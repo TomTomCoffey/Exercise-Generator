@@ -32,7 +32,7 @@ app
         res.send('Hello World! From Express')
     })
     .use('/api/v1/users', users)
-   // .use('/api/v1/easyWorkouts', easyWorkouts)
+    .use('/api/v1/easyWorkouts', easyWorkouts)
    // .use('/api/v1/jokes', jokes)
 
 // Catch all

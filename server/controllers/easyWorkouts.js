@@ -11,9 +11,5 @@ router
 })
 
 
-.get('/', (req, res) => {
-    const list = model.getEasyWorkouts();
-    const data = { data: list, total: list.length, isSuccess: true };
-    res.send(data)
-})
+module.exports = router;
 
