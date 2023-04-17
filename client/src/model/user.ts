@@ -1,7 +1,9 @@
 import type { Workout } from "./workout";
 import type { Cardio } from "./cardio";
+import { useEasyWorkouts, useMediumWorkouts, useHardWorkouts } from "./workout";
 //import user from "../data/user.json";
 import { reactive } from "vue";
+
 
 
 
@@ -81,6 +83,21 @@ export function getWorkouts(){
 export function getCardios(){
     return session.user?.cardios;
 }
+
+export function getWorkout(){
+    return session.user?.workout;
+}
+
+export function changeToEasyWorkouts(){
+    session.user!.workouts = useEasyWorkouts();
+}
+export function changeToMedWorkouts(){
+    session.user!.workouts = useMediumWorkouts();
+}
+export function changeToHardWorkouts(){
+    session.user!.workouts = useHardWorkouts();
+}
+
 
 
 
