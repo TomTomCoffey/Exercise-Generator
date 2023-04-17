@@ -1,4 +1,4 @@
-const data = require('../data/IntermediateWorkouts.json')
+const data = require('../data/intermediateWorkouts.json')
 
 function getIntermediateWorkouts() {
     return data.workouts;
