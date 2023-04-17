@@ -1,9 +1,15 @@
 <script setup lang="ts">
 
 import LoginBadge from '@/components/LoginBadge.vue';
-import { useSession } from '@/model/user';
+import { getEasyWorkouts, useSession } from '@/model/user';
+import type { Workout } from '@/model/workout';
+import { ref } from 'vue';
 
 const session = useSession();
+
+
+
+
 
 </script>
 <template>

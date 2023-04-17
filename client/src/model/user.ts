@@ -90,6 +90,17 @@ export function getEasyWorkouts(): Promise<DataListEnvelope<Workout>> {
 
 }
 
+export function getintermediateWorkouts(): Promise<DataListEnvelope<Workout>> {
+
+    return api('intermediateWorkouts')
+}
+
+export function getAdvancedWorkouts(): Promise<DataListEnvelope<Workout>> {
+
+    return api('advancedWorkouts')
+}
+
+
 
 
 
