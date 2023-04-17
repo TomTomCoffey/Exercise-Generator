@@ -1,11 +1,11 @@
 const express = require('express');
-const model = require('../models/MediumWorkouts');
+const model = require('../models/intermediateWorkouts');
 const router = express.Router();
 
 router
 
 .get('/', (req, res) => {
-    const list = model.getMediumWorkouts();
+    const list = model.getIntermediateWorkouts();
     const data = { data: list, total: list.length, isSuccess: true };
     res.send(data)
 })
