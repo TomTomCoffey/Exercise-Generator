@@ -1,7 +1,7 @@
 const data = require('../data/easyWorkouts.json')
 
 function getEasyWorkouts() {
-    return data.easyWorkouts;
+    return data.workouts;
 }
 
 
