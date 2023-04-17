@@ -1,17 +1,21 @@
 import type { Workout } from "./workout";
 import type { Cardio } from "./cardio";
 import { useEasyWorkouts, useMediumWorkouts, useHardWorkouts } from "./workout";
-//import user from "../data/user.json";
+import * as myFetch from "./myFetch";
+import type { DataEnvelope, DataListEnvelope } from "./myFetch";
 import { reactive } from "vue";
 
 
 
 
 const session = reactive({
-    user: null as User | null
-
-
-
+    user: null as User | null,
+    isLoading: false,
+    messages: [] as {
+        msg: string,
+        type: "success" | "danger" | "warning" | "info",
+    }[],
+    
 })
 
 export function useSession() {
@@ -38,6 +42,74 @@ export interface User{
 
 }
 
+
+export function api(url: string, data?: any, method?: string, headers?: any) {
+    session.isLoading = true;
+    return myFetch.api(url, data, method, headers)
+        .catch(err => {
+            console.error({err});
+            session.messages.push({
+                msg: err.message  ?? JSON.stringify(err),
+                type: "danger",
+            })
+        })
+        .finally(() => {
+            session.isLoading = false;
+        })
+}
+
+export function getUsers(): Promise<DataListEnvelope<User>> {
+
+    return api('users')
+
+}
+
+export function getUser(id: number): Promise<DataEnvelope<User>> {
+
+    return api(`users/${id}`)
+
+}
+
+
+export function createUser(user: User): Promise<DataEnvelope<User>> {
+
+    return api('users', user)
+}
+
+
+
+export function updateUser(user: User): Promise<DataEnvelope<User>> {
+
+    return api(`user/${user.id}`, user, 'PUT')
+
+}
+
+export function getEasyWorkouts(): Promise<DataListEnvelope<Workout>> {
+
+    return api('easyWorkouts')
+
+}
+
+
+
+
+
+       
+export function addMessage(msg: string, type: "success" | "danger" | "warning" | "info") {
+    console.log({msg, type});
+    session.messages.push({
+        msg,
+        type,
+    })
+}
+
+export function deleteMessage(index: number) {
+    session.messages.splice(index, 1);
+
+}
+
+
+
 export function login(){
     session.user = userArray[0];
 
@@ -47,9 +119,6 @@ export function logout(){
     session.user = null;
 }
 
-export function getUser(){
-    return session.user;
-}
 
 export function getWorkoutPointer(){
     return session.user?.workoutPointer;
