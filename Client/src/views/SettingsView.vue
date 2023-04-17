@@ -59,7 +59,8 @@ const session = useSession();
                   </label>
                   </div>
                   </div>
-                  <button class="button is-fullwidth is-info is-outlined">View Profile</button>
+                  <!--<input type = "levelType" name = "level" v-model ="">  -->
+                  <button class="button is-fullwidth is-info is-outlined">Submit</button>
               </div>
           </div>
         </div>
@@ -68,9 +69,10 @@ const session = useSession();
 </body>
   </div>
   <div v-else>
-    <LoginBadge />
-  </div>
+  <LoginBadge />
+</div>
 </template>
+
 
 <style>
  body
