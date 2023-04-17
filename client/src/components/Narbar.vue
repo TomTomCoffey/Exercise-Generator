@@ -20,7 +20,7 @@ const session = useSession();
     
     <div class = "navbar-brand">                                      <!-- Navigation Bar Logo-->            
       <a href="https://www.newpaltz.edu/" class="navbar-item">        
-        <img src = "../assets/images/NPLogo.png" style = "max-height: 70px" class = "py-2 px-2"> 
+        <img src = "../assets/images/NPFit Logo.png" style = "max-height: 70px" class = "py-2 px-2"> 
       </a>
     </div>                                                             <!-- Navigation Bar Logo End--> 
     <div class = "navbar-menu">                                        <!-- Navigation Bar Menu--> 

@@ -47,7 +47,7 @@ const session = useSession();
                   </tr>
                   <tr>
                     <td>Gender:</td>
-                    <td>Male</td>
+                    <td>{{ session?.user?.gender }}</td>
                   </tr>
                   <tr>
                     <td>Age:</td>
@@ -63,7 +63,7 @@ const session = useSession();
                   </tr>
                   <tr>
                     <td>Weight:</td>
-                    <td>{{ session.user?.height }} lbs</td>
+                    <td>{{ session.user?.weight }} lbs</td>
                   </tr>
                 </tbody>
               </table>
