@@ -41,7 +41,7 @@
     [
         {
                 "id": 1,
-                "name": "Lat Pulldowns",
+                "name": "Lat Pulldown",
                 "photo": "https://th.bing.com/th/id/R.9f69b5985d6663feedaaca8f6bfe9c72?rik=r1dmSta7aANzkw&riu=http%3a%2f%2fbodybuilding-wizard.com%2fwp-content%2fuploads%2f2018%2f07%2fmachine-lat-pulldown-exercise-guide-image.jpg&ehk=0z0gkP7h4fEDN8aTItPwV9jteLbUdtexjhK9WJc3yng%3d&risl=&pid=ImgRaw&r=0",
                 "sets": 4,
                 "reps": 10,
@@ -81,7 +81,7 @@
                 "id": 1,
                 "name": "Squat",
                 "photo": "https://th.bing.com/th/id/OIP.ojoGQOFaAqIveq-jNCxUfAHaEN?pid=ImgDet&rs=1",
-                "sets": 5,
+                "sets": 3,
                 "reps": 8,
                 "weight": 95,
                 "date": "2020-03-03"
@@ -112,7 +112,7 @@
                 "reps": 50,
                 "weight": 0,
                 "date": "2020-03-03"
-        }          
+        }        
     ]
 ]
 }

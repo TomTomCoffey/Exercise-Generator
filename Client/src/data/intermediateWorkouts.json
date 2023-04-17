@@ -2,7 +2,7 @@
 "workouts": [
     [
         {
-            "id": 1,
+            "id": 2,
             "name": "Bench Press",
             "photo": "client/src/assets/images/BenchPress.jpg",
             "sets": 4,
@@ -11,7 +11,7 @@
             "date": "2020-03-03"
         },
         {
-            "id": 1, 
+            "id": 2, 
             "name": "Skull Crushers",
             "photo": "https://www.infofitness.nl/wp-content/uploads/2020/12/laying-unilateral-dumbbell-skullcrusher-png.png",
             "sets": 4,
@@ -20,7 +20,7 @@
             "date": "2020-03-03"
         },
         {
-            "id": 1,
+            "id": 2,
             "name": "Flies",
             "photo": "https://weighteasyloss.com/wp-content/uploads/2018/06/b1233081775c48bfee0d354f3a70e9c7.jpg",
             "sets": 4,
@@ -29,7 +29,7 @@
             "date": "2020-03-03"
         },
         {
-            "id": 1,
+            "id": 2,
             "name": "Shoulder Press",
             "photo": "https://cdn-0.weighttraining.guide/wp-content/uploads/2017/08/behind-the-neck-barbell-overhead-press-resized.png",
             "sets": 4,
@@ -40,8 +40,8 @@
     ],
     [
         {
-            "id": 1,
-            "name": "Lat Pulldowns",
+            "id": 2,
+            "name": "Lat Pulldown",
             "photo": "https://th.bing.com/th/id/R.9f69b5985d6663feedaaca8f6bfe9c72?rik=r1dmSta7aANzkw&riu=http%3a%2f%2fbodybuilding-wizard.com%2fwp-content%2fuploads%2f2018%2f07%2fmachine-lat-pulldown-exercise-guide-image.jpg&ehk=0z0gkP7h4fEDN8aTItPwV9jteLbUdtexjhK9WJc3yng%3d&risl=&pid=ImgRaw&r=0",
             "sets": 4,
             "reps": 12,
@@ -49,7 +49,7 @@
             "date": "2020-03-03"
         },
         {
-            "id": 1,
+            "id": 2,
             "name": "Cable Rows ",
             "photo": "https://static.strengthlevel.com/images/illustrations/seated-cable-row-1000x1000.jpg",
             "sets": 4,
@@ -58,7 +58,7 @@
             "date": "2020-03-03"
         },
         {
-            "id": 1,
+            "id": 2,
             "name": "Hammer Curls",
             "photo": "https://www.oldschoollabs.com/wp-content/uploads/2020/08/Cross-Body-Hammer-Curls.jpg",
             "sets": 5,
@@ -67,7 +67,7 @@
             "date": "2020-03-03"
         },
         {
-            "id": 1,
+            "id": 2,
             "name": "Barbell Curls",
             "photo": "https://th.bing.com/th/id/R.7c7f1cdce714ae12f008bcccb86d3c42?rik=bxYVpMF1Y787Tw&riu=http%3a%2f%2fignorelimits.com%2fwp-content%2fuploads%2f2017%2f06%2fbarbell-curl-grip-variations-1.jpg&ehk=hwJydkWgbfh8nHG08w8VZxzwfKbvnVONYKjs7vt5zw0%3d&risl=&pid=ImgRaw&r=0",
             "sets": 4,
@@ -78,7 +78,7 @@
     ],
     [
         {
-            "id": 1,
+            "id": 2,
             "name": "Squats",
             "photo": "https://th.bing.com/th/id/OIP.ojoGQOFaAqIveq-jNCxUfAHaEN?pid=ImgDet&rs=1",
             "sets": 3,
@@ -87,7 +87,7 @@
             "date": "2020-03-03"
         },
         {
-            "id": 1,
+            "id": 2,
             "name": "Lunges",
             "photo": "https://www.cdn.spotebi.com/wp-content/uploads/2016/09/front-and-back-lunges-exercise-illustration-spotebi.jpg",
             "sets": 4,
@@ -96,7 +96,7 @@
             "date": "2020-03-03"
         },
         {
-            "id": 1,
+            "id": 2,
             "name": "Deadlift",
             "photo": "https://i.pinimg.com/originals/a5/00/0c/a5000c66e063f7645e29cb248b043eeb.jpg",
             "sets": 3,
@@ -105,7 +105,7 @@
             "date": "2020-03-03"
         },
         {
-            "id": 1,
+            "id": 2,
             "name": "Jump Rope",
             "photo": "https://www.cdn.spotebi.com/wp-content/uploads/2014/10/jump-rope-exercise-illustration.jpg",
             "sets": 4,
@@ -114,5 +114,5 @@
             "date": "2020-03-03"
         }          
     ]
-],
+]
 }

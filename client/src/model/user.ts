@@ -21,8 +21,7 @@ export interface User{
    
     id: number;
     name: string;
-    age: number
-    gender: string;
+    age: number;
     email: string;
     password: string;
     isAdmin: boolean;
@@ -127,7 +126,6 @@ export function getCardios(){
         "id": 1,
         "name": "Scott Doe", 
         "age": 22,
-        "gender": "Male",
         "email": "scott@scott",
         "password": "scott",
         "isAdmin": true,
