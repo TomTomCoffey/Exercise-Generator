@@ -8,5 +8,4 @@ function getAdvancedWorkouts() {
 module.exports = {
     getAdvancedWorkouts,
     
-
 };

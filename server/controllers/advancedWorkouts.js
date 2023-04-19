@@ -10,5 +10,4 @@ router
     res.send(data)
 })
 
-
 module.exports = router;
