@@ -6,35 +6,82 @@
     <div>
 
         <div class = "columns">
-    <div class  = "column is-half is-offset-one-quarter">
+    <div class  = "column is-one-third is-offset-one-third">
       <div class="block pt-5"></div>
       <div class="block pt-5"></div>
       <div class="block pt-5"></div>
      
         <form class="box" action="login.php" method="POST">
-          <h1 class="title has-text-centered">Log in and find your workout for today!</h1>
+          <h1 class="title has-text-centered">Create an Account</h1>
           <h2 class="subtitle has-text-centered">
-            If you do not have an account please sign up.
+            Get started with NPFit
           </h2>
             
           <div class="field">
-            <label class="label">Email</label>
+            <label class="label">First Name</label>
             <div class="control">
-              <input name="email" class="input" type="email" placeholder="e.g. alex@example.com">
+              <input name="email" class="input" type="email" placeholder="e.g. John">
             </div>
           </div>
-  
+
           <div class="field">
-            <label class="label">Password</label>
+            <label class="label">Last Name</label>
+            <div class="control">
+              <input name="email" class="input" type="email" placeholder="e.g. Smith">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Height</label>
+            <div class="control">
+                <div class="select is-small is-pulled-right is-fullwidth">
+                    <select class = "is-hovered">
+                    <option>Select</option>
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                    </select>
+                </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Weight</label>
+            <div class="control">
+              <input name="email" class="input" type="email" placeholder="e.g. 23">
+            </div>
+          </div>
+
+          <div class = "field">
+            <label class = "label">Selected Difficulty</label>
+            <div class = "control">
+                    <div class="select is-small is-pulled-right is-fullwidth">
+                        <select class = "is-hovered">
+                        <option>Select</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                        </select>
+                    </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Create Username</label>
+            <div class="control">
+              <input name="password" class="input" type="password" placeholder="e.g. ealex@example.com">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Create a Password</label>
             <div class="control">
               <input name="password" class="input" type="password" placeholder="********">
             </div>
           </div>
 
-          <button class="button is-info is-outlined is-link" href = "">Sign Up</button>
-          <button class="button is-info is-outlined is-success ml-3" @click="">Log In</button>
-          <label class="checkbox is-pulled-right">
-          <input type="checkbox"> Remember me</label>
+          <button class="button is-info is-outlined is-link is-fullwidth">Sign Up</button>
+          
         </form>
   </div>
   </div>
