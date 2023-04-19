@@ -7,10 +7,6 @@ import { ref } from 'vue';
 
 const session = useSession();
 
-
-
-
-
 </script>
 <template>
   <div v-if="session.user">
