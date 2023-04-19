@@ -32,7 +32,7 @@
           </div>
 
           <button class="button is-info is-outlined is-link" href = "">Sign Up</button>
-          <button class="button is-info is-outlined is-success ml-3" @click="login()">Log In</button>
+          <button class="button is-info is-outlined is-success ml-3" @click="">Log In</button>
           <label class="checkbox is-pulled-right">
           <input type="checkbox"> Remember me</label>
         </form>

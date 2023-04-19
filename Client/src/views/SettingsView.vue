@@ -1,11 +1,39 @@
 <script setup lang="ts">
 
 import LoginBadge from '@/components/LoginBadge.vue';
-import { getEasyWorkouts, useSession } from '@/model/user';
+import { useSession } from '@/model/user';
+import { getEasyWorkouts } from '@/model/user';
 import type { Workout } from '@/model/workout';
 import { ref } from 'vue';
 
 const session = useSession();
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
 
 
 
@@ -66,7 +94,7 @@ const session = useSession();
                   </div>
                   </div>
                   <!--<input type = "levelType" name = "level" v-model ="">  -->
-                  <button class="button is-fullwidth is-info is-outlined">Submit</button>
+                  <button class="button is-fullwidth is-info is-outlined" @click="">Submit</button>
               </div>
           </div>
         </div>

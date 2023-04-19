@@ -1,6 +1,6 @@
 import type { Workout } from "./workout";
 import type { Cardio } from "./cardio";
-import { useEasyWorkouts, useMediumWorkouts, useHardWorkouts } from "./workout";
+//import { useEasyWorkouts, useMediumWorkouts, useHardWorkouts } from "./workout";
 import * as myFetch from "./myFetch";
 import type { DataEnvelope, DataListEnvelope } from "./myFetch";
 import { reactive } from "vue";
@@ -100,11 +100,6 @@ export function getAdvancedWorkouts(): Promise<DataListEnvelope<Workout>> {
     return api('advancedWorkouts')
 }
 
-
-
-
-
-
        
 export function addMessage(msg: string, type: "success" | "danger" | "warning" | "info") {
     console.log({msg, type});
@@ -118,8 +113,6 @@ export function deleteMessage(index: number) {
     session.messages.splice(index, 1);
 
 }
-
-
 
 export function login(){
     session.user = userArray[0];
@@ -168,15 +161,7 @@ export function getWorkout(){
     return session.user?.workout;
 }
 
-export function changeToEasyWorkouts(){
-    session.user!.workouts = useEasyWorkouts();
-}
-export function changeToMedWorkouts(){
-    session.user!.workouts = useMediumWorkouts();
-}
-export function changeToHardWorkouts(){
-    session.user!.workouts = useHardWorkouts();
-}
+
 
 
 

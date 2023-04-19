@@ -4,6 +4,7 @@ import hardWorkouts from '../data/advancedWorkouts.json';
 
 
 
+
 export interface Workout{
 
     id: number;
