@@ -1,6 +1,6 @@
 import type { Workout } from "./workout";
 import type { Cardio } from "./cardio";
-//import { useEasyWorkouts, useMediumWorkouts, useHardWorkouts } from "./workout";
+import { useEasyWorkouts, useMediumWorkouts, useHardWorkouts } from "./workout";
 import * as myFetch from "./myFetch";
 import type { DataEnvelope, DataListEnvelope } from "./myFetch";
 import { reactive } from "vue";
@@ -141,7 +141,7 @@ export function todaysWorkout(){
 }
 
 export function setWorkouts(Workout: Workout[][]){
-    session.user!.workouts = Workout;
+    session.user!.workouts = useEasyWorkouts();
 }
 
 

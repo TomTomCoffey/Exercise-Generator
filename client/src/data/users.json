@@ -3,6 +3,7 @@
 {
     "id": 1,
     "name": "Scott Doe", 
+    "age": 25,
     "email": "scott@scott",
     "password": "scott",
     "isAdmin": true,

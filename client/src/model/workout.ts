@@ -16,6 +16,8 @@ export interface Workout{
     date: string;
 
 
+
+
 }
 
 export function useEasyWorkouts(){
