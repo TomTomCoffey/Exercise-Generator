@@ -11,6 +11,8 @@ import LoginViewVue from '@/views/LoginView.vue'
 import AbsViewVue from '@/views/AbsView.vue'
 import SettingsViewVue from '@/views/SettingsView.vue'
 import ViewProfileViewVue from '@/views/ViewProfileView.vue'
+import SignUpViewVue from '@/views/SignUpView.vue'
+
 
 
 
@@ -29,6 +31,7 @@ const router = createRouter({
     {path: '/login', name: 'login',component: LoginViewVue },
     {path: '/settings', name: 'settings',component: SettingsViewVue },
     {path: '/viewProfile', name: 'viewProfile',component: ViewProfileViewVue },
+    {path: '/signUp', name: 'signUp', component: SignUpViewVue },
  
     {
     

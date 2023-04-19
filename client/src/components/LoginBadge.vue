@@ -38,7 +38,13 @@ const session = useSession();
             </div>
           </div>
 
-          <button class="button is-info is-outlined is-link" href = "">Sign Up</button>
+
+          <RouterLink to="/signUp">
+              
+                <button class = "button is-info is-outlined is-link">Sign Up</button>
+             
+            </RouterLink>
+
           <button class="button is-info is-outlined is-success ml-3" @click="login()">Log In</button>
           <label class="checkbox is-pulled-right">
           <input type="checkbox"> Remember me</label>
