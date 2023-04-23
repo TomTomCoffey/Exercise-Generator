@@ -28,6 +28,8 @@ getEasyWorkouts().then((data) => {
 
 });
 
+
+
 function tester(){
 
   setWorkouts(easyWorkouts.value);
