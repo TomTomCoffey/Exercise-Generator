@@ -2,7 +2,7 @@
 
 import LoginBadge from '@/components/LoginBadge.vue';
 import { setWorkouts, useSession } from '@/model/user';
-import { getEasyWorkouts } from '@/model/user';
+import { getEasyWorkouts, fetchEasyWorkoutsJson} from '@/model/user';
 import type { Workout } from '@/model/workout';
 import { ref } from 'vue';
 
@@ -10,22 +10,19 @@ const session = useSession();
 
 
 
-const easyWorkouts = ref<Workout[]>([]);
- getEasyWorkouts().then((data) => {
-     easyWorkouts.value = data.data;
- });
-
- const workout = ref<Workout[][]>([]);
 
 
- function setWorkout() {
-     workout.value = [];
-     for (let i = 0; i < easyWorkouts.value.length; i += 3) {
-         workout.value.push(easyWorkouts.value.slice(i, i + 3));
-     }
-     setWorkouts(workout.value);
-     console.log(session.user?.workouts)
- }
+
+
+
+
+
+ ////i need session.user.workouts to be equal to easyWorkouts.value
+
+ 
+
+
+
 
 
 
@@ -84,7 +81,7 @@ const easyWorkouts = ref<Workout[]>([]);
                   </div>
                   </div>
                   <!--<input type = "levelType" name = "level" v-model ="">  -->
-                  <button class="button is-fullwidth is-info is-outlined" @click="setWorkout()">Submit</button>
+                  <button class="button is-fullwidth is-info is-outlined" @click="">Submit</button>
               </div>
           </div>
         </div>

@@ -4,6 +4,9 @@ import { useEasyWorkouts, useMediumWorkouts, useHardWorkouts } from "./workout";
 import * as myFetch from "./myFetch";
 import type { DataEnvelope, DataListEnvelope } from "./myFetch";
 import { reactive } from "vue";
+import easyWorkouts from "../data/easyWorkouts.json";
+import intermediateWorkouts from "../data/intermediateWorkouts.json";
+import advancedWorkouts from "../data/advancedWorkouts.json";
 
 
 
@@ -140,8 +143,10 @@ export function todaysWorkout(){
     return session.user?.workouts[session.user?.workoutPointer!];
 }
 
-export function setWorkouts(Workout: Workout[][]){
-    session.user!.workouts = useEasyWorkouts();
+export function setWorkouts(workout: Workout[][]){
+    session.user!.workouts = workout;
+    console.log(session.user!.workouts);
+
 }
 
 
@@ -161,6 +166,22 @@ export function getWorkout(){
     return session.user?.workout;
 }
 
+
+
+ export function fetchEasyWorkoutsJson(){
+fetch('easyWorkouts.json')
+  .then(response => response.json())
+  .then(data => {
+    session.user!.workouts = data;
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
+  
+
+
+}
 
 
 

@@ -9,7 +9,10 @@ const items = todaysWorkout();
 
 
 
+
 console.log(session.user?.workoutPointer);
+console.log(session.user?.workouts[session.user?.workoutPointer]);
+console.log(items);
 
 
 

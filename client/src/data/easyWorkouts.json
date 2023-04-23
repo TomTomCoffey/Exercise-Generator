@@ -4,7 +4,7 @@
             {
                 "id": 1,
                 "name": "Bench Press",
-            "   photo": "client/src/assets/images/BenchPress.jpg",
+              "photo": "client/src/assets/images/BenchPress.jpg",
                 "sets": 4,
                 "reps": 10,
                 "weight": 100,
