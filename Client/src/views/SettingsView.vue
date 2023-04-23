@@ -7,33 +7,37 @@ import type { Workout } from '@/model/workout';
 import { ref } from 'vue';
 
 const session = useSession();
+const workouts = ref<Workout[][]>([[]]);
 
 
-console.log(session.user?.workouts);
+//console.log(session.user?.workouts);
 
 
-// const items = ref<User[]>([]);
-//  getUsers().then((data) => {    this code needs to be reworks to support the  getEasyWorkouts
-//      items.value = data.data;
-//  });
-
-
-const easyWorkouts = ref<Workout[][]>([[]]);
+const easyWorkouts = ref<Workout[]>([]);
 getEasyWorkouts().then((data) => {
-    easyWorkouts.value[session.user!.workoutPointer] = data.data;
-    // for(let i = 0; i < easyWorkouts.value.length; i++){
-    //     console.log(easyWorkouts.value[i]);
-    //     console.log("Spacer");
-    // }
+    easyWorkouts.value = data.data;
+    
+    for(let i = 0; i < easyWorkouts.value.length; i++){
+        console.log(easyWorkouts.value[i]);
+        workouts.value.push([easyWorkouts.value[i]] as Workout[]);
+        console.log("Spacer");
+    }
 
 });
 
 
 
+
+
+
+
+
+
 function tester(){
 
-  setWorkouts(easyWorkouts.value);
+ setWorkouts(workouts.value);
   console.log(session.user?.workouts);
+
 }
 
 
