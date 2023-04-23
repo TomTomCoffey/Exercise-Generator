@@ -2,73 +2,41 @@
 
 import LoginBadge from '@/components/LoginBadge.vue';
 import { setWorkouts, useSession } from '@/model/user';
-import { getEasyWorkouts, getintermediateWorkouts, getAdvancedWorkouts } from '@/model/user';
-import type { Workout } from '@/model/workout';
+//import { getEasyWorkouts, getintermediateWorkouts, getAdvancedWorkouts } from '@/model/user';
+//import { getEasyWorkouts, type Workout } from '@/model/workout';
+import { easyWorkouts, intermediateWorkouts, advancedWorkouts } from '@/model/workout';
 import { ref } from 'vue';
 
 const session = useSession();
-const workouts = ref<Workout[][]>([[]]);
+
+const skillLevel = ref('');
 
 
-//console.log(session.user?.workouts);
+// const items = ref<Workout[]>([]);
+//  getEasyWorkouts().then((data) => {
+//      items.value = data.data;
+//  });
+
+//  console.log(items.value.length);
 
 
-const easyWorkouts = ref<Workout[]>([]);
-getEasyWorkouts().then((data) => {
-    easyWorkouts.value = data.data;
-    
-    for(let i = 0; i < easyWorkouts.value.length; i++){
-        console.log(easyWorkouts.value[i]);
-        workouts.value.push([easyWorkouts.value[i]] as Workout[]);
-        console.log("Spacer");
-    }
-
-});
-
-
-
-
-
-
-
-
-
-function tester(){
-
- setWorkouts(workouts.value);
-  console.log(session.user?.workouts);
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- ////i need session.user.workouts to be equal to easyWorkouts.value
-
+function changeTheWorkouts(word : String){
  
+  if(word === 'Beginner')
+  {
+    setWorkouts(easyWorkouts);
+  }
+  if(word=== 'Intermediate')
+  {
+    setWorkouts(intermediateWorkouts);
+  }
+  if(word === 'Advanced')
+  {
+    setWorkouts(advancedWorkouts);
+  }
 
-
-
-
+  
+}
 
 
 </script>
@@ -96,7 +64,7 @@ function tester(){
                     </div>
                   <div class="column">
                       <div class="select is-small is-pulled-right is-rounded">
-                        <select>
+                        <select required v-model="skillLevel">
                           <option>Select</option>
                           <option>Beginner</option>
                           <option>Intermediate</option>
@@ -126,7 +94,7 @@ function tester(){
                   </div>
                   </div>
                   <!--<input type = "levelType" name = "level" v-model ="">  -->
-                  <button class="button is-fullwidth is-info is-outlined" @click="tester()">Submit</button>
+                  <button class="button is-fullwidth is-info is-outlined" @click="changeTheWorkouts(skillLevel)">Submit</button>
               </div>
           </div>
         </div>

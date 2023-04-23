@@ -1,25 +1,15 @@
 <script setup lang="ts">
 import LoginBadge from '@/components/LoginBadge.vue';
 import { useSession, todaysWorkout,increment  } from '@/model/user';
+import {getEasyWorkouts, type Workout} from '@/model/workout'
+import { ref } from 'vue';
+
+
 
 
 
 const session = useSession();
 const items = session.user?.workouts[session.user?.workoutPointer];
-
-
-
-
-console.log(session.user?.workoutPointer);
-console.log(session.user?.workouts[session.user?.workoutPointer]);
-console.log(items);
-
-
-
-
-
-
-
 
 
 
