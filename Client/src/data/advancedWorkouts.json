@@ -106,7 +106,7 @@
                 "date": "2020-03-03"
             },
             {
-                "id": 1,
+                "id": 3,
                 "name": "Leg Press",
                 "photo": "https://fitnessstars.weebly.com/uploads/5/8/8/7/58879495/8042364_orig.png",
                 "sets": 5,
@@ -115,7 +115,7 @@
                 "date": "2020-03-03"
             },
             {
-                "id": 1,
+                "id": 3,
                 "name": "Deadlift",
                 "photo": "https://i.pinimg.com/originals/a5/00/0c/a5000c66e063f7645e29cb248b043eeb.jpg",
                 "sets": 3,
@@ -124,7 +124,7 @@
                 "date": "2020-03-03"
             },
             {
-                "id": 1,
+                "id": 3,
                 "name": "Jump Rope",
                 "photo": "https://www.cdn.spotebi.com/wp-content/uploads/2014/10/jump-rope-exercise-illustration.jpg",
                 "sets": 4,
