@@ -1,5 +1,46 @@
 <script setup lang="ts">
 
+
+import type { User } from '@/model/user';
+import { ref } from 'vue';
+import { useRoute } from 'vue-router';
+import { getUser, createUser } from '@/model/user';
+import {  addMessage, useSession } from '@/model/user';
+
+const session = useSession();
+
+
+const route = useRoute(); 
+
+const user = ref<User>({} as User);
+    getUser(+route.params.id).then((data) => {
+        user.value = data.data ?? {} as User;
+        user.value.isAdmin = false;
+        user.value.workouts = [];
+        user.value.cardio = [];
+        user.value.workoutPointer = 0;
+      
+
+        console.log(user.value)
+    })
+    function save() {
+        if(user.value.id) {
+            console.log('update')
+        } else {
+            createUser(user.value).then((data) => {
+                console.log(data)
+                addMessage('Congrats on being a new user!', 'success')
+                //loginWithUser(user.value)// <--- want to log in new users as they sign in but not working
+            })
+        }
+    }
+
+
+
+
+
+
+
 </script>
 <template>
    <body id = "grad">
