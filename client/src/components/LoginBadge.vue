@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useSession, login } from '@/model/user';
+import { useSession, login } from '../model/user';
 import { useRouter } from 'vue-router';
 
 const session = useSession();
