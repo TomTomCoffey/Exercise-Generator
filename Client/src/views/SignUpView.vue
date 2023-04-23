@@ -31,22 +31,53 @@
             </div>
           </div>
 
+<div class="columns">
+      <div class = "column">
           <div class="field">
-            <label class="label">Height</label>
-            <div class="control">
-                <div class="select is-small is-pulled-right is-fullwidth">
-                    <select class = "is-hovered">
-                    <option>Select</option>
-                    <option>Beginner</option>
-                    <option>Intermediate</option>
-                    <option>Advanced</option>
-                    </select>
-                </div>
-            </div>
+            <label class="label">Height (Feet)</label>
+              <div class="control">
+                 <div class="select is-small is-pulled-right is-fullwidth">
+                     <select class = "is-hovered">
+                        <option>--</option>
+                        <option>4 ft</option>
+                        <option>5 ft</option>
+                        <option>6 ft</option>
+                        <option>7 ft</option>
+                        <option>8 ft</option>
+                      </select>
+                  </div>
+               </div>
           </div>
+      </div>
+
+      <div class = "column">
+          <div class="field">
+            <label class="label">Height (Inches)</label>
+              <div class="control">
+                 <div class="select is-small is-pulled-right is-fullwidth">
+                     <select class = "is-hovered">
+                        <option>--</option>
+                        <option>0 in</option>
+                        <option>1 in</option>
+                        <option>2 in</option>
+                        <option>3 in</option>
+                        <option>4 in</option>
+                        <option>5 in</option>
+                        <option>6 in</option>
+                        <option>7 in</option>
+                        <option>8 in</option>
+                        <option>9 in</option>
+                        <option>10 in</option>
+                        <option>11 in</option>
+                      </select>
+                  </div>
+               </div>
+          </div>
+      </div>
+</div>
 
           <div class="field">
-            <label class="label">Weight</label>
+            <label class="label">Weight (lbs)</label>
             <div class="control">
               <input name="email" class="input" type="email" placeholder="e.g. 23">
             </div>
@@ -57,7 +88,7 @@
             <div class = "control">
                     <div class="select is-small is-pulled-right is-fullwidth">
                         <select class = "is-hovered">
-                        <option>Select</option>
+                        <option>--</option>
                         <option>Beginner</option>
                         <option>Intermediate</option>
                         <option>Advanced</option>
@@ -65,6 +96,7 @@
                     </div>
             </div>
           </div>
+          <div class="block pt-4"></div>
 
           <div class="field">
             <label class="label">Create Username</label>
@@ -74,7 +106,14 @@
           </div>
 
           <div class="field">
-            <label class="label">Create a Password</label>
+            <label class="label">Create a Password
+              <i class = "fa-solid fa-circle-info is-pulled-right tooltip">
+                <span class = "tooltiptext">
+                  Here, you can create a password!
+                </span>
+              </i>
+            </label>
+            
             <div class="control">
               <input name="password" class="input" type="password" placeholder="********">
             </div>
@@ -119,5 +158,31 @@
           #grad 
           {
             background-image: linear-gradient(to left, rgb(255, 139, 0) , rgb(2, 0, 198));
+          }
+          .tooltip {
+            position: relative;
+            display: inline-block;
+          }
+
+          .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: rgb(0, 0, 0);
+            color: #ffffff;
+            text-align: center;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-right: 10px; 
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 10px;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+          }
+
+          .tooltip:hover .tooltiptext {
+            visibility: visible;
           }
 </style>
