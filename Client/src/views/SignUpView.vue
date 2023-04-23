@@ -79,9 +79,10 @@
           <div class="field">
             <label class="label">Weight (lbs)</label>
             <div class="control">
-              <input name="email" class="input" type="email" placeholder="e.g. 23">
+              <input id = "weight" type = "number" placeholder="e.g. 23">
             </div>
           </div>
+          <p id = "reply"></p>
 
           <div class = "field">
             <label class = "label">Selected Difficulty</label>
@@ -99,7 +100,20 @@
           <div class="block pt-4"></div>
 
           <div class="field">
-            <label class="label">Create Username</label>
+            <label class="label">Create Username
+              <div class = "tooltip is-pulled-right">
+              <i class = "fa-solid fa-circle-info"></i>
+                <span class = "tooltiptext">
+                 <p>
+                  This can be 
+                  <br>
+                  - Email Address
+                  <br>
+                  - Custom  
+                 </p>
+                </span>
+              </div>
+            </label>
             <div class="control">
               <input name="password" class="input" type="password" placeholder="e.g. ealex@example.com">
             </div>
@@ -107,11 +121,12 @@
 
           <div class="field">
             <label class="label">Create a Password
-              <i class = "fa-solid fa-circle-info is-pulled-right tooltip">
+              <div class = "tooltip is-pulled-right">
+              <i class = "fa-solid fa-circle-info"></i>
                 <span class = "tooltiptext">
-                  Here, you can create a password!
+                  Brian
                 </span>
-              </i>
+              </div>
             </label>
             
             <div class="control">
@@ -119,7 +134,7 @@
             </div>
           </div>
 
-          <button class="button is-info is-outlined is-link is-fullwidth">Sign Up</button>
+          <button class="button is-info is-outlined is-link is-fullwidth" type = "button" onclick = "myFunction()">Sign Up</button>
           
         </form>
   </div>
@@ -166,7 +181,7 @@
 
           .tooltip .tooltiptext {
             visibility: hidden;
-            width: 120px;
+            width: 200px;
             background-color: rgb(0, 0, 0);
             color: #ffffff;
             text-align: center;
@@ -174,8 +189,9 @@
             padding-left: 10px;
             padding-right: 10px; 
             padding-top: 10px;
-            padding-bottom: 10px;
+            padding-bottom: 12px;
             font-size: 10px;
+
 
             /* Position the tooltip */
             position: absolute;
@@ -184,5 +200,9 @@
 
           .tooltip:hover .tooltiptext {
             visibility: visible;
+          }
+          .noCap
+          {
+            text-transform: capitalize;
           }
 </style>
