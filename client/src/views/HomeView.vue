@@ -5,7 +5,7 @@ import { useSession, todaysWorkout,increment  } from '@/model/user';
 
 
 const session = useSession();
-const items = todaysWorkout();
+const items = session.user?.workouts[session.user?.workoutPointer];
 
 
 

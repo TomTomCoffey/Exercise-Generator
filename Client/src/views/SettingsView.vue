@@ -2,11 +2,50 @@
 
 import LoginBadge from '@/components/LoginBadge.vue';
 import { setWorkouts, useSession } from '@/model/user';
-import { getEasyWorkouts, fetchEasyWorkoutsJson} from '@/model/user';
+import { getEasyWorkouts, getintermediateWorkouts, getAdvancedWorkouts } from '@/model/user';
 import type { Workout } from '@/model/workout';
 import { ref } from 'vue';
 
 const session = useSession();
+
+
+console.log(session.user?.workouts);
+
+
+// const items = ref<User[]>([]);
+//  getUsers().then((data) => {    this code needs to be reworks to support the  getEasyWorkouts
+//      items.value = data.data;
+//  });
+
+
+const easyWorkouts = ref<Workout[][]>([[]]);
+getEasyWorkouts().then((data) => {
+    easyWorkouts.value[session.user!.workoutPointer] = data.data;
+    // for(let i = 0; i < easyWorkouts.value.length; i++){
+    //     console.log(easyWorkouts.value[i]);
+    //     console.log("Spacer");
+    // }
+
+});
+
+function tester(){
+
+  setWorkouts(easyWorkouts.value);
+  console.log(session.user?.workouts);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -81,7 +120,7 @@ const session = useSession();
                   </div>
                   </div>
                   <!--<input type = "levelType" name = "level" v-model ="">  -->
-                  <button class="button is-fullwidth is-info is-outlined" @click="">Submit</button>
+                  <button class="button is-fullwidth is-info is-outlined" @click="tester()">Submit</button>
               </div>
           </div>
         </div>
