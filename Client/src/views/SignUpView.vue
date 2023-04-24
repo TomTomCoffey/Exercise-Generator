@@ -121,7 +121,7 @@ const user = ref<User>({} as User);
           <div class="field">
             <label class="label">Weight (lbs)</label>
             <div class="control">
-              <input id = "weight" type = "number" placeholder="e.g. 23">
+              <input name = "email" class = "input" type = "email" placeholder="e.g. 23">
             </div>
           </div>
           <p id = "reply"></p>
