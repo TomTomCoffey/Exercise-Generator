@@ -46,10 +46,6 @@ const session = useSession();
                     <td>{{ session?.user?.name }}</td>
                   </tr>
                   <tr>
-                    <td>Gender:</td>
-                    <td>{{ session?.user?.gender }}</td>
-                  </tr>
-                  <tr>
                     <td>Age:</td>
                     <td>{{session.user?.age }}</td>
                   </tr>
@@ -91,7 +87,7 @@ const session = useSession();
             <tbody>
               <tr>
                 <td># Workout Sessions:</td>
-                <td class = "has-text-centered">3</td>
+                <td class = "has-text-centered">{{ session.user?.totalWorkouts }}</td>
                 <td class = "has-text-centered">/ 5</td>
               </tr>
               <tr>
