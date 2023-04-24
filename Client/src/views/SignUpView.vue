@@ -15,9 +15,11 @@ const user = ref<User>({} as User);
     getUser(+route.params.id).then((data) => {
         user.value = data.data ?? {} as User;
         user.value.isAdmin = false;
-        user.value.workouts = [];
+        user.value.workout = [];
         user.value.cardio = [];
         user.value.workoutPointer = 0;
+        user.value.workouts = [];
+        user.value.height = 0; ////placeholder
       
 
         console.log(user.value)
