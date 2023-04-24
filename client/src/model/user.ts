@@ -41,6 +41,7 @@ export interface User{
     cardio: Cardio[];
     workoutPointer: number;
     totalWorkouts: number;
+    totalWorkout: number;
 
 
 }
@@ -143,6 +144,15 @@ export function increment(){
         {
             session.user!.totalWorkouts = 0;
         }
+        if(session.user!.totalWorkout < 15)
+        {
+            session.user!.totalWorkout = session.user!.totalWorkout + 3; 
+        }
+        else
+        {
+            session.user!.totalWorkout = 0;
+        }
+        
     }
     else
     {
@@ -391,7 +401,8 @@ export function getWorkout(){
             }
         ],
         "workoutPointer": 0,
-        "totalWorkouts" : 0
+        "totalWorkouts" : 0,
+        "totalWorkout": 0
     
     
         

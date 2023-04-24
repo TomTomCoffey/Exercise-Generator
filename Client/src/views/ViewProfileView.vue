@@ -92,8 +92,8 @@ const session = useSession();
               </tr>
               <tr>
                 <td># Workouts:</td>
-                <td class = "has-text-centered">8</td>
-                <td class = "has-text-centered">/ 25</td>
+                <td class = "has-text-centered">{{ session.user?.totalWorkout }}</td>
+                <td class = "has-text-centered">/ 15</td>
               </tr>
               <tr>
                 <td>Calories Burned:</td>
