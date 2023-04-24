@@ -1,27 +1,42 @@
 <script setup lang="ts">
 
-import type { User } from '@/model/user';
+import { setWorkouts} from '@/model/user';
 import { ref } from 'vue';
 import { useRoute } from 'vue-router';
-import { getUser, createUser } from '@/model/user';
+import { getUser, createUser, type User } from '@/model/user';
 import {  addMessage, useSession } from '@/model/user';
+import { easyWorkouts, intermediateWorkouts, advancedWorkouts } from '@/model/workout';
 
 const session = useSession();
 
+let feet = ref(0);
+let inches = ref(0);
+const firstName = ref('');
+const lastName = ref('');
+const level = ref('');
+
+
+function convertToInches() {
+    return feet.value * 12 + inches.value;
+}
+function makeFullName() {
+    return firstName.value + ' ' + lastName.value;
+}
 
 const route = useRoute(); 
 
 const user = ref<User>({} as User);
     getUser(+route.params.id).then((data) => {
         user.value = data.data ?? {} as User;
+        user.value.name = makeFullName();
         user.value.isAdmin = false;
         user.value.workout = [];
         user.value.cardio = [];
         user.value.workoutPointer = 0;
-        user.value.workouts = [];
-        user.value.height = 0; ////placeholder
-      
-
+        user.value.workouts = [[]];
+        user.value.height = convertToInches(); ////placeholder
+        session.user = user.value;
+   
         console.log(user.value)
     })
     function save() {
@@ -35,11 +50,8 @@ const user = ref<User>({} as User);
             })
         }
     }
-
-
-
-
-
+    
+          
 
 
 </script>
@@ -62,14 +74,14 @@ const user = ref<User>({} as User);
           <div class="field">
             <label class="label">First Name</label>
             <div class="control">
-              <input name="email" class="input" type="email" placeholder="e.g. John">
+              <input name="email" class="input" type="email" placeholder="e.g. John" v-model="firstName">
             </div>
           </div>
 
           <div class="field">
             <label class="label">Last Name</label>
             <div class="control">
-              <input name="email" class="input" type="email" placeholder="e.g. Smith">
+              <input name="email" class="input" type="email" placeholder="e.g. Smith" v-model="lastName">
             </div>
           </div>
 
@@ -79,7 +91,7 @@ const user = ref<User>({} as User);
             <label class="label">Height (Feet)</label>
               <div class="control">
                  <div class="select is-small is-pulled-right is-fullwidth">
-                     <select class = "is-hovered">
+                     <select class = "is-hovered" v-model="feet" type="text" >
                         <option>--</option>
                         <option>4 ft</option>
                         <option>5 ft</option>
@@ -97,7 +109,7 @@ const user = ref<User>({} as User);
             <label class="label">Height (Inches)</label>
               <div class="control">
                  <div class="select is-small is-pulled-right is-fullwidth">
-                     <select class = "is-hovered">
+                     <select class = "is-hovered" v-model="inches" type="text" >
                         <option>--</option>
                         <option>0 in</option>
                         <option>1 in</option>
@@ -121,7 +133,7 @@ const user = ref<User>({} as User);
           <div class="field">
             <label class="label">Weight (lbs)</label>
             <div class="control">
-              <input name = "email" class = "input" type = "email" placeholder="e.g. 23">
+              <input name = "email" class = "input" type = "email" placeholder="e.g. 23" v-model="user.weight">
             </div>
           </div>
           <p id = "reply"></p>
@@ -130,7 +142,7 @@ const user = ref<User>({} as User);
             <label class = "label">Selected Difficulty</label>
             <div class = "control">
                     <div class="select is-small is-pulled-right is-fullwidth">
-                        <select class = "is-hovered">
+                        <select class = "is-hovered" v-model="level">
                         <option>--</option>
                         <option>Beginner</option>
                         <option>Intermediate</option>
@@ -142,7 +154,7 @@ const user = ref<User>({} as User);
           <div class="block pt-4"></div>
 
           <div class="field">
-            <label class="label">Create Username
+            <label class="label">E-mail
               <div class = "tooltip is-pulled-right">
               <i class = "fa-solid fa-circle-info"></i>
                 <span class = "tooltiptext">
@@ -157,7 +169,7 @@ const user = ref<User>({} as User);
               </div>
             </label>
             <div class="control">
-              <input name="password" class="input" type="email" placeholder="e.g. ealex@example.com">
+              <input name="password" class="input" type="email" placeholder="e.g. ealex@example.com" v-model="user.email">
             </div>
           </div>
 
@@ -172,11 +184,11 @@ const user = ref<User>({} as User);
             </label>
             
             <div class="control">
-              <input name="password" class="input" type="password" placeholder="********">
+              <input name="password" class="input" type="password" placeholder="********" v-model="user.password">
             </div>
           </div>
 
-          <button class="button is-info is-outlined is-link is-fullwidth" type = "button" onclick = "myFunction()">Sign Up</button>
+          <button class="button is-info is-outlined is-link is-fullwidth" type = "button">Sign Up</button>
           
         </form>
   </div>

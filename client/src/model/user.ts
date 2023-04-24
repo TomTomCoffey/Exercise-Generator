@@ -2,7 +2,7 @@ import type { Workout } from "./workout";
 import type { Cardio } from "./cardio";
 import * as myFetch from "./myFetch";
 import type { DataEnvelope, DataListEnvelope } from "./myFetch";
-import { reactive } from "vue";
+import { computed, reactive } from "vue";
 import easyWorkouts from "../data/easyWorkouts.json";
 import intermediateWorkouts from "../data/intermediateWorkouts.json";
 import advancedWorkouts from "../data/advancedWorkouts.json";
@@ -188,21 +188,6 @@ export function getWorkout(){
 }
 
 
-
- export function fetchEasyWorkoutsJson(){
-fetch('easyWorkouts.json')
-  .then(response => response.json())
-  .then(data => {
-    session.user!.workouts = data;
-  })
-  .catch(error => {
-    console.error(error);
-  });
-
-  
-
-
-}
 
 
 
