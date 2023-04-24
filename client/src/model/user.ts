@@ -40,6 +40,7 @@ export interface User{
     workout: Workout[];
     cardio: Cardio[];
     workoutPointer: number;
+    totalWorkouts: number;
 
 
 }
@@ -132,8 +133,19 @@ export function getWorkoutPointer(){
 
 export function increment(){
    if(session.user?.workoutPointer! < session.user?.workouts.length! - 1)
-       { session.user!.workoutPointer++;}
-    else{
+    { 
+        session.user!.workoutPointer++;
+        if(session.user!.totalWorkouts < 5)
+        {
+            session.user!.totalWorkouts++;
+        }
+        else
+        {
+            session.user!.totalWorkouts = 0;
+        }
+    }
+    else
+    {
         session.user!.workoutPointer = 0;
     }
 }
@@ -393,7 +405,8 @@ fetch('easyWorkouts.json')
                 "date": "2020-03-03"
             }
         ],
-        "workoutPointer": 0
+        "workoutPointer": 0,
+        "totalWorkouts" : 0
     
     
         
