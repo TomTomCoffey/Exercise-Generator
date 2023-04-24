@@ -1,6 +1,5 @@
 <script setup lang="ts">
 
-
 import type { User } from '@/model/user';
 import { ref } from 'vue';
 import { useRoute } from 'vue-router';
@@ -156,7 +155,7 @@ const user = ref<User>({} as User);
               </div>
             </label>
             <div class="control">
-              <input name="password" class="input" type="password" placeholder="e.g. ealex@example.com">
+              <input name="password" class="input" type="email" placeholder="e.g. ealex@example.com">
             </div>
           </div>
 
