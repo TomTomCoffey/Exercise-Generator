@@ -25,3 +25,13 @@ async function connect(){
 }
 
 connect().catch(console.error);
+
+//use this function to test your conecting
+/*
+async function listDatabases(client){
+  databasesList = await client.db().admin().listDatabases();
+
+  console.log("Databases:");
+  databasesList.databases.forEach(db => console.log(` - ${db.name}`));
+};
+*/
