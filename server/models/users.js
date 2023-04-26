@@ -1,43 +1,140 @@
-const data = require('../data/users.json')
+const data = require('../data/users.json');
+const { connect, ObjectId } = require('./mongo');
+const jwt = require('jsonwebtoken');
 
 
-function getUsers() {
-  return data.users;
+const COLLECTION_NAME = 'products';
+
+async function collection() {
+    const db = await connect();
+    return db.collection(COLLECTION_NAME);
 }
 
-function getUserbyId(id) {
-    return data.users.find(user => user.id === id);
+async function getAll(page = 1, pageSize = 30) {
+    const col = await collection();
+    const items = await col.find().skip((page-1) * pageSize).limit(pageSize).toArray();
+    const total = await col.countDocuments();
+    return { items, total };
 }
 
-function addUser(user) {
-    user.id = data.users.length + 1;
-    data.users.push(user);
+async function getById(id) {
+    const col = await collection();
+    const item = await col.findOne({ _id: new ObjectId(id) });
+    return item;
 }
 
-function updateUser(user) {
-    const index = data.users.findIndex(p => p.id === user.id);
-    data.users[index] = user;
+async function add(item) {
+    const col = await collection();
+
+    const result = await col.insertOne(item);
+
+    item._id = result.insertedId;
+    return item;
 }
 
-function deleteUser(id) {
-    const index = data.users.findIndex(p => p.id === id);
-    data.users.splice(index, 1);
+async function update(item) {
+
+    console.log(item);
+    const col = await collection();
+    const result = await col.findOneAndUpdate(
+        { _id: new ObjectId(item.id) },
+        { $set: item },
+        { returnDocument: 'after' }
+    );
+
+    return result.value;
 }
 
-function searchUsers(searchTerm) {
-    return data.users.filter(user => {
-        return  user.name.toLowerCase().includes(searchTerm.toLowerCase())  ||
-            user.email.toLowerCase().includes(searchTerm.toLowerCase())  ||
-            user.password.toLowerCase().includes(searchTerm.toLowerCase());
+async function deleteItem(id) {
+    const col = await collection();
+    const result = await col.deleteOne({ _id: new ObjectId(id) });
+    return result.deletedCount;
+}
+
+async function search(searchTerm, page = 1, pageSize = 30) {
+    const col = await collection();
+    const query = {
+        $or: [
+            { title: { $regex: searchTerm, $options: 'i' } },
+            { description: { $regex: searchTerm, $options: 'i' } },
+            { brand: { $regex: searchTerm, $options: 'i' } }
+        ]
+    };
+
+    const items = await col.find(query).skip((page - 1) * pageSize).limit(pageSize).toArray();
+    const total = await col.countDocuments(query);
+    return { items, total };
+}
+
+async function seed() {
+    const col = await collection();
+    const result = await col.insertMany(data.users);
+    return result.insertedCount;
+}
+
+async function login(email, password) {
+    const col = await collection();
+    const user = await col.findOne({ email });
+    if (!user) {
+        throw new Error('User not found');
+    }
+    if(user.password !== password) {
+        throw new Error('Invalid password');
+    }
+
+    const cleanUser = {... user, password: undefined};
+    const token = await generateTokenAsync(cleanUser, process.env.JWT.SECRET, '1d');
+
+    // const token = jwt.sign()  we should not use sync function for encryption
+    // return {... user, password: undefined};
+    return { user: cleanUser, token };
+
+}
+
+async function oAuthLogin(provider, accessToken){
+    // if (provider === 'google') {
+    //     const googleUser = await getGoogleUser(accessToken);
+    //     const user = await getOrCreateUserFromGoogleUser(googleUser);
+    //     return user;
+    // }
+}
+
+function generateTokenAsync(user, secret, expiresT){
+    return new Promise((resolve, reject) => {
+        jwt.sign( user , secret, { expiresIn: expiresT }, (err, token) => {
+            if(err) {
+                reject(err);
+                return;
+            }
+            resolve(token);
+        });
     });
+
 }
+function verifyTokenAsync(token, secret){
+    return new Promise((resolve, reject) => {
+        jwt.verify( token , secret, (err, decoded) => {
+            if(err) {
+                reject(err);
+                return;
+            }
+            resolve(decoded);
+        });
+    });
+
+}
+
 
 module.exports = {
-    getUsers,
-    getUserbyId,
-    addUser,
-    updateUser,
-    deleteUser,
-    searchUsers
-
+    getAll,
+    getById,
+    add,
+    update,
+    deleteItem,
+    search,
+    seed,
+    login,
+    oAuthLogin,
+    generateTokenAsync,
+    verifyTokenAsync
 };

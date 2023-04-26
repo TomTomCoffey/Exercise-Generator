@@ -36,7 +36,9 @@ const user = ref<User>({} as User);
         user.value.workouts = [[]];
         user.value.height = convertToInches(); ////placeholder
         session.user = user.value;
-   
+        const workouts = setStartingWorkout(level.value);
+        
+
         console.log(user.value)
     })
     function save() {
@@ -50,6 +52,24 @@ const user = ref<User>({} as User);
             })
         }
     }
+
+    function setStartingWorkout(word : String){
+  
+        if(word === 'Beginner')
+        {
+          setWorkouts(easyWorkouts);
+        }
+        if(word=== 'Intermediate')
+        {
+          setWorkouts(intermediateWorkouts);
+        }
+        if(word === 'Advanced')
+        {
+          setWorkouts(advancedWorkouts);
+        }
+    
+        
+      }
     
           
 
@@ -65,7 +85,7 @@ const user = ref<User>({} as User);
       <div class="block pt-5"></div>
       <div class="block pt-5"></div>
      
-        <form class="box" action="login.php" method="POST">
+        <form class="box" @submit.prevent="save()">
           <h1 class="title has-text-centered">Create an Account</h1>
           <h2 class="subtitle has-text-centered">
             Get started with NPFit
@@ -188,7 +208,7 @@ const user = ref<User>({} as User);
             </div>
           </div>
 
-          <button class="button is-info is-outlined is-link is-fullwidth" type = "button">Sign Up</button>
+          <button class="button is-info is-outlined is-link is-fullwidth" type = "button">Submit</button>
           
         </form>
   </div>
