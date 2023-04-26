@@ -1,10 +1,11 @@
 <script setup lang="ts">
 
-import { setWorkouts} from '@/model/user';
+import { setWorkouts } from '@/model/user';
 import { ref } from 'vue';
 import { useRoute } from 'vue-router';
 import { getUser, createUser, type User } from '@/model/user';
-import {  addMessage, useSession } from '@/model/user';
+import {type Workout} from '@/model/workout';
+import {  addMessage, useSession , loginWithUser} from '@/model/user';
 import { easyWorkouts, intermediateWorkouts, advancedWorkouts } from '@/model/workout';
 
 const session = useSession();
@@ -15,6 +16,13 @@ const firstName = ref('');
 const lastName = ref('');
 const level = ref('');
 
+function tester(){
+  loginWithUser(user.value);
+  setStartingWorkout(level.value);
+}
+
+
+console.log(firstName);
 
 function convertToInches() {
     return feet.value * 12 + inches.value;
@@ -27,19 +35,18 @@ const route = useRoute();
 
 const user = ref<User>({} as User);
     getUser(+route.params.id).then((data) => {
-        user.value = data.data ?? {} as User;
-        user.value.name = makeFullName();
+        //user.value.name = firstName.value;
         user.value.isAdmin = false;
         user.value.workout = [];
         user.value.cardio = [];
         user.value.workoutPointer = 0;
-        user.value.workouts = [[]];
-        user.value.height = convertToInches(); ////placeholder
-        session.user = user.value;
-        const workouts = setStartingWorkout(level.value);
-        
+        user.value.workouts = [[]]
+        user.value.height = convertToInches(); 
+        user.value.totalWorkout = 0;
+        user.value.totalWorkouts = 0;
+        user.value = data.data ?? {} as User;
+      
 
-        console.log(user.value)
     })
     function save() {
         if(user.value.id) {
@@ -49,6 +56,9 @@ const user = ref<User>({} as User);
                 console.log(data)
                 addMessage('Congrats on being a new user!', 'success')
                 //loginWithUser(user.value)// <--- want to log in new users as they sign in but not working
+                loginWithUser(user.value);
+                setStartingWorkout(level.value);
+         
             })
         }
     }
@@ -92,18 +102,13 @@ const user = ref<User>({} as User);
           </h2>
             
           <div class="field">
-            <label class="label">First Name</label>
+            <label class="label">Enter Name</label>
             <div class="control">
-              <input name="email" class="input" type="email" placeholder="e.g. John" v-model="firstName">
+              <input name="firstName" class="input" type="email" placeholder="e.g. John" v-model="user.name">
             </div>
           </div>
 
-          <div class="field">
-            <label class="label">Last Name</label>
-            <div class="control">
-              <input name="email" class="input" type="email" placeholder="e.g. Smith" v-model="lastName">
-            </div>
-          </div>
+        
 
 <div class="columns">
       <div class = "column">
@@ -129,7 +134,7 @@ const user = ref<User>({} as User);
             <label class="label">Height (Inches)</label>
               <div class="control">
                  <div class="select is-small is-pulled-right is-fullwidth">
-                     <select class = "is-hovered" v-model="inches" type="text" >
+                     <select class = "is-hovered" v-model="inches" >
                         <option>--</option>
                         <option>0 in</option>
                         <option>1 in</option>
@@ -208,7 +213,7 @@ const user = ref<User>({} as User);
             </div>
           </div>
 
-          <button class="button is-info is-outlined is-link is-fullwidth" type = "button">Submit</button>
+          <button class="button is-info is-outlined is-link is-fullwidth" type = "button" @click= "loginWithUser(user)">Submit</button>
           
         </form>
   </div>

@@ -123,6 +123,10 @@ export function login(){
 
 }
 
+export function loginWithUser(user: User){
+    session.user = user;
+}
+
 export function logout(){
     session.user = null;
 }
