@@ -26,12 +26,22 @@ async function connect(){
 
 connect().catch(console.error);
 
+
+async function listDatabases(client){
+  const cursor = db.collection('users').find({ email: 'scott@scott' });
+
+  console.log(cursor);
+}
+const cursor = db.collection('users').find({});
+
 //use this function to test your conecting
-/*
+
 async function listDatabases(client){
   databasesList = await client.db().admin().listDatabases();
 
   console.log("Databases:");
   databasesList.databases.forEach(db => console.log(` - ${db.name}`));
 };
-*/
+
+
+
