@@ -12,8 +12,6 @@ const session = useSession();
 
 let feet = ref(0);
 let inches = ref(0);
-const firstName = ref('');
-const lastName = ref('');
 const level = ref('');
 
 function tester(){
@@ -22,14 +20,10 @@ function tester(){
 }
 
 
-console.log(firstName);
-
 function convertToInches() {
     return feet.value * 12 + inches.value;
 }
-function makeFullName() {
-    return firstName.value + ' ' + lastName.value;
-}
+
 
 const route = useRoute(); 
 
@@ -41,10 +35,10 @@ const user = ref<User>({} as User);
         user.value.cardio = [];
         user.value.workoutPointer = 0;
         user.value.workouts = [[]]
-        user.value.height = convertToInches(); 
         user.value.totalWorkout = 0;
         user.value.totalWorkouts = 0;
         user.value = data.data ?? {} as User;
+        user.value.height = feet.value * 12 + inches.value;
       
 
     })
@@ -58,6 +52,7 @@ const user = ref<User>({} as User);
                 //loginWithUser(user.value)// <--- want to log in new users as they sign in but not working
                 loginWithUser(user.value);
                 setStartingWorkout(level.value);
+                console.log(feet.value);
          
             })
         }
@@ -80,6 +75,8 @@ const user = ref<User>({} as User);
     
         
       }
+
+
     
           
 
