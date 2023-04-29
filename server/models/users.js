@@ -1,14 +1,14 @@
 const data = require('../data/users.json');
-//const { connect, ObjectId } = require('./mongo');
+const { connect, ObjectId } = require('./mongo');
 const jwt = require('jsonwebtoken');
 
 
-// const COLLECTION_NAME = 'products';
+const COLLECTION_NAME = 'users';
 
-// async function collection() {
-//     const db = await connect();
-//     return db.collection(COLLECTION_NAME);
-// }
+async function collection() {
+    const db = await connect();
+    return db.collection("users");
+}
 
 async function getAll(page = 1, pageSize = 30) {
     const col = await collection();
