@@ -50,6 +50,55 @@
 
 
             </div>
+            <h1 class = "title has-text-centered">Arm Exercises</h1>
+            <hr class="navbar-divider-black">
+            <div class = "columns col">
+              <div class = "column is-half">
+                <figure class= "image">
+                  <img src = "../assets/images/benchPress.gif">
+                </figure>
+              </div>
+
+              <div class = "column is-half">
+                <h1 class = "title has-text-centered image">Bench Press</h1>
+                <div>
+                <p>
+                  There will be words here, that everyone will be able to read.
+                  There will be words here, that everyone will be able to read.
+                  There will be words here, that everyone will be able to read.
+                  There will be words here, that everyone will be able to read.
+                  There will be words here, that everyone will be able to read.
+                  There will be words here, that everyone will be able to read.
+                  There will be words here, that everyone will be able to read.
+                  
+                </p>
+              </div>
+              </div>
+            </div>
+
+            <div class = "columns col">
+              <div class = "column is-half">
+                <h1 class = "title has-text-centered image">Flies</h1>
+                <div>
+                <p>
+                  There will be words here, that everyone will be able to read.
+                  There will be words here, that everyone will be able to read.
+                  There will be words here, that everyone will be able to read.
+                  There will be words here, that everyone will be able to read.
+                  There will be words here, that everyone will be able to read.
+                  There will be words here, that everyone will be able to read.
+                  There will be words here, that everyone will be able to read.
+                  
+                </p>
+              </div>
+            </div>
+
+              <div class = "column is-half">
+                <figure class= "image">
+                  <img src = "../assets/images/flies.gif">
+                </figure>
+              </div>
+              </div>
           </div>
         </div>
       </div>
