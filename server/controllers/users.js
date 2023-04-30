@@ -21,7 +21,7 @@ router
         
     })
 
-    .get('/:id', (req, res, next) => {
+    .get('/id/:q', (req, res, next) => {
 
         model.getById(req.params.id)
             .then(x => {

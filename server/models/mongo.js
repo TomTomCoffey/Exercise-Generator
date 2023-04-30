@@ -2,7 +2,7 @@ const { MongoClient, ObjectId  } = require('mongodb');
 
 
 
-const url = process.env.MONGO_URL ?? "mongodb://localhost:27017";
+const url = process.env.MONGO_URL ?? "mongodb://localhost:27017"; 
 const DB_Name = process.env.MONGO_DB_NAME ?? 'NpFit';
 
 const client = new MongoClient(url);
