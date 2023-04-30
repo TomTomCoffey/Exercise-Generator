@@ -2,13 +2,15 @@
 
 import { setWorkouts } from '@/model/user';
 import { ref } from 'vue';
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 import { getUser, createUser, type User } from '@/model/user';
 import {type Workout} from '@/model/workout';
 import {  addMessage, useSession , loginWithUser} from '@/model/user';
 import { easyWorkouts, intermediateWorkouts, advancedWorkouts } from '@/model/workout';
 
+
 const session = useSession();
+const router = useRouter();
 
 let feet = ref(0);
 let inches = ref(0);
@@ -39,12 +41,14 @@ const user = ref<User>({} as User);
         user.value.totalWorkouts = 0;
         user.value = data.data ?? {} as User;
         user.value.height = feet.value * 12 + inches.value;
+    
       
 
     })
     function save() {
         if(user.value.id) {
             console.log('update')
+            router.push('/');
         } else {
             createUser(user.value).then((data) => {
                 console.log(data)
@@ -53,6 +57,7 @@ const user = ref<User>({} as User);
                 loginWithUser(user.value);
                 setStartingWorkout(level.value);
                 console.log(feet.value);
+                router.push('/');
          
             })
         }
