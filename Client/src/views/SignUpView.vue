@@ -19,6 +19,7 @@ const level = ref('');
 function tester(){
   loginWithUser(user.value);
   setStartingWorkout(level.value);
+  router.push('/settings');
 }
 
 
@@ -55,6 +56,7 @@ const user = ref<User>({} as User);
                 addMessage('Congrats on being a new user!', 'success')
                 //loginWithUser(user.value)// <--- want to log in new users as they sign in but not working
                 loginWithUser(user.value);
+                session.user = user.value;
                 setStartingWorkout(level.value);
                 console.log(feet.value);
                 router.push('/');
@@ -215,7 +217,7 @@ const user = ref<User>({} as User);
             </div>
           </div>
 
-          <button class="button is-info is-outlined is-link is-fullwidth" type = "button" @click= "loginWithUser(user)">Submit</button>
+          <button class="button is-info is-outlined is-link is-fullwidth" type = "button" @click= "tester()">Submit</button>
           
         </form>
   </div>
