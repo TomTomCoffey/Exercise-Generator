@@ -1,6 +1,6 @@
 const data = require('../data/users.json');
 const { connect, ObjectId } = require('./mongo');
-const jwt = require('jsonwebtoken');
+//const jwt = require('jsonwebtoken');
 
 
 const COLLECTION_NAME = 'users';
