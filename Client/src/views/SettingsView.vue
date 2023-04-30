@@ -5,7 +5,11 @@ import { setWorkouts, useSession } from '@/model/user';
 //import { getEasyWorkouts, getintermediateWorkouts, getAdvancedWorkouts } from '@/model/user';
 //import { getEasyWorkouts, type Workout } from '@/model/workout';
 import { easyWorkouts, intermediateWorkouts, advancedWorkouts } from '@/model/workout';
+import { useRoute, useRouter } from 'vue-router';
+
 import { ref } from 'vue';
+
+const router = useRouter();
 
 const session = useSession();
 
@@ -35,7 +39,7 @@ function changeTheWorkouts(word : String){
     setWorkouts(advancedWorkouts);
   }
 
-  
+   router.push('/');
 }
 
 
