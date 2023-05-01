@@ -2,7 +2,6 @@
 import { ref } from 'vue';
 import { useSession, loginWithServer, type User } from '../model/user';
 import { useRouter } from 'vue-router';
-import router from '@/router';
 
 
 
@@ -24,13 +23,13 @@ function login() {
         // user1.value = user;
         // console.log(user);
         // console.log("=========")
-        // session.user = user as User;
-        // console.log(session.user);
+        session.user = user as User;
+        console.log(session.user);
         // console.log("=========")
         // console.log(user1.value);
         // console.log("=========")
         // console.log(user);
-        router.push("/");
+ 
     }
        
     });
