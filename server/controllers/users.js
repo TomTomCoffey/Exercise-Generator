@@ -21,7 +21,7 @@ router
         
     })
 
-    .get('/id/:q', (req, res, next) => {
+    .get('/:id', (req, res, next) => {
 
         model.getById(req.params.id)
             .then(x => {
@@ -68,8 +68,19 @@ router
             }).catch(next);
     })
 
+
+
+   
     .post('/login', (req, res, next) => {
         model.login(req.body.email, req.body.password)
+            .then(x => {
+                const data = { data: x, isSuccess: true };
+                res.send(data)
+            }).catch(next);
+    })
+
+    .post('/oAuthLogin', (req, res, next) => {
+        model.oAuthLogin(req.body.provider, req.body.accessToken)
             .then(x => {
                 const data = { data: x, isSuccess: true };
                 res.send(data)
