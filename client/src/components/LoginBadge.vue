@@ -1,17 +1,41 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { useSession, loginWithServer } from '../model/user';
+import { useSession, loginWithServer, type User } from '../model/user';
 import { useRouter } from 'vue-router';
+import router from '@/router';
+
+
 
 const session = useSession();
-
 const email = ref('');
 const password = ref('');
-
+console.log(session.user);  /// <---at this point it is undefined 
+const user1 = ref<User | null>(null);
 function login() {
-    loginWithServer(email.value, password.value)
-
+    
+    loginWithServer(email.value, password.value).then((user) => {
+        if(user.name === null || user === undefined){
+            console.log("user is null");
+            return;
+        }
+    else{
+        // console.log(user);
+        // console.log('=========')
+        // user1.value = user;
+        // console.log(user);
+        // console.log("=========")
+        // session.user = user as User;
+        // console.log(session.user);
+        // console.log("=========")
+        // console.log(user1.value);
+        // console.log("=========")
+        // console.log(user);
+        router.push("/");
+    }
+       
+    });
 }
+
         
 
 
