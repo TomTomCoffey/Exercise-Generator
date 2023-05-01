@@ -6,6 +6,7 @@ import { computed, reactive } from "vue";
 import easyWorkouts from "../data/easyWorkouts.json";
 import intermediateWorkouts from "../data/intermediateWorkouts.json";
 import advancedWorkouts from "../data/advancedWorkouts.json";
+import { useRouter } from "vue-router";
 
 
 
@@ -42,6 +43,7 @@ export interface User{
     workoutPointer: number;
     totalWorkouts: number;
     totalWorkout: number;
+    token?: string;
 
 
 }
@@ -103,6 +105,36 @@ export function getAdvancedWorkouts(): Promise<DataListEnvelope<Workout>> {
 
     return api('advancedWorkouts')
 }
+
+export async function loginWithServer(email: string, password: string): Promise<User> {
+      
+    
+    const person = await api('users/login', {email, password}, 'POST');
+
+    session.user = person.data.user;
+
+    if(session.user) {
+    const router = useRouter();
+    session.user.token = person.data.token;
+    addMessage("Login Successful", "success");
+    router.push('/');
+    }
+
+    return person.data.user;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
        
 export function addMessage(msg: string, type: "success" | "danger" | "warning" | "info") {
