@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 const { env } = require('process');
 
 
-const COLLECTION_NAME = 'products';
+const COLLECTION_NAME = 'users';
 
 async function collection() {
     const db = await connect();

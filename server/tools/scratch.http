@@ -1,8 +1,8 @@
 ###
-GET http://localhost:3000/
+GET http://localhost:3070/
 
 ###
-GET http://127.0.0.1:3000/
+GET http://127.0.0.1:3070/
 
 ###
 
@@ -24,7 +24,7 @@ GET http://localhost:3070/api/v1/intermediateWorkouts/
 GET http://localhost:3070/api/v1/advancedWorkouts/
 
 ###
-GET http://localhost:3070/api/v1/users/search/scott@scott
+GET http://localhost:3070/api/v1/users/search/scott
 
 ###
 GET http://localhost:3070/api/v1/users/id/1
