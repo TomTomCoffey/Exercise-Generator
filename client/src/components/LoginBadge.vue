@@ -37,14 +37,14 @@ function login() {
           <div class="field">
             <label class="label">Email</label>
             <div class="control">
-              <input name="email" class="input" type="email" placeholder="e.g. alex@example.com " v-model="email">>
+              <input name="email" class="input" type="email" placeholder="e.g. alex@example.com " v-model="email">
             </div>
           </div>
   
           <div class="field">
             <label class="label">Password</label>
             <div class="control">
-              <input name="password" class="input" type="password" placeholder="********" v-model="password">>
+              <input name="password" class="input" type="password" placeholder="********" v-model="password">
             </div>
           </div>
 
