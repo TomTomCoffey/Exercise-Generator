@@ -19,6 +19,7 @@ const level = ref('');
 function tester(){
   loginWithUser(user.value);
   setStartingWorkout(level.value);
+  save();
   router.push('/settings');
 }
 
@@ -147,7 +148,7 @@ const user = ref<User>({} as User);
               </div>
             </label>
             <div class="control">
-              <input name="firstName" class="input" type="email" placeholder="e.g. 65 " v-model="user.name">
+              <input name="firstName" class="input" type="email" placeholder="e.g. 65 " v-model="user.height">
             </div>
           </div>
 

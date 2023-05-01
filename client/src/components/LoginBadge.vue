@@ -23,8 +23,9 @@ function login() {
         // user1.value = user;
         // console.log(user);
         // console.log("=========")
-        session.user = user as User;
-        console.log(session.user);
+        // session.user = user as User;
+        // console.log(session.user);
+        console.log(user);
         // console.log("=========")
         // console.log(user1.value);
         // console.log("=========")
