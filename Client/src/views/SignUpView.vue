@@ -105,6 +105,7 @@ const user = ref<User>({} as User);
             Get started with NPFit
           </h2>
             
+
           <div class="field">
             <label class="label">Enter Full Name
               <div class = "tooltip is-pulled-right">
@@ -126,6 +127,7 @@ const user = ref<User>({} as User);
               <input name="firstName" class="input" type="email" placeholder="e.g. John" v-model="user.name">
             </div>
           </div>
+
 
           <div class="field">
             <label class="label">Height (inches)
@@ -150,6 +152,7 @@ const user = ref<User>({} as User);
           </div>
 
         
+
 
 <!--<div class="columns">
       <div class = "column">-->
@@ -196,6 +199,7 @@ const user = ref<User>({} as User);
       <!--</div>-->
 <!--</div>-->
 
+
           <div class="field">
             <label class="label">Weight (lbs)
               <div class = "tooltip is-pulled-right">
@@ -212,6 +216,7 @@ const user = ref<User>({} as User);
             </div>
           </div>
           <p id = "reply"></p>
+
 
           <div class = "field">
             <label class = "label">Selected Difficulty
@@ -242,6 +247,7 @@ const user = ref<User>({} as User);
                         </select>
                     </div>
             </div>
+            
           </div>
           <div class="block pt-4"></div>
 
