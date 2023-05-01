@@ -1,13 +1,14 @@
 const data = require('../data/users.json');
 const { connect, ObjectId } = require('./mongo');
-//const jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken');
+const { env } = require('process');
 
 
 const COLLECTION_NAME = 'users';
 
 async function collection() {
     const db = await connect();
-    return db.collection("users");
+    return db.collection(COLLECTION_NAME);
 }
 
 async function getAll(page = 1, pageSize = 30) {
@@ -19,7 +20,7 @@ async function getAll(page = 1, pageSize = 30) {
 
 async function getById(id) {
     const col = await collection();
-    const item = await col.findOne({ _id: new ObjectId(id) });
+    const item = await col.findOne({ id: new ObjectId(id) });
     return item;
 }
 
@@ -34,14 +35,16 @@ async function add(item) {
 
 async function update(item) {
 
-    console.log(item);
+    console.log({item});
     const col = await collection();
+    const id = item._id;
+    delete item._id;
     const result = await col.findOneAndUpdate(
-        { _id: new ObjectId(item.id) },
-        { $set: item },
+        { _id: new ObjectId(id) },
+        { $set: item},
         { returnDocument: 'after' }
     );
-
+    console.log(result.value);
     return result.value;
 }
 
@@ -78,50 +81,45 @@ async function login(email, password) {
     if (!user) {
         throw new Error('User not found');
     }
-    if(user.password !== password) {
+    if (user.password !== password) {
         throw new Error('Invalid password');
     }
 
-    const cleanUser = {... user, password: undefined};
-    const token = await generateTokenAsync(cleanUser, process.env.JWT.SECRET, '1d');
+    const cleanUser = { ...user, password: undefined };
+    const token = await generateTokenAsync(cleanUser,'1d');
 
-    // const token = jwt.sign()  we should not use sync function for encryption
-    // return {... user, password: undefined};
     return { user: cleanUser, token };
-
 }
 
-async function oAuthLogin(provider, accessToken){
-    // if (provider === 'google') {
-    //     const googleUser = await getGoogleUser(accessToken);
-    //     const user = await getOrCreateUserFromGoogleUser(googleUser);
-    //     return user;
-    // }
+async function oAuthLogin(provider, accessToken) {
+    // validate the access token
+    // if valid, return the user
+    // if not, create a new user
+    // return the user
 }
 
-function generateTokenAsync(user, secret, expiresT){
-    return new Promise((resolve, reject) => {
-        jwt.sign( user , secret, { expiresIn: expiresT }, (err, token) => {
-            if(err) {
+function generateTokenAsync(user, expiresIn) {
+    return new Promise( (resolve, reject) => {
+        jwt.sign(user, process.env.JWT_SECRET ?? "", { expiresIn }, (err, token) => {
+            if (err) {
                 reject(err);
-                return;
+            } else {
+                resolve(token);
             }
-            resolve(token);
         });
     });
-
 }
-function verifyTokenAsync(token, secret){
-    return new Promise((resolve, reject) => {
-        jwt.verify( token , secret, (err, decoded) => {
-            if(err) {
+
+function verifyTokenAsync(token) {
+    return new Promise( (resolve, reject) => {
+        jwt.verify(token, process.env.JWT_SECRET ?? "", (err, user) => {
+            if (err) {
                 reject(err);
-                return;
+            } else {
+                resolve(user);
             }
-            resolve(decoded);
         });
     });
-
 }
 
 

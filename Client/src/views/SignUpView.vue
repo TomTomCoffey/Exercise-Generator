@@ -1,12 +1,12 @@
 <script setup lang="ts">
 
-import { setWorkouts } from '@/model/user';
+import { setWorkouts } from '../model/user';
 import { ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import { getUser, createUser, type User } from '@/model/user';
-import {type Workout} from '@/model/workout';
-import {  addMessage, useSession , loginWithUser} from '@/model/user';
-import { easyWorkouts, intermediateWorkouts, advancedWorkouts } from '@/model/workout';
+import { getUser, createUser, type User } from '../model/user';
+import {type Workout} from '../model/workout';
+import {  addMessage, useSession , loginWithUser} from '../model/user';
+import { easyWorkouts, intermediateWorkouts, advancedWorkouts } from '../model/workout';
 
 
 const session = useSession();
