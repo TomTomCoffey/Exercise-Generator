@@ -28,7 +28,7 @@ function login() {
       <div class="block pt-5"></div>
       <div class="block pt-5"></div>
      
-        <form class="box" action="login.php" method="POST">
+        <form class="box">
           <h1 class="title has-text-centered">Log in and find your workout for today!</h1>
           <h2 class="subtitle has-text-centered">
             If you do not have an account please sign up.
