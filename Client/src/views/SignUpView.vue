@@ -106,17 +106,54 @@ const user = ref<User>({} as User);
           </h2>
             
           <div class="field">
-            <label class="label">Enter Name</label>
+            <label class="label">Enter Full Name
+              <div class = "tooltip is-pulled-right">
+              <i class = "fa-solid fa-circle-info"></i>
+                <span class = "tooltiptext">
+                 <p>
+                  Enter First and Last Name!
+                  <br>
+                  ~~~~~~~~~~~~~~~~~~~~
+                  <br>
+                  ex. John Smith
+                  <br>
+                  Tip: add a space between first and last name
+                 </p>
+                </span>
+              </div>
+            </label>
             <div class="control">
               <input name="firstName" class="input" type="email" placeholder="e.g. John" v-model="user.name">
             </div>
           </div>
 
+          <div class="field">
+            <label class="label">Height (inches)
+              <div class = "tooltip is-pulled-right">
+              <i class = "fa-solid fa-circle-info"></i>
+                <span class = "tooltiptext">
+                 <p>
+                  The height must be entered in inches!
+                  <br>
+                  ~~~~~~~~~~~~~~~~~~~~
+                  <br>
+                  ex. 5ft 10in = 70 inches
+                  <br>
+                  Enter: 70
+                 </p>
+                </span>
+              </div>
+            </label>
+            <div class="control">
+              <input name="firstName" class="input" type="email" placeholder="e.g. 65 " v-model="user.name">
+            </div>
+          </div>
+
         
 
-<div class="columns">
-      <div class = "column">
-          <div class="field">
+<!--<div class="columns">
+      <div class = "column">-->
+          <!--<div class="field">
             <label class="label">Height (Feet)</label>
               <div class="control">
                  <div class="select is-small is-pulled-right is-fullwidth">
@@ -130,11 +167,11 @@ const user = ref<User>({} as User);
                       </select>
                   </div>
                </div>
-          </div>
-      </div>
+          </div>-->
+     <!-- </div> -->
 
-      <div class = "column">
-          <div class="field">
+      <!--<div class = "column">-->
+          <!--<div class="field">
             <label class="label">Height (Inches)</label>
               <div class="control">
                  <div class="select is-small is-pulled-right is-fullwidth">
@@ -155,12 +192,21 @@ const user = ref<User>({} as User);
                       </select>
                   </div>
                </div>
-          </div>
-      </div>
-</div>
+          </div>-->
+      <!--</div>-->
+<!--</div>-->
 
           <div class="field">
-            <label class="label">Weight (lbs)</label>
+            <label class="label">Weight (lbs)
+              <div class = "tooltip is-pulled-right">
+              <i class = "fa-solid fa-circle-info"></i>
+                <span class = "tooltiptext">
+                 <p>
+                  The weight must be entered in pounds!
+                 </p>
+                </span>
+              </div>
+            </label>
             <div class="control">
               <input name = "email" class = "input" type = "email" placeholder="e.g. 23" v-model="user.weight">
             </div>
@@ -168,7 +214,24 @@ const user = ref<User>({} as User);
           <p id = "reply"></p>
 
           <div class = "field">
-            <label class = "label">Selected Difficulty</label>
+            <label class = "label">Selected Difficulty
+              <div class = "tooltip is-pulled-right">
+              <i class = "fa-solid fa-circle-info"></i>
+                <span class = "tooltiptext">
+                 <p>
+                  This will determine what workouts you are given!
+                  <br>
+                  ~~~~~~~~~~~~~~~~~~~~
+                  <br>
+                  Beginner: 3-4 Workouts
+                  <br>
+                  Intermediate: 4-5 Workouts
+                  <br>
+                  Advanced: 5-6 Workouts 
+                 </p>
+                </span>
+              </div>
+            </label>
             <div class = "control">
                     <div class="select is-small is-pulled-right is-fullwidth">
                         <select class = "is-hovered" v-model="level">
@@ -188,11 +251,11 @@ const user = ref<User>({} as User);
               <i class = "fa-solid fa-circle-info"></i>
                 <span class = "tooltiptext">
                  <p>
-                  This can be 
+                  This will be used as your Username! 
                   <br>
-                  - Email Address
+                  ~~~~~~~~~~~~~~~~~~~~
                   <br>
-                  - Custom  
+                  -Choose an active Email Account
                  </p>
                 </span>
               </div>
@@ -207,7 +270,17 @@ const user = ref<User>({} as User);
               <div class = "tooltip is-pulled-right">
               <i class = "fa-solid fa-circle-info"></i>
                 <span class = "tooltiptext">
-                  Brian
+                  Password must Contain the following
+                  <br>
+                  ~~~~~~~~~~~~~~~~~~~~
+                  <br>
+                  -One Capital Letter
+                  <br>
+                  -Letters
+                  <br>
+                  -Numbers
+                  <br>
+                  -One Special Character
                 </span>
               </div>
             </label>
