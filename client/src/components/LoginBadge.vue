@@ -1,8 +1,18 @@
 <script setup lang="ts">
-import { useSession, login } from '../model/user';
+import { ref } from 'vue';
+import { useSession, loginWithServer } from '../model/user';
 import { useRouter } from 'vue-router';
 
 const session = useSession();
+
+const email = ref('');
+const password = ref('');
+
+function login() {
+    loginWithServer(email.value, password.value)
+
+}
+        
 
 
 </script>
@@ -27,14 +37,14 @@ const session = useSession();
           <div class="field">
             <label class="label">Email</label>
             <div class="control">
-              <input name="email" class="input" type="email" placeholder="e.g. alex@example.com">
+              <input name="email" class="input" type="email" placeholder="e.g. alex@example.com " v-model="email">>
             </div>
           </div>
   
           <div class="field">
             <label class="label">Password</label>
             <div class="control">
-              <input name="password" class="input" type="password" placeholder="********">
+              <input name="password" class="input" type="password" placeholder="********" v-model="password">>
             </div>
           </div>
 
