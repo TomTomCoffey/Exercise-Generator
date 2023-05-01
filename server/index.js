@@ -6,7 +6,7 @@ const easyWorkouts = require('./controllers/easyWorkouts')
 const intermediateWorkouts = require('./controllers/intermediateWorkouts')
 const advancedWorkouts = require('./controllers/advancedWorkouts')
 const app = express()
-const mongo = require('mongoDB/DbConnection')
+const mongo = require('./models/mongo.js')
 
 const hostname = '127.0.0.1';
 const port = process.env.PORT || 3070;
