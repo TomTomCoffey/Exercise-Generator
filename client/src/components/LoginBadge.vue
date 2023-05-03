@@ -72,14 +72,14 @@ function login() {
             </div>
           </div>
 
+          <button class="button is-info is-outlined is-success" @click="login()">Log In</button>
 
           <RouterLink to="/signUp">
               
-                <button class = "button is-info is-outlined is-link">Sign Up</button>
+                <button class = "button is-info is-outlined is-link ml-3">Sign Up</button>
              
             </RouterLink>
 
-          <button class="button is-info is-outlined is-success ml-3" @click="login()">Log In</button>
           <label class="checkbox is-pulled-right">
           <input type="checkbox"> Remember me</label>
         </form>
