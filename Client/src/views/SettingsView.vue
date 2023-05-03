@@ -1,10 +1,10 @@
 <script setup lang="ts">
 
-import LoginBadge from '@/components/LoginBadge.vue';
-import { setWorkouts, useSession, type User } from '@/model/user';
+//import LoginBadge from '../components/LoginBadge.vue';
+import { setWorkouts, useSession, type User } from '../model/user';
 //import { getEasyWorkouts, getintermediateWorkouts, getAdvancedWorkouts } from '@/model/user';
 //import { getEasyWorkouts, type Workout } from '@/model/workout';
-import { easyWorkouts, intermediateWorkouts, advancedWorkouts  } from '@/model/workout';
+import { easyWorkouts, intermediateWorkouts, advancedWorkouts  } from '../model/workout';
 import { useRoute, useRouter } from 'vue-router';
 import { updateUser } from '../model/user';
 
