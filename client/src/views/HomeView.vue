@@ -218,6 +218,7 @@ const items = session.user?.workouts[session.user?.workoutPointer];
       </div>
     </div>
   </div>
+  <div class="block pt-2"></div>
 </body>
 </div>
 
