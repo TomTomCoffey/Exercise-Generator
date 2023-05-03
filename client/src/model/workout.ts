@@ -57,7 +57,7 @@ export const easyWorkouts: Workout[][] = [
         {
             "id": 1,
             "name": "Bench Press",
-          "photo": "client/src/assets/images/BenchPress.jpg",
+            "photo": "https://img.favpng.com/1/7/1/bench-press-exercise-barbell-muscle-png-favpng-LiwEHRvRceJXwcvhMjmjmRHJf.jpg",
             "sets": 4,
             "reps": 10,
             "weight": 100,
@@ -175,7 +175,7 @@ export const intermediateWorkouts: Workout[][] = [
         {
             "id": 2,
             "name": "Bench Press",
-            "photo": "client/src/assets/images/BenchPress.jpg",
+            "photo": "https://img.favpng.com/1/7/1/bench-press-exercise-barbell-muscle-png-favpng-LiwEHRvRceJXwcvhMjmjmRHJf.jpg",
             "sets": 4,
             "reps": 15,
             "weight": 120,

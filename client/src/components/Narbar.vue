@@ -64,6 +64,7 @@ const session = useSession();
             <a class="navbar-item">Show All</a>
           </div>
         </div>
+        
         <RouterLink to="/personal records" class="navbar-item">
           <div class="span">
                 <div class="icon pr-3">
@@ -72,7 +73,7 @@ const session = useSession();
               </div>  
           Personal Records
         </RouterLink>
-      </div>
+    </div>
 
       <div v-if="session.user">
         <div class = "navbar-end">                                          <!-- Right Side NavBar-->

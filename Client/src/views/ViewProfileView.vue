@@ -46,10 +46,6 @@ const session = useSession();
                     <td>{{ session?.user?.name }}</td>
                   </tr>
                   <tr>
-                    <td>Age:</td>
-                    <td>{{session.user?.age }}</td>
-                  </tr>
-                  <tr>
                     <td>Level:</td>
                     <td>Beginner</td>
                   </tr>
@@ -78,10 +74,6 @@ const session = useSession();
           <h2 class = "pt-3">Workouts</h2>
           <progress class="progress is-success is-normal mb-1" value="8" max="25">32%</progress>
           <h2 class = "is-pulled-right">32%</h2>
-          <h2 class = "pt-3">Average Calories Burned</h2>
-          <progress class="progress is-success is-normal mb-1" value="210" max="500">42%</progress>
-          <h2 class = "is-pulled-left">0</h2>
-          <h2 class = "is-pulled-right pb-5">500</h2>
           
           <table class = "table is-fullwidth is-hoverable is-striped">
             <tbody>
@@ -94,16 +86,6 @@ const session = useSession();
                 <td># Workouts:</td>
                 <td class = "has-text-centered">{{ session.user?.totalWorkout }}</td>
                 <td class = "has-text-centered">/ 15</td>
-              </tr>
-              <tr>
-                <td>Calories Burned:</td>
-                <td>210 cal</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Average Time Spent:</td>
-                <td>2 Hours, 17 Minutes</td>
-                <td></td>
               </tr>
             </tbody>
           </table>
