@@ -59,18 +59,18 @@ function login() {
           </h2>
             
           <div class="field">
-                <label class="label">Email</label>
-                <div class="control">
-                    <input class="input" type="email" v-model="email">
-                </div>
+            <label class="label">Email</label>
+            <div class="control">
+              <input name="email" class="input"  placeholder="e.g. alex@example.com " v-model="email">
             </div>
-    
-            <div class="field">
-                <label class="label">Password</label>
-                <div class="control">
-                    <input class="input" type="password" v-model="password">
-                </div>
+          </div>
+  
+          <div class="field">
+            <label class="label">Password</label>
+            <div class="control">
+              <input name="password" class="input" type="password" placeholder="********" v-model="password">
             </div>
+          </div>
 
           <button class="button is-info is-outlined is-success" @click="login()">Log In</button>
 

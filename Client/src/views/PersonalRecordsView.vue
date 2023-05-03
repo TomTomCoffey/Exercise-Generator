@@ -6,14 +6,7 @@ import { ref } from 'vue';
 
 const session = useSession();
 
-
 const items = getYesterdaysWorkout();
-
-
-
-
-
-
 
 
 
