@@ -136,6 +136,8 @@ export async function loginWithServer(email: string, password: string): Promise<
 
 
 
+
+
        
 export function addMessage(msg: string, type: "success" | "danger" | "warning" | "info") {
     console.log({msg, type});
@@ -198,6 +200,18 @@ export function increment(){
 
 export function todaysWorkout(){
     return session.user?.workouts[session.user?.workoutPointer!];
+}
+
+export function getYesterdaysWorkout() {
+    if(session.user?.workoutPointer! > 0)
+    {
+        return session.user?.workouts[session.user?.workoutPointer! - 1] as Workout[];
+        
+    }
+    else
+    {
+        return session.user?.workouts[session.user?.workouts.length! - 1] as Workout[];
+    }
 }
 
 export function setWorkouts(workout: Workout[][]){
