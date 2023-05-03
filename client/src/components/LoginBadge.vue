@@ -11,7 +11,6 @@ const password = ref('');
 console.log(session.user);  /// <---at this point it is undefined 
 const user1 = ref<User | null>(null);
 function login() {
-    
     loginWithServer(email.value, password.value).then((user) => {
         if(user.name === null || user === undefined){
             console.log("user is null");

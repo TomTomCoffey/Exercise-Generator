@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
-import { useSession, logout } from '@/model/user';
+import { useSession, logout } from '../model/user';
 
 
 
