@@ -17,6 +17,8 @@ function login() {
     
     loginWithServer(email.value, password.value).then((user) => {
 
+        router.push('/');
+
         if(user.name === null || user === undefined){
             console.log("user is null");
             return;
@@ -66,6 +68,12 @@ function login() {
                     <button class="button is-link" @click="login">Login</button>
                 </div>
             </div>
+
+            <RouterLink to="/signUp">
+              
+              <button class = "button is-info is-outlined is-link">Sign Up</button>
+           
+          </RouterLink>
 
         </div>
 
