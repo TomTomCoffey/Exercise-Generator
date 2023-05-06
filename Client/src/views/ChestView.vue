@@ -39,7 +39,7 @@
 
 
             </div>
-            <h1 class = "title has-text-centered">Arm Exercises</h1>
+            <h1 class = "title has-text-centered">Chest Exercises</h1>
             <hr class="navbar-divider-black">
             <div class = "columns col">
               <div class = "column is-half">
@@ -52,7 +52,7 @@
                 <h1 class = "title has-text-centered image"><u>Bench Press</u></h1>
                 <div>
                 <p class = "is-size-4">
-                  <strong><i>Bench Press:</i></strong>first start with laying down on a bench.
+                  <strong><i>Bench Press:</i></strong> first start with laying down on a bench.
                   Start with barbell at your chest and push up into the air. Then bring it back
                   down onto your chest. Repeat this for the number of reps.
                 </p>
@@ -62,17 +62,13 @@
 
             <div class = "columns col">
               <div class = "column is-half">
-                <h1 class = "title has-text-centered image">Flies</h1>
+                <h1 class = "title has-text-centered image"><u>Flies</u></h1>
                 <div>
-                <p>
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  
+                <p class = "is-size-4">
+                  <strong><i>Flies:</i></strong> start with laying down on a bench. Pick
+                  your desired weights and hold them at opposite sides of your body. To do
+                  a fly bring the weights in front of you above your body. This is shown in 
+                  the image to your right.
                 </p>
               </div>
             </div>
