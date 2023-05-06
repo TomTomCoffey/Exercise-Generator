@@ -19,7 +19,7 @@
             <h1 class = "title has-text-centered">The Team</h1>
           </div>
             <div class = "box mb-3">
-            <div class = "columns">
+            <div class = "columns col">
               <div class = "column is-half">
 
                 <h2 class = "has-text-weight-bold is-size-4 has-text-black">Tom Coffey</h2>
@@ -81,5 +81,10 @@
     {
       border-radius: 30px;
       border: 3px solid #000000; 
+    }
+    .col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 </style>
