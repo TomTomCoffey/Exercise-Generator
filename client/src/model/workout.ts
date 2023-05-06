@@ -14,10 +14,7 @@ export interface Workout{
     reps: number;
     weight: number;
     date: string;
-
-
-
-
+    
 }
 
 export function api(url: string, data?: any, method?: string, headers?: any) {
@@ -57,7 +54,7 @@ export const easyWorkouts: Workout[][] = [
         {
             "id": 1,
             "name": "Bench Press",
-            "photo": "https://img.favpng.com/1/7/1/bench-press-exercise-barbell-muscle-png-favpng-LiwEHRvRceJXwcvhMjmjmRHJf.jpg",
+            "photo": "https://w7.pngwing.com/pngs/514/837/png-transparent-bench-press-exercise-barbell-strength-training-barbell-angle-physical-fitness-sports-equipment.png",
             "sets": 4,
             "reps": 10,
             "weight": 100,
@@ -175,7 +172,7 @@ export const intermediateWorkouts: Workout[][] = [
         {
             "id": 2,
             "name": "Bench Press",
-            "photo": "https://img.favpng.com/1/7/1/bench-press-exercise-barbell-muscle-png-favpng-LiwEHRvRceJXwcvhMjmjmRHJf.jpg",
+            "photo": "https://w7.pngwing.com/pngs/514/837/png-transparent-bench-press-exercise-barbell-strength-training-barbell-angle-physical-fitness-sports-equipment.png",
             "sets": 4,
             "reps": 15,
             "weight": 120,
