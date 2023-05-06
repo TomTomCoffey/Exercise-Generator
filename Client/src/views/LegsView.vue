@@ -187,4 +187,9 @@
     {
         background-image: linear-gradient(to right, rgb(255, 102, 0) ,  rgb(255, 0, 0), rgba(255, 102, 0));  
     }
+    .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>
