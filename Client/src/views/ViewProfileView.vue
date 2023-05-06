@@ -4,6 +4,7 @@ import { useSession } from '@/model/user';
 
 const session = useSession();
 
+
 </script>
 <template>
   <body id = "grad">
@@ -68,12 +69,6 @@ const session = useSession();
             Weekly Analytics
             <hr class="navbar-divider-black">
           </h1>
-          <h2>Sessions</h2>
-          <progress id = "pg1" class="progress is-success is-normal mb-1" value="3" max="5">60%</progress>
-          <h2 class = "is-pulled-right">60%</h2>
-          <h2 class = "pt-3">Workouts</h2>
-          <progress class="progress is-success is-normal mb-1" value="8" max="25">32%</progress>
-          <h2 class = "is-pulled-right">32%</h2>
           
           <table class = "table is-fullwidth is-hoverable is-striped">
             <tbody>
