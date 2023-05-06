@@ -3,13 +3,21 @@ import LoginBadge from '@/components/LoginBadge.vue';
 import { useSession, todaysWorkout,increment  } from '@/model/user';
 import {getEasyWorkouts, type Workout} from '@/model/workout'
 import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 
 
 
-
+const router = useRouter();
 const session = useSession();
 const items = session.user?.workouts[session.user?.workoutPointer];
+
+function finished(){
+
+  increment();
+  console.log(session.user?.workoutPointer);
+  router.push('personal records');
+}
 
 
 
@@ -101,7 +109,7 @@ const items = session.user?.workouts[session.user?.workoutPointer];
         </table>
           </div>
           </div>
-          <button class="button is-fullwidth is-info is-outlined" id = "submission" type = "button" @click="increment()">Finished Workout</button>
+          <button class="button is-fullwidth is-info is-outlined" id = "submission" type = "button" @click="finished()">Finished Workout</button>
 
         
       </div>
@@ -224,7 +232,7 @@ const items = session.user?.workouts[session.user?.workoutPointer];
 
 <div v-else>
 
-  <LoginBadge></LoginBadge>
+  
 
 </div>
 

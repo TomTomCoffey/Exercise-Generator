@@ -93,6 +93,18 @@ const session = useSession();
           
         </div>
       </div>
+       <div v-else>
+          <RouterLink to="/login">
+            <div class = "navbar-end">                                          <!-- Right Side NavBar-->
+              <div style = "position:relative; top:15px;">
+                <a class = "navbar-item">
+                  <button class="button is-info is-outlined">Login</button>
+                </a>
+              </div>
+            </div>
+          </RouterLink>
+
+       </div>
     
     </div>                                                          <!-- Navigation Bar Menu End--> 
   </nav>  

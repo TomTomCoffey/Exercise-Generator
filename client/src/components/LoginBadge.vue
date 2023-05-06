@@ -11,6 +11,7 @@ const password = ref('');
 console.log(session.user);  /// <---at this point it is undefined 
 const user1 = ref<User | null>(null);
 function login() {
+    
     loginWithServer(email.value, password.value).then((user) => {
         if(user.name === null || user === undefined){
             console.log("user is null");
@@ -60,7 +61,7 @@ function login() {
           <div class="field">
             <label class="label">Email</label>
             <div class="control">
-              <input name="email" class="input"  placeholder="e.g. alex@example.com " v-model="email">
+              <input name="email" class="input" type="email" placeholder="e.g. alex@example.com " v-model="email">
             </div>
           </div>
   
@@ -71,14 +72,14 @@ function login() {
             </div>
           </div>
 
-          <button class="button is-info is-outlined is-success" @click="login()">Log In</button>
 
           <RouterLink to="/signUp">
               
-                <button class = "button is-info is-outlined is-link ml-3">Sign Up</button>
+                <button class = "button is-info is-outlined is-link">Sign Up</button>
              
             </RouterLink>
 
+          <button class="button is-info is-outlined is-success ml-3" @click="login()">Log In</button>
           <label class="checkbox is-pulled-right">
           <input type="checkbox"> Remember me</label>
         </form>
