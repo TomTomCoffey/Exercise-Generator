@@ -33,7 +33,7 @@
                 <ul>
                   <RouterLink to = "/">
                   <li><a href="#">Home</a></li>
-                  <li><a href="#">Show All</a></li>
+                
                   <li class="is-active"><a href="#" aria-current="page">Arms</a></li>
                 </RouterLink>
                 </ul>
@@ -42,9 +42,9 @@
             <div class = "box mb-3">
             <div class = "columns col">
               <div class = "column is-half">
-                <h1 class = "title has-text-centered">The Arms</h1>
+                <h1 class = "title has-text-centered"><u>The Arms</u></h1>
              <div>
-                <p>
+                <p class = "is-size-4">
                   The arms are one of the main muscle groups.
                   These are located in the upper region of your torso.
                 </p>
@@ -73,16 +73,13 @@
               </div>
 
               <div class = "column is-half">
-                <h1 class = "title has-text-centered image">Bicep Curls</h1>
+                <h1 class = "title has-text-centered image"><u>Bicep Curls</u></h1>
                 <div>
-                <p>
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
+                <p class = "is-size-4">
+                  <strong><i>Bicep Curls:</i></strong> Choose any two weights you would like. Hold 
+                  them like shown in the diagram to the left. Start the 
+                  weights at your waist and bring them up to your shoulders.
+                  Repeat this step for the number of reps given. 
                   
                 </p>
               </div>
@@ -91,16 +88,14 @@
 
             <div class = "columns col">
               <div class = "column is-half">
-                <h1 class = "title has-text-centered image">Hammer Curls</h1>
+                <h1 class = "title has-text-centered image"><u>Hammer Curls</u></h1>
                 <div>
-                <p>
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
+                  <p class = "is-size-4">
+                  <strong><i>Hammer Curls:</i></strong> Choose any two weights you would like. Hold 
+                  them like shown in the diagram to the left. Start the 
+                  weights at your waist and bring them up to your shoulders.
+                  The weights should be held vertically instead of horizontally.
+                  Repeat this step for the number of reps given. 
                   
                 </p>
               </div>

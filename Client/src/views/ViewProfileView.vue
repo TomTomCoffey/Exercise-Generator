@@ -14,8 +14,11 @@ const session = useSession();
       <div class="block pt-5"></div>
       <nav class="breadcrumb mb-3" aria-label="breadcrumbs">
                 <ul>
+                  <RouterLink to = "/">
                   <li><a href="#">Home</a></li>
+                
                   <li class="is-active"><a href="#" aria-current="page">View Profile</a></li>
+                </RouterLink>
                 </ul>
               </nav>
       <div class="box mb-3">

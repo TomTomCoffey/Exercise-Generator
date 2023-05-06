@@ -60,8 +60,6 @@ const session = useSession();
             <RouterLink to="/legs" class = "navbar-item">Legs</RouterLink>
             <RouterLink to="/abs" class = "navbar-item">Abs</RouterLink>
             <RouterLink to="/cardio" class="navbar-item">Cardio</RouterLink>
-            <hr class="navbar-divider">
-            <a class="navbar-item">Show All</a>
           </div>
         </div>
         

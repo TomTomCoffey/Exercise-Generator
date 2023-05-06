@@ -7,11 +7,13 @@
       <div class = "columns">
         <div class = "column is is-three-fifths is-offset-one-fifth is narrow-mobile">
           <div class = "block pt-5"></div>
-              <nav class="breadcrumb mb-3" aria-label="breadcrumbs">
+          <nav class="breadcrumb mb-3" aria-label="breadcrumbs">
                 <ul>
+                  <RouterLink to = "/">
                   <li><a href="#">Home</a></li>
-                  <li><a href="#">Show All</a></li>
+                
                   <li class="is-active"><a href="#" aria-current="page">Abs</a></li>
+                </RouterLink>
                 </ul>
               </nav>
             <div class = "box mb-3">

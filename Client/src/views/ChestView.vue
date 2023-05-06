@@ -7,34 +7,23 @@
       <div class = "columns">
         <div class = "column is is-three-fifths is-offset-one-fifth is narrow-mobile">
           <div class = "block pt-5"></div>
-            <nav class="breadcrumb mb-3" aria-label="breadcrumbs">
+          <nav class="breadcrumb mb-3" aria-label="breadcrumbs">
                 <ul>
+                  <RouterLink to = "/">
                   <li><a href="#">Home</a></li>
-                  <li><a href="#">Show All</a></li>
+                
                   <li class="is-active"><a href="#" aria-current="page">Chest</a></li>
+                </RouterLink>
                 </ul>
               </nav>
             <div class = "box mb-3">
-            <div class = "columns">
+            <div class = "columns col">
               <div class = "column is-half">
-                <h1 class = "title">Chest</h1>
-                <p>
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
+                <h1 class = "title has-text-centered"><u>The Chest</u></h1>
+                <p class = "is-size-4">
+                  The chest is on the front of the torso, located on
+                  the upper part of the torso. The highlighted section
+                  to the right demonstrates where the chest it found.
                 </p>
 
 
@@ -60,17 +49,12 @@
               </div>
 
               <div class = "column is-half">
-                <h1 class = "title has-text-centered image">Bench Press</h1>
+                <h1 class = "title has-text-centered image"><u>Bench Press</u></h1>
                 <div>
-                <p>
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  
+                <p class = "is-size-4">
+                  <strong><i>Bench Press:</i></strong>first start with laying down on a bench.
+                  Start with barbell at your chest and push up into the air. Then bring it back
+                  down onto your chest. Repeat this for the number of reps.
                 </p>
               </div>
               </div>
