@@ -16,15 +16,17 @@
                 </RouterLink>
                 </ul>
               </nav>
-            <div class = "box mb-3">
-            <div class = "columns">
+         
+                <div class = "box mb-3">
+            <div class = "columns col">
               <div class = "column is-half">
-                <h1 class = "title">Shoulders</h1>
+                <h1 class = "title has-text-centered"><u>Shoulders</u></h1>
                 <p class = "is-size-4">
                   Shoulders are a major muscle group in the upper body. 
                   They consist of three heads, the anterior deltoid, the medial deltoid, 
-                  and the posterior deltoid, each playing a different role in shoulder movement. 
+                  and the posterior deltoid, each playing a different role in shoulder movement.  
                 </p>
+
 
 
               </div>
