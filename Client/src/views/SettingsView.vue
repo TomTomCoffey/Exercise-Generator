@@ -111,7 +111,7 @@ function changeTheWorkouts(word : String){
 <div class="block pt-2"></div>
   </div>
   <div v-else>
-  <LoginBadge />
+  <div class="h2"> Please Click Login to view this page</div>
 </div>
 </template>
 

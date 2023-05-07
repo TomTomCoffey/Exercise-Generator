@@ -157,6 +157,9 @@ function finished(){
 </div>
 
 <div v-else>
+  <div class="h1"> Please login to view this page.</div>
+
+
 
   
 
