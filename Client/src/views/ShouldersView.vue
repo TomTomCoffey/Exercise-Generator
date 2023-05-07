@@ -59,6 +59,25 @@
               </div>
             </div>
 
+            <div class = "columns col">
+              <div class = "column is-half">
+                <h1 class = "title has-text-centered image"><u>Lateral Raises</u></h1>
+                <div>
+                <p>
+                  <strong><i>Lateral raises:</i></strong> Stand with your arms at your side, dumbbell in each
+                  hand. Slowly raise both hands keeping your arms straight until your elbows are at shoulder height.
+                  Lower both hands to the resting position.
+                </p>
+              </div>
+            </div>
+
+              <div class = "column is-half">
+                <figure class= "image">
+                  <img src = "../assets/images/lateral-raises.jpeg">
+                </figure>
+              </div>
+              </div>
+
            
             
           </div>

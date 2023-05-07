@@ -23,7 +23,7 @@ footer
       <div class="content has-text-centered">
         <div class="box mb-3">
         <p>
-          <strong>NPFit</strong> by <a href="">Scrum Team 4</a>. This website is assosiated with <a href="https://www.newpaltz.edu/">SUNY New Paltz</a>.
+          <strong>NPFit</strong> by <a href="">Scrum Team 4</a>. This website is associated with <a href="https://www.newpaltz.edu/">SUNY New Paltz</a>.
         </p>
       </div>
       </div>
