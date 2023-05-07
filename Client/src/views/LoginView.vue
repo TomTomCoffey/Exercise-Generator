@@ -17,7 +17,7 @@ function login() {
     
     loginWithServer(email.value, password.value).then((user) => {
 
-        router.push('/');
+       // router.push('/');
 
         if(user.name === null || user === undefined){
             console.log("user is null");

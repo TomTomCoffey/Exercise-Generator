@@ -27,6 +27,32 @@ async function getById(id) {
 async function add(item) {
     const col = await collection();
 
+
+    if (!item.email || item.email === '' || item.email.contains('@') === false) {
+        console.log(' Valid Email is required');
+        throw new Error(' Valid Email is required');
+    }
+    if(!item.password) {
+        console.log('Password is required');
+        throw new Error('Password is required');
+    
+    }
+
+    const takenUser = col.findOne({ email: item.email });
+    if (takenUser) {
+        console.log('Email is already taken');
+        throw new Error('Email is already taken');
+    }
+
+    if (!checkPassworkStrength(item.password)) {
+        console.log('Password is not strong enough');
+        throw new Error('Password is not strong enough');
+    }
+
+    
+    
+  
+
     const result = await col.insertOne(item);
 
     item._id = result.insertedId;
@@ -120,6 +146,36 @@ function verifyTokenAsync(token) {
             }
         });
     });
+}
+
+function checkPassworkStrength(password) {
+    // check if password is strong enough
+    // return true or false
+    let strength = 0;
+    if (password.length > 5) {
+        strength++;
+    }
+    if (password.length > 8) {
+        strength++;
+    }
+    if (password.match(/[a-z]/)) {
+        strength++;
+    }
+    if (password.match(/[A-Z]/)) {
+        strength++;
+    }
+    if (password.match(/[0-9]/)) {
+        strength++;
+    }
+    if (password.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/)) {
+        strength++;
+    }
+    if(strength < 3) {
+        return false;
+    }
+    return true;
+
+
 }
 
 
