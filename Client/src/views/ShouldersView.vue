@@ -20,23 +20,10 @@
             <div class = "columns">
               <div class = "column is-half">
                 <h1 class = "title">Shoulders</h1>
-                <p>
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
+                <p class = "is-size-4">
+                  Shoulders are a major muscle group in the upper body. 
+                  They consist of three heads, the anterior deltoid, the medial deltoid, 
+                  and the posterior deltoid, each playing a different role in shoulder movement. 
                 </p>
 
 
@@ -50,8 +37,30 @@
               </div>
 
 
-
             </div>
+            <h1 class = "title has-text-centered">Shoulder Exercises</h1>
+            <hr class="navbar-divider-black">
+            <div class = "columns col">
+              <div class = "column is-half">
+                <figure class= "image">
+                  <img src = "../assets/images/Shoulder-Press.gif">
+                </figure>
+              </div>
+
+              <div class = "column is-half">
+                <h1 class = "title has-text-centered image"><u>Shoulder Press</u></h1>
+                <div>
+                <p>
+                  <strong><i>Shoulder Press:</i></strong> Raise your hands so that the dumbbells are 
+                  resting at shoulder height with your palms facing out. Slowly raise the dumbbells upwards 
+                  above your head before returning to the starting position. 
+                </p>
+              </div>
+              </div>
+            </div>
+
+           
+            
           </div>
         </div>
       </div>
