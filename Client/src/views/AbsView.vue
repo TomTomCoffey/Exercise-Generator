@@ -17,41 +17,79 @@
                 </ul>
               </nav>
             <div class = "box mb-3">
-            <div class = "columns">
+            <div class = "columns col">
               <div class = "column is-half">
-                <h1 class = "title">Abs</h1>
-                <p>
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
+                <h1 class = "title has-text-centered"><u>The Abdominal</u></h1>
+                <div>
+                <p class = "is-size-4">
+                  The abs are located on your torso towards the bottom.
+                  The abdominal muscles are made up of two muscles, the obliques
+                  and the abdominis. This muscle group can be seen to your right.
                 </p>
-
-
+              </div>
               </div>
 
               <div class = "column is-half">
                 <h1 class = "title has-text-centered">Location</h1>
                 <img src = "../assets/images/absRed.png">
+              </div>
+            </div>
 
+            <h1 class = "title has-text-centered">Abs Exercises</h1>
+            <hr class="navbar-divider-black">
+            <div class = "columns col">
+              <div class = "column is-half">
+                <figure class= "image">
+                  <img src = "../assets/images/pushUp.gif">
+                </figure>
+              </div>
 
+              <div class = "column is-half">
+                <h1 class = "title has-text-centered image"><u>Push Ups</u></h1>
+                <div>
+                <p class = "is-size-4">
+                  <strong><i>Push Ups:</i></strong> start with a plank position.
+                  Then lift your body up using only your arms. This is known as
+                  the starting position. You will then lower your body using your
+                  arms until your elbows are creating a 90 degree angle. This is
+                  the end position. This is one rep, repeat until desired number
+                  or until failure.
+                  
+                </p>
+              </div>
+              </div>
+            </div>
+
+            <div class = "columns col">
+              <div class = "column is-half">
+                <h1 class = "title has-text-centered image"><u>Crunches</u></h1>
+                <div>
+                  <p class = "is-size-4">
+                  <strong><i>Crunches:</i></strong> start by laying down on your
+                  back  
+                  
+                </p>
+              </div>
+            </div>
+
+              <div class = "column is-half">
+                <figure class= "image">
+                  <img src = "../assets/images/hammerCurl.gif">
+                </figure>
+              </div>
               </div>
 
 
 
-            </div>
+
+
+
+
+
+
+
+
+
           </div>
         </div>
       </div>
@@ -73,5 +111,10 @@
        #grad2 
       {
         background-image: linear-gradient(to right, rgb(255, 102, 0) ,  rgb(255, 0, 0), rgba(255, 102, 0));
+      }
+      .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 </style>

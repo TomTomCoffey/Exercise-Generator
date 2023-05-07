@@ -297,7 +297,7 @@ const user = ref<User>({} as User);
             </div>
           </div>
 
-          <button class="button is-info is-outlined is-link is-fullwidth" type = "button" @click= "tester()">Submit</button>
+          <button class="button is-info is-outlined is-link is-fullwidth" type = "button" @click= "tester()">Create Account</button>
           
         </form>
   </div>

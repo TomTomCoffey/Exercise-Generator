@@ -44,12 +44,11 @@ function login() {
     <body id = "grad">
      <div class="box">
 
-        
         <div class="form">
-
+            
             <h1 class="title">Login</h1>
             <h2 class="subtitle">Please enter your credentials</h2>
-    
+            
             <div class="field">
                 <label class="label">Email</label>
                 <div class="control">
@@ -63,8 +62,6 @@ function login() {
                     <input class="input" type="password" v-model="password">
                 </div>
             </div>
-    
-           
             
             <button class="button is-info is-outlined is-success" @click="login">Login</button>
                 
@@ -73,6 +70,7 @@ function login() {
               <button class = "button is-info is-outlined is-link ml-3">Sign Up</button>
            
           </RouterLink>
+        
 
         </div>
 
