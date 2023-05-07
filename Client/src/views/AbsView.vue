@@ -40,20 +40,20 @@
             <div class = "columns col">
               <div class = "column is-half">
                 <figure class= "image">
-                  <img src = "../assets/images/pushUp.gif">
+                  <img src = "../assets/images/plank.gif">
                 </figure>
               </div>
 
               <div class = "column is-half">
-                <h1 class = "title has-text-centered image"><u>Push Ups</u></h1>
+                <h1 class = "title has-text-centered image"><u>Plank</u></h1>
                 <div>
                 <p class = "is-size-4">
-                  <strong><i>Push Ups:</i></strong> start with a plank position.
-                  Then lift your body up using only your arms. This is known as
-                  the starting position. You will then lower your body using your
-                  arms until your elbows are creating a 90 degree angle. This is
-                  the end position. This is one rep, repeat until desired number
-                  or until failure.
+                  <strong><i>Plank:</i></strong> start with your forearms 
+                  pressed against the floor and have the rest of your body
+                  lifted into the air. Make sure that your butt is not raised
+                  too high into the air. Your back must be straight for this 
+                  exercise to be completed successfully. You can increase the
+                  amount of time that you hold this plank.
                   
                 </p>
               </div>
@@ -66,15 +66,17 @@
                 <div>
                   <p class = "is-size-4">
                   <strong><i>Crunches:</i></strong> start by laying down on your
-                  back  
-                  
+                  back and bending your knees. Now place your hands at the back
+                  of your head and try to do a sit up without going all the way
+                  up. The man to the left demonstrates this in greater detail. 
+                  Repeat for desired amount of reps or until failure. 
                 </p>
               </div>
             </div>
 
               <div class = "column is-half">
                 <figure class= "image">
-                  <img src = "../assets/images/hammerCurl.gif">
+                  <img src = "../assets/images/crunches.gif">
                 </figure>
               </div>
               </div>
