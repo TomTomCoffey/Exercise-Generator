@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import LoginBadge from '@/components/LoginBadge.vue';
-import { useSession, todaysWorkout,increment  } from '@/model/user';
+import { useSession, todaysWorkout,increment, type User  } from '@/model/user';
 import {getEasyWorkouts, type Workout} from '@/model/workout'
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
@@ -18,6 +18,8 @@ function finished(){
   console.log(session.user?.workoutPointer);
   router.push('personal records');
 }
+
+const testing = ref(session.user);
 
 
 
@@ -53,6 +55,19 @@ function finished(){
     width: 100px;
     height: 100px;
     object-fit: cover;
+
+  }
+
+  .modal-card-head{
+    background-color: #00FFC3;
+    z-index: 1;
+    display: center;
+
+
+  }
+
+  .modal{
+    z-index: 1;
 
   }
 </style>
@@ -157,11 +172,9 @@ function finished(){
 </div>
 
 <div v-else>
-  <div class="h1"> Please login to view this page.</div>
-
-
-
   
+ <LoginBadge/>
+
 
 </div>
 

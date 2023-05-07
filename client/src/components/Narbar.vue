@@ -1,10 +1,16 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router';
+import { RouterLink, useRouter } from 'vue-router';
 import { useSession, logout } from '../model/user';
 
 
-
+const router = useRouter();
 const session = useSession();
+
+
+function logoutUser() {
+    logout();
+    router.push('/login');
+}
 
 
 </script>
@@ -85,7 +91,7 @@ const session = useSession();
         
             <div style = "position:relative; top:15px;">
               <a class = "navbar-item">
-                <button class="button is-danger is-outlined" @click="logout">Logout</button>
+                <button class="button is-danger is-outlined" @click="logoutUser">Logout</button>
               </a>
             </div>
           
