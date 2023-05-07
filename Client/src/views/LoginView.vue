@@ -41,6 +41,7 @@ function login() {
  </script>
 
  <template>
+    <body id = "grad">
      <div class="box">
 
         
@@ -63,21 +64,20 @@ function login() {
                 </div>
             </div>
     
-            <div class="field">
-                <div class="control">
-                    <button class="button is-link" @click="login">Login</button>
-                </div>
-            </div>
-
+           
+            
+            <button class="button is-info is-outlined is-success" @click="login">Login</button>
+                
             <RouterLink to="/signUp">
               
-              <button class = "button is-info is-outlined is-link">Sign Up</button>
+              <button class = "button is-info is-outlined is-link ml-3">Sign Up</button>
            
           </RouterLink>
 
         </div>
 
      </div>
+     </body>
  </template>
 
 
@@ -114,6 +114,10 @@ function login() {
         display: flex;
         justify-content: center;
         align-items: center;
+ }
+ #grad 
+ {
+        background-image: linear-gradient(to left, rgb(255, 139, 0) , rgb(2, 0, 198));
  }
 
 
