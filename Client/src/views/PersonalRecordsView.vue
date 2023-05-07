@@ -68,7 +68,7 @@ const items = getYesterdaysWorkout();
 </div>
 
 <div v-else>
-  <LoginBadge/>
+ <div class="h2">Please log in to view this page.</div>
 </div>
   
 
