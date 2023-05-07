@@ -43,11 +43,11 @@
                   Poughkeepsie, NY and I'm bilingual in English and Spanish. 
                 </p>
 
-                <h2 class = "has-text-weight-bold is-size-4 has-text-black pt-4">Jalen Feton</h2>
+                <h2 class = "has-text-weight-bold is-size-4 has-text-black pt-4">Jalen Fenton</h2>
                 <p>
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
+                  Senior at SUNY New Paltz, majoring in Computer Science. I am 22 years old and
+                  enjoy playing sports and relaxing on my off time. I am from Brooklyn, NY and
+                  part of my family is from Great Britain.
                 </p>
               </div>
 
