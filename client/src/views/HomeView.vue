@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import LoginBadge from '@/components/LoginBadge.vue';
-import { useSession, todaysWorkout,increment, type User  } from '@/model/user';
+import { useSession, todaysWorkout,increment, type User, updateUser  } from '@/model/user';
 import {getEasyWorkouts, type Workout} from '@/model/workout'
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
@@ -17,6 +17,7 @@ function finished(){
   increment();
   console.log(session.user?.workoutPointer);
   router.push('personal records');
+  updateUser(session.user as User);
 }
 
 const testing = ref(session.user);
