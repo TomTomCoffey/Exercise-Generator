@@ -28,10 +28,7 @@ async function add(item) {
     const col = await collection();
 
 
-    if (!item.email || item.email === '' || item.email.contains('@') === false) {
-        console.log(' Valid Email is required');
-        throw new Error(' Valid Email is required');
-    }
+
     if(!item.password) {
         console.log('Password is required');
         throw new Error('Password is required');
@@ -49,7 +46,7 @@ async function add(item) {
         throw new Error('Password is not strong enough');
     }
 
-    
+
     
   
 
