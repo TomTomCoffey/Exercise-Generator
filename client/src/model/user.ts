@@ -173,29 +173,17 @@ export function getWorkoutPointer(){
 export function increment(){
    if(session.user?.workoutPointer! < session.user?.workouts.length! - 1)
     { 
-        session.user!.workoutPointer++;
-        if(session.user!.totalWorkouts < 5)
-        {
-            session.user!.totalWorkouts++;
-        }
-        else
-        {
-            session.user!.totalWorkouts = 0;
-        }
-        if(session.user!.totalWorkout < 15)
-        {
-            session.user!.totalWorkout = session.user!.totalWorkout + 3; 
-        }
-        else
-        {
-            session.user!.totalWorkout = 0;
-        }
-        
+        session.user!.workoutPointer++;    
+        session.user!.totalWorkout += session.user!.workouts[session.user!.workoutPointer!].length;
+        session.user!.totalWorkouts++;
     }
     else
     {
         session.user!.workoutPointer = 0;
+        session.user!.totalWorkout += session.user!.workouts[session.user!.workoutPointer!].length;
+        session.user!.totalWorkouts++;
     }
+
 }
 
 export function todaysWorkout(){

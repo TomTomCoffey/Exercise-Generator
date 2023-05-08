@@ -109,12 +109,12 @@ else
               <tr>
                 <td># Workout Sessions:</td>
                 <td class = "has-text-centered">{{ session.user?.totalWorkouts }}</td>
-                <td class = "has-text-centered">/ 5</td>
+                <td class = "has-text-centered">/ 30</td>
               </tr>
               <tr>
                 <td># Workouts:</td>
                 <td class = "has-text-centered">{{ session.user?.totalWorkout }}</td>
-                <td class = "has-text-centered">/ 15</td>
+                <td class = "has-text-centered">/ 150</td>
               </tr>
             </tbody>
           </table>
