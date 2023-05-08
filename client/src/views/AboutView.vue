@@ -24,16 +24,15 @@
 
                 <h2 class = "has-text-weight-bold is-size-4 has-text-black">Tom Coffey</h2>
                 <p>
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
+                  I'm a Computer Science student at SUNY New Paltz. I'm from Newburgh and I like taking on 
+                  new projects to challenge myself and keep learning. In my free time I like going to the 
+                  gym.
                 </p>
 
                 <h2 class = "has-text-weight-bold is-size-4 has-text-black pt-4">Scott Klein</h2>
                 <p>
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
+                  I'm a student at SUNY New Paltz majoring in computer science. I'm 23 years old, from Long Island
+                  and like skiing and hiking in my free time. 
                 </p>
 
                 <h2 class = "has-text-weight-bold is-size-4 has-text-black pt-4">Brian Ordonez</h2>
