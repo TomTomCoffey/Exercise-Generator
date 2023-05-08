@@ -49,14 +49,10 @@
                 <h1 class = "title has-text-centered image"><u>Pull Downs</u></h1>
                 <div>
                 <p class = is-size-4>
-                  <strong><i>Pull Downs:</i></strong> There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  
+                  <strong><i>Pull Downs:</i></strong> start in a seated position and lift
+                  your arms to reach for the bar. Once you have your hands on the bar, pull
+                  the bar down to complete one rep. Slowly release it back to the starting position
+                  and repeated for desired amount of reps or until failure.
                 </p>
               </div>
               </div>
@@ -67,13 +63,10 @@
                 <h1 class = "title has-text-centered image"><u>Cable Rows</u></h1>
                 <div>
                 <p class = "is-size-4">
-                  <strong><i>Cable Rows:</i></strong> There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
-                  There will be words here, that everyone will be able to read.
+                  <strong><i>Cable Rows:</i></strong> start in a seated position and stretch your
+                  hands out and reach for the bar. You then need to pull the bar back until the bar
+                  meets your chest. Then slowly bring the bar back to the initial position. Repeated 
+                  for desired amount of reps or until failure.
                   
                 </p>
               </div>
