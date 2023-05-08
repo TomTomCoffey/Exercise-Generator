@@ -5,6 +5,37 @@ import { useSession } from '@/model/user';
 const session = useSession();
 
 
+//const workout = session!.user.workouts[0][0];
+
+
+function getWorkoutLevel() : string {
+
+if(session.user!.workouts[0][0].id === 1)
+{
+  return "Beginner";
+}
+else if(session.user!.workouts[0][0].id === 2)
+{
+  return "Intermediate";
+}
+else if(session.user!.workouts[0][0].id === 3)
+{
+  return "Advanced";
+}
+else
+{
+  return "Expert";
+}
+
+}
+
+
+
+
+
+
+
+
 </script>
 <template>
   <body id = "grad">
@@ -51,7 +82,7 @@ const session = useSession();
                   </tr>
                   <tr>
                     <td>Level:</td>
-                    <td>Beginner</td>
+                    <td>{{ getWorkoutLevel() }}</td>
                   </tr>
                   <tr>
                     <td>Height:</td>
