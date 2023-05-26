@@ -135,9 +135,6 @@ export async function loginWithServer(email: string, password: string): Promise<
 
 
 
-
-
-
        
 export function addMessage(msg: string, type: "success" | "danger" | "warning" | "info") {
     console.log({msg, type});

@@ -29,8 +29,13 @@ async function add(item) {
 
     // const takenUser = col.findOne({ email: item.email });
     // if (takenUser) {
-    //     console.log('Email is already taken');
+    //    console.log('Email is already taken');
     //     throw new Error('Email is already taken');
+    // }
+
+    // if (!checkPassworkStrength(item.password)) {
+    //     console.log('Password is not strong enough');
+    //     throw new Error('Password is not strong enough');
     // }
 
 
