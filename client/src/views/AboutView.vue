@@ -1,5 +1,8 @@
 <script setup lang="ts">
 
+import { RouterLink } from 'vue-router'
+import img from '../assets/images/team.jpg'
+
 
 </script>
 <template>
@@ -52,7 +55,7 @@
               </div>
 
               <div class = "column is-half">
-                <img class = "roundImage" src = "../assets/images/team.jpg">
+                <img src = "../assets/images/team.jpg" class="is-round">
 
               </div>
 
