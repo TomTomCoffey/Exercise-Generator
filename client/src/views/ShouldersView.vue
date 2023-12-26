@@ -45,7 +45,7 @@
             <div class = "columns col">
               <div class = "column is-half">
                 <figure class= "image">
-                  <img src = "../assets/images/Shoulder-Press.gif">
+                  <img src = "../assets/images/Shoulder-press.gif">
                 </figure>
               </div>
 
