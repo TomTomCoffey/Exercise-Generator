@@ -55,7 +55,7 @@ import img from '../assets/images/team.jpg'
               </div>
 
               <div class = "column is-half">
-                <img src = "../assets/images/team.jpg" class="is-round">
+                <img src = "../assets/images/team.jpg" class="is-rounded">
 
               </div>
 
